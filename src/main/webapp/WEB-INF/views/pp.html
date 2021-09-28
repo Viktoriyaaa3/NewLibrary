@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+<button type="button" data-toggle="modal" data-targhet="#addModal">AddNew</button>
+<form th:action="@{/employees}" method="get">
+<input id="txtSearch" type="text" name="keyword">
+<button type="submit">Go</button>
+
+</form>
+<table>
+<tbody>
+<tr>
+<th> Nome</th>
+<th> Cognome</th>
+<th> Telegono</th>
+<th> Cod Fiscale</th>
+<th> Email</th>
+
+</tr>
+<tr th:each="employee:${employees}"><!-- url nel controller file -->
+<td>
+<a id="photoButton" th:href="@{'/img/photos/' + ${employee.username} + '.jpg'}">
+<img th:src="@{'/img/photos/' + ${employee.username} + '.jpg'}" width="40" height="40">
+</a></td>
+<td th:text="${employee.firstname} + '  ' + ${employee.cognome}">fullname</td>
+<td th:text="${employee.firstname}">ndfks</td>
+<td th:text="${employee.firstname}">ndfks</td>
+<td th:text="${employee.firstname}">ndfks</td>
+<td th:text="${employee.firstname}">ndfks</td>
+
+</tr>
+
+</tbody></table>
+
+</body>
+</html>

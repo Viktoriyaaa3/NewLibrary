@@ -1,21 +1,29 @@
 package teoresiGroup.web.service;
 
+import java.util.List;
 import java.util.Optional;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.sql.DataSource;
 import javax.transaction.Transactional;
-
+import teoresiGroup.web.Repository.AbstractDao;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Expression;
 
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.Utente;
 import teoresiGroup.web.model.UtentiModel;
 
-public class UtentiImpl implements UtentiRepo{
+@Repository
+public class UtentiImpl extends AbstractDao<UtentiModel, Integer> implements UtentiRepo {
 	private static final Logger log= Logger.getLogger(UtentiImpl.class.getName());
 @PersistenceContext
 private EntityManager em;
@@ -39,10 +47,46 @@ private JdbcTemplate conn;
 		return em.find(UtentiModel.class, id);
 	}
 	@Override
-	@Transactional
+	//@Transactional
 	public UtentiModel getByName(String nome) {
+		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+		CriteriaQuery<UtentiModel> query= queryBuilder.createQuery(UtentiModel.class);
+		Root<UtentiModel> rec= query.from(UtentiModel.class);
+		 query.select(rec).where(queryBuilder.equal(rec.get("nome"), nome));
+		 
+		 UtentiModel ut=em.createQuery(query).getSingleResult();
+		 /*serve per ripulire EntityManager*/
+		 em.clear();
 		
-		return em.find(UtentiModel.class, nome);
+		 return ut;
+		
+		//return em.find(UtentiModel.class, nome);
+		
+	}
+	@Override
+	public List<UtentiModel> ByNome(String nome) {
+		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+			CriteriaQuery<UtentiModel> query= queryBuilder.createQuery(UtentiModel.class);
+	
+			String toSearch= "%" + nome + "%";
+			
+			Root<UtentiModel> rec= query.from(UtentiModel.class);
+			/*Ricerca "viceversa", nome-cognome, cognome-nome*/
+			Expression<String> exp= queryBuilder.concat(rec.<String>get("nome"), " ");
+			exp=queryBuilder.concat(exp, rec.<String>get("cognome"));
+			
+			Expression<String> exp2= queryBuilder.concat(rec.<String>get("cognome"), " ");
+			exp2=queryBuilder.concat(exp2, rec.<String>get("nome"));
+			
+			
+			Predicate p=queryBuilder.or(queryBuilder.like(exp, toSearch), queryBuilder.like(exp2, toSearch));
+			
+			query.select(rec).where(p);
+			
+			List<UtentiModel> ut=em.createQuery(query).getResultList();
+			em.clear();
+			
+			return ut;
 	}
 	@Override
 	public UtentiModel getByCognome(String cognome) {
@@ -71,5 +115,6 @@ private JdbcTemplate conn;
 		String name= conn.queryForObject(sql, String.class);
 		return name;
 	}
+	
 
 }
