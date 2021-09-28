@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cliente form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Cliente Form</h1>
+    <form th:action="@{/newCliente}" th:object="${utenteForm}" method="post">
+        <p>Name: <input type="text" th:field="*{nome}"/></p>
+        <p>Cognome: <input type="text" th:field="*{cognome}"/></p>
+       
+        <p><input type="submit" value="Submit"/></p>
+    </form>
+</body>
+</html>
