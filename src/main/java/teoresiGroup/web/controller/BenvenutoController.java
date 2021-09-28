@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class BenvenutoController {
 	//
 	private final static Logger log= Logger.getLogger(BenvenutoController.class.getName());
-	@GetMapping("/ciao")
+	@GetMapping("/")
 
 	//@RequestMapping("/")
 public String ciao(Model model) {
