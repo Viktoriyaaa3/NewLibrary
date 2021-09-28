@@ -4,6 +4,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,16 +33,17 @@ public class UtentiController {
 	private UtentiRepo utentiRepo;
 	
 	List<UtentiModel> um;
-
+UtentiModel utenti;
 	
 @GetMapping("/registra")
 public ModelAndView nuovo(Model model) {
-	log.info("Sono nel metodo nuovo");
+	log.info("Sono nel metodo per registrare gli utenti");
 	
 	UtentiModel utenti= new UtentiModel();
-	log.info("gli utenti ora: " + utenti.toString());
+	
 	
 	model.addAttribute("utenteForm", utenti);
+	
 //	log.info("")
 	return new ModelAndView("cliente", "utenteForm", new UtentiModel());
 	//log.info(utenti.toString());
@@ -52,9 +56,20 @@ public ModelAndView sumbit(@ModelAttribute("utenteForm") UtentiModel utenti)
 	log.info("Sono nel metodo submit");
 	
 	if(utenti!=null)
-	{utentiRepo.add(utenti);
+	{ 
+		log.info("Scrivo i dati ricevuti nel post, metodo add : " + utenti.getNome() + " " + utenti.getCognome() + " " + utenti.getCodFiscale()
+	+ " "+ utenti.getEmail() + " " + utenti.getTelefono() + " " + utenti.getPassword() + " " + utenti.getUsername());
+	
+	if(utenti.getPassword().isEmpty() || utenti.getUsername().isEmpty())
+		return new ModelAndView("error");
+	
+
+	/*aggiungere espressioni regolari per controllare email in arrivo*/
+		
+		utentiRepo.add(utenti);
 	return new ModelAndView("result", "utenteForm", utenti);}
-	else return new ModelAndView("error");
+	else 
+		return new ModelAndView("error");
 	
 }
 //ricerca per nome
@@ -72,6 +87,7 @@ public String getByName() {
 public String nome() {
 	log.info("sono nel metodo cerca nome");
 	log.info(utentiRepo.dammiNome());
+	
 	return "result";
 	
 }
@@ -242,7 +258,8 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 
 @GetMapping("/employees")
 public String getWmployees(Model model) {
-	//model.addAttribute("employees", );
+	model.addAttribute("employees", utenti.getNome() );
+	model.addAttribute("employee", utenti.getCognome());
 	return "";
 }
 

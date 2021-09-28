@@ -36,7 +36,30 @@ private String codFiscale;
 private String telefono;
 	@Column(name="email")
 private String email;
+	@Column(name="password")
+	private String password;
+	@Column(name="username")
+	private String username;
+	
 
+public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	public static Logger getLogger() {
+		return logger;
+	}
 public int getId() {
 	return id;
 }
@@ -93,5 +116,17 @@ public UtentiModel(int id, String nome, String cognome, String codFiscale, Strin
 	this.telefono = telefono;
 	this.email = email;
 }
+public UtentiModel(String nome, String cognome, String codFiscale, String telefono, String email, String password,
+		String username) {
+	super();
+	this.nome = nome;
+	this.cognome = cognome;
+	this.codFiscale = codFiscale;
+	this.telefono = telefono;
+	this.email = email;
+	this.password = password;
+	this.username = username;
+}
+
 
 }

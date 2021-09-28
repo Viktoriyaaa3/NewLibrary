@@ -1,6 +1,8 @@
 package teoresiGroup.web.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -38,4 +40,22 @@ public class LoginController {
 /*@RequestAttribute lo uso quando faccio il forward*/
 
 /*usare redirect quando voglio inviare la richiesta a un'altra pagina o uun altro controller. e forward per indirizzare più richieste*/
+
+	@GetMapping
+	public String logIn() {
+		/*
+		 * 
+		 * if(password e username esiste)
+		 * return :tiSeiLoggato
+		 * 
+		 * else return pagina di registrazione*/
+		return "tiSeiLoggato";
+	}
+	
+	@PostMapping
+	public String logOk() {
+		
+		return "redirect/welcomePage";
+	}
+
 }

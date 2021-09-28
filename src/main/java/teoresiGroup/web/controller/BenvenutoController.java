@@ -17,8 +17,8 @@ public class BenvenutoController {
 
 	//@RequestMapping("/")
 public String ciao(Model model) {
-		log.info(model);
-		model.addAttribute("mex", "Hello");
+		log.info("Sono nel metodo iniziale");
+		model.addAttribute("mex", "Effettua una scelta");
 	return "welcome";
 }
 }
