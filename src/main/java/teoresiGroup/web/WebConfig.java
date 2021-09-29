@@ -16,7 +16,9 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
+import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.UtentiRepo;
+import teoresiGroup.web.service.LibroImpl;
 import teoresiGroup.web.service.UtentiImpl;
 
 import org.springframework.core.env.Environment;
@@ -106,5 +108,11 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    @Bean
 	    public UtentiRepo getUtenteService() {
 	    	return new UtentiImpl(getDataSource());
+	    }
+	    
+	    
+	    @Bean
+	    public LibroRepo getLibroService() {
+	    	return new LibroImpl(getDataSource());
 	    }
 }
