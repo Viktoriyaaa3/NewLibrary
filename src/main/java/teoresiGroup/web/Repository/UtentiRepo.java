@@ -17,6 +17,7 @@ public interface UtentiRepo  {
 	public void insert(Utente u);
 	public String dammiNome();
 	List<UtentiModel>ByNome(String nome);
+	List<UtentiModel> ByPassAndUsername(String password, String username);
 
 
 	

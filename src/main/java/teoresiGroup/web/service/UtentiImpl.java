@@ -115,6 +115,43 @@ private JdbcTemplate conn;
 		String name= conn.queryForObject(sql, String.class);
 		return name;
 	}
+	@Override
+	public List<UtentiModel> ByPassAndUsername(String password, String username) {
+		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+		CriteriaQuery<UtentiModel> query= queryBuilder.createQuery(UtentiModel.class);
+
+		String toSearch= "%" + username + "%";
+		
+		Root<UtentiModel> rec= query.from(UtentiModel.class);
+		/*Ricerca "viceversa", nome-cognome, cognome-nome*/
+		Expression<String> exp= queryBuilder.concat(rec.<String>get("username"), " ");
+		exp=queryBuilder.concat(exp, rec.<String>get("password"));
+		
+		Expression<String> exp2= queryBuilder.concat(rec.<String>get("password"), " ");
+		exp2=queryBuilder.concat(exp2, rec.<String>get("username"));
+		
+		
+		Predicate p=queryBuilder.or(queryBuilder.like(exp, toSearch), queryBuilder.like(exp2, toSearch));
+		
+		query.select(rec).where(p);
+		
+		List<UtentiModel> ut=em.createQuery(query).getResultList();
+		em.clear();
+		
+		return ut;
+	}
 	
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -2,20 +2,28 @@ package teoresiGroup.web.controller;
 
 import org.springframework.ui.Model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.UtentiModel;
 
 @Controller
 @RequestMapping("/login")
 public class LoginController {
 	private final static Logger log= Logger.getLogger(LoginController.class.getName());
+	@Autowired
+	private UtentiRepo utentiRepo;
 	/*pag di registrazione è get, il submit è il post*/
 	/*GETmAPPING= definisce metodo accessibile solo via get
 	 * PostMapping:
@@ -51,6 +59,7 @@ public class LoginController {
 
 	@GetMapping("/log")
 	public ModelAndView logIn(Model model) {
+		
 		UtentiModel utenti= new UtentiModel();
 		model.addAttribute("utenteForm", utenti);
 		
@@ -65,17 +74,26 @@ public class LoginController {
 	}
 	
 	@PostMapping("/controllo")
-	public String logOk(@RequestParam("utentiForm") String password, @RequestParam("utentiForm.username") String username, Model model) {
-		log.info("Controllo i dati che mi stanno arrivando dall'utente: ");
-		model.addAttribute("utentiForm.password", password);
-		model.addAttribute("utentiForm.username", username);
+	public String logOk(@ModelAttribute("utenteForm") UtentiModel utenti, Model model) {
 		
-		if(password!=null && username!=null)
+		log.info("Controllo i dati che mi stanno arrivando dall'utente: ");
+		List<String> dati= new ArrayList<String>();
+		if(utenti!=null)
 		{
-			log.info("I dati che sono arrivati: " + password + " " + username );
+			utenti.getPassword();
+			utenti.getUsername();
+			log.info("I dati che sono arrivati: " + utenti.getPassword() + " " + utenti.getUsername() );
 		}
 		
-		return "redirect/welcomePage";
+		utentiRepo.ByPassAndUsername(utenti.getPassword(), utenti.getUsername());
+		log.info("Vedo cosa mi ha trovato trimite CriteriaAPi");
+		log.info(utentiRepo.ByPassAndUsername(utenti.getPassword().toString(), utenti.getUsername().toString()));
+		
+		
+		
+		
+		
+		return "welcome";
 	}
 
 }
