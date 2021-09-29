@@ -73,27 +73,48 @@ public class LoginController {
 		
 	}
 	
+	@SuppressWarnings("unused")
 	@PostMapping("/controllo")
 	public String logOk(@ModelAttribute("utenteForm") UtentiModel utenti, Model model) {
 		
 		log.info("Controllo i dati che mi stanno arrivando dall'utente: ");
-		List<String> dati= new ArrayList<String>();
+		List<UtentiModel> dati=null;
+		String nome;
+		
 		if(utenti!=null)
 		{
+		
 			utenti.getPassword();
 			utenti.getUsername();
 			log.info("I dati che sono arrivati: " + utenti.getPassword() + " " + utenti.getUsername() );
-		}
 		
-		utentiRepo.ByPassAndUsername(utenti.getPassword(), utenti.getUsername());
+		
+		dati = utentiRepo.ByPassAndUsername(utenti.getPassword(), utenti.getUsername());
 		log.info("Vedo cosa mi ha trovato trimite CriteriaAPi");
 		log.info(utentiRepo.ByPassAndUsername(utenti.getPassword().toString(), utenti.getUsername().toString()));
 		
+		//log.info(a);
+		//log.info(a);
+		/*if(dati.isEmpty() && dati==null)
+				{log.info("errore password o username");
+				 return "error";}*/
 		
+		}
+		int a= dati.size();
 		
-		
-		
+		if(a<=0)
+		{
+			return "error";
+		}
+		else
+		//if(utenti.getPassword() == null)
+		//log.info(dati.get(1));
 		return "welcome";
+		
+
+	
+		
+			
 	}
 
 }
