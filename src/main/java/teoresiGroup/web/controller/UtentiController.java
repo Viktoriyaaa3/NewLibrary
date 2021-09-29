@@ -256,12 +256,6 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 	
 }
 
-@GetMapping("/employees")
-public String getWmployees(Model model) {
-	model.addAttribute("employees", utenti.getNome() );
-	model.addAttribute("employee", utenti.getCognome());
-	return "";
-}
 
 
 

@@ -127,6 +127,11 @@ public UtentiModel(String nome, String cognome, String codFiscale, String telefo
 	this.password = password;
 	this.username = username;
 }
+@Override
+public String toString() {
+	return "UtentiModel [password=" + password + ", username=" + username + "]";
+}
+
 
 
 }
