@@ -1,4 +1,4 @@
-package teoresiGroup.web.service;
+package teoresiGroup.web.Repository.RepoImpl;
 
 import java.util.List;
 import java.util.Optional;
@@ -27,8 +27,8 @@ public class UtentiImpl extends AbstractDao<UtentiModel, Integer> implements Ute
 	private static final Logger log= Logger.getLogger(UtentiImpl.class.getName());
 @PersistenceContext
 private EntityManager em;
-@Autowired
-public UtentiRepo utentiRepo;
+/*@Autowired
+public UtentiRepo utentiRepo;*/
 
 private JdbcTemplate conn;
 	@Override
@@ -95,7 +95,7 @@ private JdbcTemplate conn;
 	}
 	@Override
 	public Optional<UtentiModel> findOne(int id) {
-		return utentiRepo.findOne(id);
+		return null;//utentiRepo.findOne(id);
 		
 	}
 	@Override

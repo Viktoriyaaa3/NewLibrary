@@ -20,7 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.bind.annotation.MatrixVariable;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.UtentiModel;
-import teoresiGroup.web.service.UtentiImpl;
+import teoresiGroup.web.service.Interfacce.UtentiService;
 
 import java.util.LongSummaryStatistics; /*vedere come funziona*/
 
@@ -30,7 +30,8 @@ public class UtentiController {
 	private final static Logger log = Logger.getLogger(UtentiController.class.getName());
 	//private static final Logger logger= LoggerFactory.getLogger(UtentiController.class);
 	@Autowired
-	private UtentiRepo utentiRepo;
+	//private UtentiRepo utentiRepo;
+	private UtentiService utentiService;
 	
 	List<UtentiModel> um;
 UtentiModel utenti;
@@ -66,7 +67,7 @@ public ModelAndView sumbit(@ModelAttribute("utenteForm") UtentiModel utenti)
 
 	/*aggiungere espressioni regolari per controllare email in arrivo*/
 		
-		utentiRepo.add(utenti);
+		utentiService.add(utenti);
 	return new ModelAndView("result", "utenteForm", utenti);}
 	else 
 		return new ModelAndView("error");
@@ -86,7 +87,7 @@ public String getByName() {
 @GetMapping("/cNome")
 public String nome() {
 	log.info("sono nel metodo cerca nome");
-	log.info(utentiRepo.dammiNome());
+	log.info(utentiService.dammiNome());
 	
 	return "result";
 	
@@ -190,7 +191,7 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 	}
 	*/
 	if (Filter.length() > 0)
-		recordset = utentiRepo.ByNome(Filter); //Otteniamo i clienti per nominativo
+		recordset = utentiService.ByNome(Filter); //Otteniamo i clienti per nominativo
 	else
 	{
 		if (um == null)
