@@ -11,6 +11,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.model.LibriModel;
+
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import org.apache.log4j.Logger;
 @Controller
 @RequestMapping("/book")
@@ -24,6 +28,9 @@ public class LibroController {
 	{
 		log.info("Sono in libri form");
 		LibriModel libri= new LibriModel();
+		//Date d;
+		//GregorianCalendar c;
+		log.info("Dati inseriti: " + libri);
 		
 		return new ModelAndView("libroVista", "libroForm", new LibriModel());
 		
@@ -34,10 +41,14 @@ public class LibroController {
 		
 log.info("Sono in Libri aggiungi post");
 
+
 if(libro!=null)
-{ libroRepo.add(libro);
-log.info("i dati che sono arrivati: " + libro.getAutore() + " " + libro.getTitolo()+
-		" " + libro.getNumeroPezzi());
+{ 
+	log.info("i dati che sono arrivati: " + libro.getAutore() + " " + libro.getTitolo()+
+			" " + libro.getNumeroPezzi());
+	
+	libroRepo.add(libro);
+
 	return  new ModelAndView("regLibroSucesso", "libroForm", libro);
 	
 }

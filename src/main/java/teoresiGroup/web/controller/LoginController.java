@@ -75,7 +75,7 @@ public class LoginController {
 	
 	@SuppressWarnings("unused")
 	@PostMapping("/controllo")
-	public String logOk(@ModelAttribute("utenteForm") UtentiModel utenti, Model model) {
+	public ModelAndView logOk(@ModelAttribute("utenteForm") UtentiModel utenti, Model model) {
 		
 		log.info("Controllo i dati che mi stanno arrivando dall'utente: ");
 		List<UtentiModel> dati=null;
@@ -104,12 +104,12 @@ public class LoginController {
 		
 		if(a<=0)
 		{
-			return "error";
+			return new ModelAndView("cliente");
 		}
 		else
 		//if(utenti.getPassword() == null)
 		//log.info(dati.get(1));
-		return "welcome";
+		return new ModelAndView("dashboard", "utenteForm", utenti);
 		
 
 	
