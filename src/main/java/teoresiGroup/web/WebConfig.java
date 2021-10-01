@@ -18,8 +18,10 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.service.LibroImpl;
-import teoresiGroup.web.service.UtentiImpl;
+import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
+import teoresiGroup.web.Repository.RepoImpl.UtentiImpl;
+import teoresiGroup.web.service.Implem.UtentiServiceImpl;
+import teoresiGroup.web.service.Interfacce.UtentiService;
 
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -114,5 +116,16 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    @Bean
 	    public LibroRepo getLibroService() {
 	    	return new LibroImpl(getDataSource());
+	    }
+	    @Bean
+	    public UtentiService getUtentiService() {
+	    	return new UtentiServiceImpl();
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
 	    }
 }

@@ -9,6 +9,7 @@ import javax.persistence.PersistenceContext;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.Utente;
@@ -16,19 +17,29 @@ import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Service
+@Transactional
 public class UtentiServiceImpl implements UtentiService{
 	private final static Logger log= Logger.getLogger(UtentiServiceImpl.class.getName());
 	@Autowired
 	private UtentiRepo utentiRepo;
 	@PersistenceContext
 	private EntityManager em;
-
+/*public UtentiServiceImpl(UtentiRepo utentiRepo) {
+	this.utentiRepo=utentiRepo;
+}*/
+	public UtentiRepo getUtentiRepo() {
+		return utentiRepo;
+	}
+	public void setUtentiRepo(UtentiRepo utentiRepo) {
+		this.utentiRepo = utentiRepo;
+	}
 	@Override
 	public String getUtente() {
 	
 		return null;
 	}
 	@Override
+	@Transactional
 	public void add(UtentiModel u) {
 		utentiRepo.add(u);
 		

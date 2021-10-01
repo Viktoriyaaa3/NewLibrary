@@ -20,6 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.bind.annotation.MatrixVariable;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.UtentiModel;
+//Simport teoresiGroup.web.service.Interfacce.UtentiService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
 import java.util.LongSummaryStatistics; /*vedere come funziona*/
@@ -32,7 +33,8 @@ public class UtentiController {
 	@Autowired
 	//private UtentiRepo utentiRepo;
 	private UtentiService utentiService;
-	
+	//@Autowired
+	//private UtentiRepo utentiRepo;
 	List<UtentiModel> um;
 UtentiModel utenti;
 	

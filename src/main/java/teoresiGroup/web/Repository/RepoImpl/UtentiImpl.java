@@ -21,14 +21,16 @@ import javax.persistence.criteria.Expression;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.Utente;
 import teoresiGroup.web.model.UtentiModel;
+import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Repository
+@Transactional
 public class UtentiImpl extends AbstractDao<UtentiModel, Integer> implements UtentiRepo {
 	private static final Logger log= Logger.getLogger(UtentiImpl.class.getName());
 @PersistenceContext
 private EntityManager em;
-/*@Autowired
-public UtentiRepo utentiRepo;*/
+@Autowired
+public UtentiRepo utentiRepo;
 
 private JdbcTemplate conn;
 	@Override

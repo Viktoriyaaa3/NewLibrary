@@ -17,13 +17,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.UtentiModel;
+import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Controller
 @RequestMapping("/login")
 public class LoginController {
 	private final static Logger log= Logger.getLogger(LoginController.class.getName());
 	@Autowired
-	private UtentiRepo utentiRepo;
+	//private UtentiRepo utentiRepo;
+	private UtentiService utentiService;
 	/*pag di registrazione è get, il submit è il post*/
 	/*GETmAPPING= definisce metodo accessibile solo via get
 	 * PostMapping:
@@ -89,9 +91,9 @@ public class LoginController {
 			log.info("I dati che sono arrivati: " + utenti.getPassword() + " " + utenti.getUsername() );
 		
 		
-		dati = utentiRepo.ByPassAndUsername(utenti.getPassword(), utenti.getUsername());
+		dati = utentiService.ByPassAndUsername(utenti.getPassword(), utenti.getUsername());
 		log.info("Vedo cosa mi ha trovato trimite CriteriaAPi");
-		log.info(utentiRepo.ByPassAndUsername(utenti.getPassword().toString(), utenti.getUsername().toString()));
+		log.info(utentiService.ByPassAndUsername(utenti.getPassword().toString(), utenti.getUsername().toString()));
 		
 		//log.info(a);
 		//log.info(a);
