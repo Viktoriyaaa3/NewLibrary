@@ -83,7 +83,7 @@ CriteriaQuery<I> query = this.init();
 		
 	}
 	
-	/**/
+	
 	private void flushAndClear() 
 	{
 	    em.flush();

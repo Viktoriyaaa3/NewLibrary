@@ -20,7 +20,9 @@ import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
 import teoresiGroup.web.Repository.RepoImpl.UtentiImpl;
+import teoresiGroup.web.service.Implem.LibroServiceImpl;
 import teoresiGroup.web.service.Implem.UtentiServiceImpl;
+import teoresiGroup.web.service.Interfacce.LibroService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
 import org.springframework.core.env.Environment;
@@ -121,11 +123,9 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    public UtentiService getUtentiService() {
 	    	return new UtentiServiceImpl();
 	    	
-	    	
-	    	
-	    	
-	    	
-	    	
-	    	
+	    }
+	    @Bean
+	    public LibroService getLibroServic() {
+	    	return new LibroServiceImpl();
 	    }
 }

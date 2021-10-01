@@ -2,7 +2,7 @@ package teoresiGroup.web.Repository.RepoImpl;
 
 import java.util.List;
 import java.util.Optional;
-
+import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
@@ -15,17 +15,21 @@ import teoresiGroup.web.Repository.LibroRepo;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Expression;
 
 import teoresiGroup.web.Repository.UtentiRepo;
+import teoresiGroup.web.model.Libri;
+import teoresiGroup.web.model.LibriMapper;
 import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.model.Utente;
 import teoresiGroup.web.model.UtentiModel;
 
 @Repository
+@Transactional
 public class LibroImpl extends AbstractDao<LibriModel, Integer> implements LibroRepo{
 	private static final Logger log= Logger.getLogger(LibroImpl.class.getName());
 	
@@ -35,7 +39,7 @@ public class LibroImpl extends AbstractDao<LibriModel, Integer> implements Libro
 	public LibroRepo libroRepo;
 	private JdbcTemplate conn;
 
-	
+
 
 	public LibroImpl(DataSource dataSource) {
 		conn=new JdbcTemplate(dataSource);
@@ -55,9 +59,17 @@ public class LibroImpl extends AbstractDao<LibriModel, Integer> implements Libro
 	}
 
 	@Override
-	public LibriModel getByName(String nome) {
-		// TODO Auto-generated method stub
-		return null;
+	public LibriModel getByName(String autore) {
+		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+		CriteriaQuery<LibriModel> query= queryBuilder.createQuery(LibriModel.class);
+		Root<LibriModel> rec= query.from(LibriModel.class);
+		 query.select(rec).where(queryBuilder.equal(rec.get("autore"), autore));
+		 
+		 LibriModel ut=em.createQuery(query).getSingleResult();
+		 /*serve per ripulire EntityManager*/
+		 em.clear();
+		
+		 return ut;
 	}
 
 	@Override
@@ -74,10 +86,17 @@ public class LibroImpl extends AbstractDao<LibriModel, Integer> implements Libro
 
 	@Override
 	public void insert(LibriModel u) {
-		// TODO Auto-generated method stub
+		String sql="INSERT INTO Libri( titolo,autore, dataPubblicazione, numeroPezzi) VALUES(?,?,?,?)";
+		conn.update(sql, u.getTitolo(), u.getAutore(), u.getDataPubblicazione(), u.getNumeroPezzi() );
 		
 	}
-
+	@Override
+	public List<Libri> getAll() {
+		String sql="SELECT * FROM Libri";
+		List<Libri> lib= conn.query(sql, new LibriMapper());
+		
+		return lib;	}
+	
 	@Override
 	public String dammiNome() {
 		// TODO Auto-generated method stub
@@ -101,6 +120,20 @@ public class LibroImpl extends AbstractDao<LibriModel, Integer> implements Libro
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
+	@Override
+	@Transactional
+	public void update(LibriModel l) {
+		em.merge(l);
+		
+	}
+
+	@Override
+	public void delete(LibriModel l) {
+		em.remove(l);
+		
+	}
+
+
 
 }

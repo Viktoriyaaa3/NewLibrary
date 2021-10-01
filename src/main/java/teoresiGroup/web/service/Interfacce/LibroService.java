@@ -3,6 +3,7 @@ package teoresiGroup.web.service.Interfacce;
 import java.util.List;
 import java.util.Optional;
 
+import teoresiGroup.web.model.Libri;
 import teoresiGroup.web.model.LibriModel;
 
 public interface LibroService {
@@ -16,6 +17,7 @@ public interface LibroService {
 	public String dammiNome();
 	List<LibriModel>ByNome(String nome);
 	List<LibriModel> ByPassAndUsername(String autore, String titolo);
-
-
+	void update(LibriModel l);
+	void delete(LibriModel l);
+List<Libri> getAll();
 }

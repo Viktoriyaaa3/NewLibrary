@@ -9,7 +9,7 @@
     <form action="#" th:action="@{/book/libro}" th:object="${libroForm}" method="post">
     	<p>Titolo: <input type="text" th:field="*{titolo}" /></p>
         <p>Autore: <input type="text" th:field="*{autore}" /></p>
-       	<p>Data Pubblicazione: <input type="date" th:field="*{dataPubblicazione}" /></p>
+       
         <p>Numero Pezzi: <input type="number" th:field="*{numeroPezzi}" /></p>
         <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
     </form>

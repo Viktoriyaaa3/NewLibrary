@@ -24,9 +24,7 @@ public class UtentiServiceImpl implements UtentiService{
 	private UtentiRepo utentiRepo;
 	@PersistenceContext
 	private EntityManager em;
-/*public UtentiServiceImpl(UtentiRepo utentiRepo) {
-	this.utentiRepo=utentiRepo;
-}*/
+
 	public UtentiRepo getUtentiRepo() {
 		return utentiRepo;
 	}
