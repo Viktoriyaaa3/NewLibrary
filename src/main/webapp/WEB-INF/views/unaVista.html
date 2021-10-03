@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Modifcia Libro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th> Titolo </th>
+            <th> Autore </th>
+            <th> Numero Pezzi</th>
+            <th>Data di Pubblicazione</th>
+        </tr>
+    </thead>
+    <tbody>
+	<tr th:if="${books.empty}">
+            <td colspan="2"> No Books Available </td>
+        </tr>
+        <tr th:each="book : ${books}">
+            <td><span th:text="${book.titolo}"> Title </span></td>
+            <td><span th:text="${book.autore}"> Author </span></td>
+            <td><span th:text="${book.numeroPezzi}"> Numero Pezzi</span></td>
+            <td><span th:text="${book.dataPubblicazione}">Data pubblicazione</span></td>
+        </tr>
+    </tbody>
+</table>
+		
+</body>
+</html>

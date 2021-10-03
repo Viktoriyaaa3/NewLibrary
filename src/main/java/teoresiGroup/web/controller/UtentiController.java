@@ -57,7 +57,8 @@ public ModelAndView sumbit(@ModelAttribute("utenteForm") UtentiModel utenti)
 	if(utenti!=null)
 	{ 
 		log.info("Scrivo i dati ricevuti nel post, metodo add : " + utenti.getNome() + " " + utenti.getCognome() + " " + utenti.getCodFiscale()
-	+ " "+ utenti.getEmail() + " " + utenti.getTelefono() + " " + utenti.getPassword() + " " + utenti.getUsername());
+	+ " "+ utenti.getEmail() + " " + utenti.getTelefono() + " " + utenti.getPassword() + " " + utenti.getUsername()+ " "+
+	utenti.getDataNascita());
 	
 	if(utenti.getPassword().isEmpty() || utenti.getUsername().isEmpty())
 		return new ModelAndView("error");

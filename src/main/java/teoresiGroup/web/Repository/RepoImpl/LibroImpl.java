@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.sql.DataSource;
 import javax.transaction.Transactional;
-import teoresiGroup.web.Repository.AbstractDao;
+//import teoresiGroup.web.Repository.AbstractDao;
 import teoresiGroup.web.Repository.LibroRepo;
 
 import org.apache.log4j.Logger;
@@ -23,20 +23,22 @@ import javax.persistence.criteria.Expression;
 
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.Libri;
-import teoresiGroup.web.model.LibriMapper;
+//import teoresiGroup.web.model.LibriMapper;
 import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.model.Utente;
 import teoresiGroup.web.model.UtentiModel;
 
 @Repository
 @Transactional
-public class LibroImpl extends AbstractDao<LibriModel, Integer> implements LibroRepo{
+public class LibroImpl /*extends AbstractDao<LibriModel, Integer>*/ implements LibroRepo{
 	private static final Logger log= Logger.getLogger(LibroImpl.class.getName());
 	
 	@PersistenceContext
 	private EntityManager em;
 	@Autowired
 	public LibroRepo libroRepo;
+	
+	/*jdbc non ti serve. da eliminare tutti i metodi con jdbc*/
 	private JdbcTemplate conn;
 
 
@@ -48,15 +50,24 @@ public class LibroImpl extends AbstractDao<LibriModel, Integer> implements Libro
 	@Override
 	@Transactional
 	public void add(LibriModel l) {
+		log.info("sono nem metodo add di LibroImpl");
+		log.info("Vedo dato che arriva qua: " + l);
 		em.persist(l);
 		
 	}
 
 	@Override
 	public LibriModel getById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	return	em.find(LibriModel.class,id);
+		
 	}
+	@Override
+	@Transactional
+	public void update(LibriModel l) {
+		em.merge(l);
+		
+	}
+
 
 	@Override
 	public LibriModel getByName(String autore) {
@@ -90,12 +101,12 @@ public class LibroImpl extends AbstractDao<LibriModel, Integer> implements Libro
 		conn.update(sql, u.getTitolo(), u.getAutore(), u.getDataPubblicazione(), u.getNumeroPezzi() );
 		
 	}
-	@Override
+	/*@Override
 	public List<Libri> getAll() {
 		String sql="SELECT * FROM Libri";
 		List<Libri> lib= conn.query(sql, new LibriMapper());
 		
-		return lib;	}
+		return lib;	}*/
 	
 	@Override
 	public String dammiNome() {
@@ -121,13 +132,7 @@ public class LibroImpl extends AbstractDao<LibriModel, Integer> implements Libro
 		return null;
 	}
 
-	@Override
-	@Transactional
-	public void update(LibriModel l) {
-		em.merge(l);
-		
-	}
-
+	
 	@Override
 	public void delete(LibriModel l) {
 		em.remove(l);

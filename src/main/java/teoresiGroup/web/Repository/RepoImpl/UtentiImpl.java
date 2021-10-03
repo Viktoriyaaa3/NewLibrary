@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.sql.DataSource;
 import javax.transaction.Transactional;
-import teoresiGroup.web.Repository.AbstractDao;
+//import teoresiGroup.web.Repository.AbstractDao;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -25,7 +25,7 @@ import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Repository
 @Transactional
-public class UtentiImpl extends AbstractDao<UtentiModel, Integer> implements UtentiRepo {
+public class UtentiImpl /*extends AbstractDao<UtentiModel, Integer>*/ implements UtentiRepo {
 	private static final Logger log= Logger.getLogger(UtentiImpl.class.getName());
 @PersistenceContext
 private EntityManager em;

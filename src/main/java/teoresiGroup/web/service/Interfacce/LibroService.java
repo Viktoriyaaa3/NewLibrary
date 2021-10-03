@@ -7,9 +7,12 @@ import teoresiGroup.web.model.Libri;
 import teoresiGroup.web.model.LibriModel;
 
 public interface LibroService {
-	public String getLibro();
+	
 	public void add(LibriModel l);
 	LibriModel getById(int id);
+	void update(LibriModel l);
+	
+	
 	LibriModel getByName(String nome);
 	LibriModel getByCognome(String cognome);
 	Optional<LibriModel> findOne(int id);
@@ -17,7 +20,8 @@ public interface LibroService {
 	public String dammiNome();
 	List<LibriModel>ByNome(String nome);
 	List<LibriModel> ByPassAndUsername(String autore, String titolo);
-	void update(LibriModel l);
+
 	void delete(LibriModel l);
-List<Libri> getAll();
+	public String getLibro();
+//List<Libri> getAll();
 }

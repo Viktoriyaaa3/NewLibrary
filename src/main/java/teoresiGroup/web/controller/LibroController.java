@@ -10,14 +10,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import teoresiGroup.web.Repository.LibroCrudRepository;
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.service.Interfacce.LibroService;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 @Controller
@@ -26,6 +29,8 @@ public class LibroController {
 	private static final Logger log= Logger.getLogger(LibroController.class.getName());
 	@Autowired
 	public LibroService libroService;
+	@Autowired 
+	private LibroCrudRepository repo;
 	
 	@GetMapping("/lb")
 	public ModelAndView hello(Model model)
@@ -52,7 +57,7 @@ if(libro!=null)
 	libroService.add(libro);
 
 	return  new ModelAndView("regLibroSucesso", "libroForm", libro);
-	
+	/*reindirizza alla pagina di registrazione. cambiare vesro visualizza tutto*/
 }
 else return  new ModelAndView("error");
 		
@@ -60,52 +65,60 @@ else return  new ModelAndView("error");
 	
 	
 	
-	/*-------------CERCO LIBRO--------*/
-	
-	
-	@GetMapping("/update")
-	public ModelAndView aggiorna(@RequestParam(value="autore") String autore, ModelMap mm) {
-		log.info("Sono nel metodo update di libri");
-		//libroService.
-		if(autore!=null) {
-			mm.addAttribute("libroF", libroService.getByName(autore));
-		}
-		
-		return new ModelAndView("unaVista", "datiLibri", libroService.getAll());
-	}
-	@GetMapping("/all")
-	public String showAll(Model model) {
-	    model.addAttribute("books", libroService.getAll());
-	    return "unaVista";
-	}
 
+	@GetMapping("/all")
+	public ModelAndView all(Model model) {
+		Iterable<LibriModel> lib= repo.findAll();
+		lib.forEach((LibriModel l)->{
+			model.addAttribute("books", lib);
+		});
+		
+		
+		
+		return new ModelAndView("unaVista");
+		
+	}
 	
-@PutMapping("/aggiorna")
-public String update(@ModelAttribute("datiLibri") LibriModel lb) {
+@GetMapping("/aggiorna")
+public ModelAndView update(Model model) {
+	LibriModel lib=new LibriModel();
+	model.addAttribute("book", lib);
+	return new ModelAndView( "aggiorna");
+}
+@PostMapping("/aggiorna")
+public ModelAndView update(@ModelAttribute("book") LibriModel l, Model model)
+{
+	libroService.update(l);
 	
-	libroService.update(lb);
-	return "unaVista";
+	return new ModelAndView ("unaVista");
 }
 
+
+
+@GetMapping("/search")
+public ModelAndView cerco(Model model)
+{log.info("SOno nel metodo per cercare un libro: get search");
+	LibriModel lib= new LibriModel();
+	model.addAttribute("book", lib);
+	return new ModelAndView("cercoLibro", "book", new LibriModel());
+}
+
+@PostMapping("/trovato")
+public ModelAndView trovato(@ModelAttribute("book") LibriModel lib, Model model)
+{
+	log.info("Son nel metodo per cercare i libri: post trovato");
+	List<LibriModel> libri= null;
+	LibriModel l=null;
 	
+	if(lib!=null) {
+		l=libroService.getById(lib.getId());
+		return new ModelAndView("libroTrovato", "book", l);
+	}
+	else 
+		return new ModelAndView("error");
+
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/*    @PostMapping("/update")
-public String update(@ModelAttribute("datiLibri") Libri libr){
-    libri.update(libr);
-    return "redirect:/";
-}*/
-	
+}
 	
 	
 	

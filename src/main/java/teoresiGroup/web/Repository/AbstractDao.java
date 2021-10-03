@@ -10,15 +10,15 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.validation.constraints.NotNull;
 
 /*generico I identifica la classe di entity, il generico Id indica la chiave primaria che identifica quella stessa entity*/
-public abstract class AbstractDao <I extends Serializable,Id extends Serializable> 
+/*public abstract class AbstractDao <I extends Serializable,Id extends Serializable> 
 implements RepoGenerica<I,Id>{
 	@PersistenceContext
 	protected EntityManager em;
 	
-	protected final Class<I> entityClass;
+	protected final Class<I> entityClass;*/
 	
 	/*criteria api per fare le query*/
-	CriteriaBuilder builder;
+	/*CriteriaBuilder builder;
 
 	@SuppressWarnings("unchecked")
 	public AbstractDao()
@@ -90,4 +90,4 @@ CriteriaQuery<I> query = this.init();
 	    em.clear();
 	}
 	
-}
+}*/
