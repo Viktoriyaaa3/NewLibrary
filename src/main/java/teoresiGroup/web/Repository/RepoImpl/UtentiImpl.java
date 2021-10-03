@@ -1,4 +1,4 @@
-package teoresiGroup.web.service;
+package teoresiGroup.web.Repository.RepoImpl;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.sql.DataSource;
 import javax.transaction.Transactional;
-import teoresiGroup.web.Repository.AbstractDao;
+//import teoresiGroup.web.Repository.AbstractDao;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -21,9 +21,11 @@ import javax.persistence.criteria.Expression;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.model.Utente;
 import teoresiGroup.web.model.UtentiModel;
+import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Repository
-public class UtentiImpl extends AbstractDao<UtentiModel, Integer> implements UtentiRepo {
+@Transactional
+public class UtentiImpl /*extends AbstractDao<UtentiModel, Integer>*/ implements UtentiRepo {
 	private static final Logger log= Logger.getLogger(UtentiImpl.class.getName());
 @PersistenceContext
 private EntityManager em;
@@ -95,7 +97,7 @@ private JdbcTemplate conn;
 	}
 	@Override
 	public Optional<UtentiModel> findOne(int id) {
-		return utentiRepo.findOne(id);
+		return null;//utentiRepo.findOne(id);
 		
 	}
 	@Override

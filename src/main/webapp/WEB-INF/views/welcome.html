@@ -7,6 +7,15 @@
 <div >
    <h1>BENVENUTO</h1>
    <p th:text="${mex}"></p>
+   <h1>Format ISO</h1>
+<p th:text="${#dates.formatISO(standardDate)}"></p>
+<p th:text="${#temporals.formatISO(localDateTime)}"></p>
+<p th:text="${#temporals.formatISO(localDate)}"></p>
+<p th:text="${#temporals.formatISO(timestamp)}"></p>
+<h1>Format manually</h1>
+<p th:text="${#dates.format(standardDate, 'dd-MM-yyyy HH:mm')}"></p>
+<p th:text="${#temporals.format(localDateTime, 'dd-MM-yyyy HH:mm')}"></p>
+<p th:text="${#temporals.format(localDate, 'MM-yyyy')}"></p>
    <a href="/libreriaProject/login/log">Vai alla pagina di login</a>
    <a href="/libreriaProject/cliente/registra">Registrati</a>
 </div>

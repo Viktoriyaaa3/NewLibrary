@@ -31,9 +31,8 @@
 			</p>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 		</form-->
-		  <form action="#" th:action="@{/login/controllo}" th:object="${utenteForm}" method="post" >
-          <p>Username: <input type="text" th:field="*{username}"/></p>
-            <p>Password: <input type="text" th:field="*{password}"/></p>
+		  <form action="#" th:action="@{/book/trovato}" th:object="${book}" method="post" >
+          <p>Cerco per ID: <input type="number" th:field="*{id}"/></p>
         
         <p><input type="submit" value="Submit"/></p>
     </form>

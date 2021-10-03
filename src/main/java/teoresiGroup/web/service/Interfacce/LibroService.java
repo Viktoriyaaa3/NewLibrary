@@ -1,4 +1,4 @@
-package teoresiGroup.web.Repository;
+package teoresiGroup.web.service.Interfacce;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,13 +6,11 @@ import java.util.Optional;
 import teoresiGroup.web.model.Libri;
 import teoresiGroup.web.model.LibriModel;
 
-public interface LibroRepo {
-	
+public interface LibroService {
 	
 	public void add(LibriModel l);
 	LibriModel getById(int id);
 	void update(LibriModel l);
-	
 	
 	
 	LibriModel getByName(String nome);
@@ -22,11 +20,8 @@ public interface LibroRepo {
 	public String dammiNome();
 	List<LibriModel>ByNome(String nome);
 	List<LibriModel> ByPassAndUsername(String autore, String titolo);
-	
+
 	void delete(LibriModel l);
 	public String getLibro();
-	
-	//List<Libri> getAll();
-
-
+//List<Libri> getAll();
 }
