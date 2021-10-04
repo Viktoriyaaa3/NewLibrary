@@ -11,8 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import teoresiGroup.web.Repository.LibroCrudRepository;
 import teoresiGroup.web.Repository.LibroRepo;
-import teoresiGroup.web.model.Libri;
+
 import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.service.Interfacce.LibroService;
 
@@ -24,7 +25,16 @@ public class LibroServiceImpl implements LibroService {
 	private LibroRepo libroRepo;
 	@PersistenceContext
 	private EntityManager em;
+	@Autowired 
+	private LibroCrudRepository repo;
 	
+	
+	public LibroCrudRepository getRepo() {
+		return repo;
+	}
+	public void setRepo(LibroCrudRepository repo) {
+		this.repo = repo;
+	}
 	public LibroRepo getLibroRepo() {
 		return libroRepo;
 	}
@@ -32,6 +42,12 @@ public class LibroServiceImpl implements LibroService {
 		this.libroRepo=libroRepo;
 	}
 	
+	public LibroCrudRepository lcr() {
+		return repo;
+	}
+	public void setCRL(LibroCrudRepository repo) {
+		this.repo=repo;
+	}
 
 	@Override
 	@Transactional
@@ -76,13 +92,6 @@ public class LibroServiceImpl implements LibroService {
 		return libroRepo.findOne(id);
 	}
 
-	@Override
-	@Transactional
-	public void insert(LibriModel u) {
-		 libroRepo.insert(u);
-		 
-		
-	}
 
 	@Override
 	public String dammiNome() {

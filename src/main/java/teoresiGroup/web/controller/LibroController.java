@@ -75,7 +75,7 @@ else return  new ModelAndView("error");
 		
 		
 		
-		return new ModelAndView("unaVista");
+		return new ModelAndView("tuttiLibri");
 		
 	}
 	
@@ -83,14 +83,15 @@ else return  new ModelAndView("error");
 public ModelAndView update(Model model) {
 	LibriModel lib=new LibriModel();
 	model.addAttribute("book", lib);
-	return new ModelAndView( "aggiorna");
+	log.info("Dati inseriti: " + lib.getAutore() + " " + lib.getTitolo());
+	return new ModelAndView( "aggiorna", "book", lib);
 }
 @PostMapping("/aggiorna")
 public ModelAndView update(@ModelAttribute("book") LibriModel l, Model model)
 {
 	libroService.update(l);
-	
-	return new ModelAndView ("unaVista");
+	log.info("Dati in arrivo al post di update: " + l.getAutore() + " " + l.getTitolo());
+	return new ModelAndView ("tuttiLibri");
 }
 
 
@@ -109,14 +110,22 @@ public ModelAndView trovato(@ModelAttribute("book") LibriModel lib, Model model)
 	log.info("Son nel metodo per cercare i libri: post trovato");
 	List<LibriModel> libri= null;
 	LibriModel l=null;
-	
+	/*
 	if(lib!=null) {
 		l=libroService.getById(lib.getId());
 		return new ModelAndView("libroTrovato", "book", l);
 	}
 	else 
 		return new ModelAndView("error");
-
+*/
+	try {	l=libroService.getById(lib.getId());
+	return new ModelAndView("libroTrovato", "book", l);
+		
+		
+	}catch(Exception e) {
+		model.addAttribute("book", null);
+		return new ModelAndView("errore");
+	}
 	
 }
 	

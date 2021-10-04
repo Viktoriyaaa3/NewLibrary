@@ -22,10 +22,9 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Expression;
 
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.model.Libri;
-//import teoresiGroup.web.model.LibriMapper;
+
 import teoresiGroup.web.model.LibriModel;
-import teoresiGroup.web.model.Utente;
+
 import teoresiGroup.web.model.UtentiModel;
 
 @Repository

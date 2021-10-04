@@ -3,7 +3,7 @@ package teoresiGroup.web.Repository;
 import java.util.List;
 import java.util.Optional;
 
-import teoresiGroup.web.model.Libri;
+
 import teoresiGroup.web.model.LibriModel;
 
 public interface LibroRepo {
@@ -14,7 +14,7 @@ public interface LibroRepo {
 	void update(LibriModel l);
 	
 	
-	
+	/*Questi non li sto utilizzando */
 	LibriModel getByName(String nome);
 	LibriModel getByCognome(String cognome);
 	Optional<LibriModel> findOne(int id);
@@ -26,7 +26,7 @@ public interface LibroRepo {
 	void delete(LibriModel l);
 	public String getLibro();
 	
-	//List<Libri> getAll();
+
 
 
 }
