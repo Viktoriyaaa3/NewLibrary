@@ -74,7 +74,19 @@ public class LibroServiceImpl implements LibroService {
 	}
 	
 	
+	@Override
+	@Transactional
+	public void delete(int id) {
+		libroRepo.delete(id);
+		
+	}
+	@Override
+	public List<LibriModel> getAll() {
+		
+		return libroRepo.getAll();
+	}
 	
+
 	
 	
 	@Override

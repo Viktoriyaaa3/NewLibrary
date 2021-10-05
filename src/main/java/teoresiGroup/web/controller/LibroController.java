@@ -4,8 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -68,7 +71,7 @@ else return  new ModelAndView("error");
 
 	@GetMapping("/all")
 	public ModelAndView all(Model model) {
-		Iterable<LibriModel> lib= repo.findAll();
+		Iterable<LibriModel> lib= libroService.getAll();
 		lib.forEach((LibriModel l)->{
 			model.addAttribute("books", lib);
 		});
@@ -124,13 +127,60 @@ public ModelAndView trovato(@ModelAttribute("book") LibriModel lib, Model model)
 		
 	}catch(Exception e) {
 		model.addAttribute("book", null);
-		return new ModelAndView("errore");
+		return new ModelAndView("error");
 	}
 	
 }
+	/*-----------------aggiorna----------------*/
 	
 	
-	
-	
+@GetMapping("/edit/{id}")
+public String showUpdateForm(@PathVariable("id") int id, Model model) {
+   try { LibriModel lib = libroService.getById(id);
+   model.addAttribute("book", lib);}
+   catch(IllegalArgumentException e) {
+     // .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+	   
+	   log.info(e.getStackTrace());
+	   //inserire cosa fare in caso di errore
+   }
+    
+  
+    return "aggiorna";
+}
+
+@PostMapping("/update/{id}")
+public String updateUser(@PathVariable("id") int id, @Validated LibriModel lib, 
+  BindingResult result, Model model) {
+    if (result.hasErrors()) {
+        lib.setId(id);
+        return "aggiorna";
+    }
+        
+    libroService.update(lib);
+    return "redirect:/book/all";
+}
+
+/*--------DELETE----------*/
+
+@GetMapping("/delete/{id}")
+public String deleteUser(@PathVariable("id") int id, Model model) {
+  try {  LibriModel user = libroService.getById(id);
+     // .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+    libroService.delete(user);
+  }
+  catch(IllegalArgumentException e) {
+	  
+	     // .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+	   
+		   log.info(e.getStackTrace());
+		   //inserire cosa fare in caso di errore
+	   }
+    return "redirect:/book/all";
+}
+
+
+
+
 	
 }

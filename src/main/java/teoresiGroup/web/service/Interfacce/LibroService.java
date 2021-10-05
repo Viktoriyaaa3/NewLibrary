@@ -12,6 +12,8 @@ public interface LibroService {
 	public void add(LibriModel l);
 	LibriModel getById(int id);
 	void update(LibriModel l);
+	public List<LibriModel> getAll();
+	void delete(int id);
 	
 	
 	LibriModel getByName(String nome);
@@ -24,5 +26,5 @@ public interface LibroService {
 
 	void delete(LibriModel l);
 	public String getLibro();
-//List<Libri> getAll();
+
 }
