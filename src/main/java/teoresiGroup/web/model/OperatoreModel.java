@@ -17,6 +17,24 @@ public class OperatoreModel {
 	private String nome;
 	@Column(name="cognnome")
 	private String cognome;
+	@Column(name="password")
+	private String password;
+	@Column(name="username")
+	private String username;
+
+	
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -49,9 +67,18 @@ public class OperatoreModel {
 	public OperatoreModel() {
 		super();
 	}
+	
+	public OperatoreModel(String nome, String cognome, String password, String username) {
+		super();
+		this.nome = nome;
+		this.cognome = cognome;
+		this.password = password;
+		this.username = username;
+	}
 	@Override
 	public String toString() {
-		return "OperatoreModel [id=" + id + ", nome=" + nome + ", cognome=" + cognome + "]";
+		return "OperatoreModel [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", password=" + password
+				+ ", username=" + username + "]";
 	}
 
 	

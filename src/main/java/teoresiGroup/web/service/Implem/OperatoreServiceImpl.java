@@ -52,4 +52,10 @@ public class OperatoreServiceImpl implements OperatoreService{
 		return operatoreRepo.getAll();
 	}
 
+	@Override
+	public OperatoreModel getByName(String nome) {
+		
+		return operatoreRepo.getByName(nome);
+	}
+
 }

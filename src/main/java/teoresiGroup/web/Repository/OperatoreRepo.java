@@ -2,7 +2,7 @@ package teoresiGroup.web.Repository;
 
 import java.util.List;
 
-import teoresiGroup.web.model.LibriModel;
+
 import teoresiGroup.web.model.OperatoreModel;
 
 public interface OperatoreRepo {
@@ -13,5 +13,6 @@ public interface OperatoreRepo {
 	//void delete(LibriModel l);
 	void delete(int id);
 	public List<OperatoreModel > getAll();
+	OperatoreModel getByName(String nome);
 
 }

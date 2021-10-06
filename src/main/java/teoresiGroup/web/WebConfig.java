@@ -126,7 +126,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    
 	    @Bean
 	    public LibroRepo getLibroService() {
-	    	return new LibroImpl(getDataSource());
+	    	return new LibroImpl();
 	    }
 	    @Bean
 	    public UtentiService getUtentiService() {

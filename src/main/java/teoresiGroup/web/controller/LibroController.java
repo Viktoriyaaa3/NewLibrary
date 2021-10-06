@@ -33,6 +33,32 @@ public class LibroController {
 	@Autowired
 	public LibroService libroService;
 	
+	
+	@GetMapping("/autore")
+	public ModelAndView byName(Model model)
+	{log.info("SOno nel metodo per cercare un libro: get search");
+		LibriModel lib= new LibriModel();
+		model.addAttribute("book", lib);
+		return new ModelAndView("cercoAutore", "book", new LibriModel());
+	}
+	@PostMapping("/trovatoAutore")
+	public ModelAndView trovatoAutore(@ModelAttribute("book") LibriModel lib, Model model)
+	{
+		log.info("Son nel metodo per cercare i libri: post trovato");
+		List<LibriModel> libri= null;
+		LibriModel l=null;
+
+		try {	l=libroService.getByName(lib.getAutore());//getById(lib.getId());
+		return new ModelAndView("libroTrovato", "book", l);
+			
+			
+		}catch(Exception e) {
+			model.addAttribute("book", null);
+			return new ModelAndView("error");
+		}
+		
+	}
+	
 	@GetMapping("/lb")
 	public ModelAndView hello(Model model)
 	{

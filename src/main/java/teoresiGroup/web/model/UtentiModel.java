@@ -8,9 +8,12 @@ import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 @Entity
@@ -44,7 +47,21 @@ private String email;
 	@Column(name="username")
 	private String username;
 	
+	
+	/*@OneToOne(fetch=FetchType.LAZY)
+	@PrimaryKeyJoinColumn
+	private LibriModel model;
+	
+	
+	
+	
 
+public LibriModel getModel() {
+		return model;
+	}
+	public void setModel(LibriModel model) {
+		this.model = model;
+	}*/
 public String getPassword() {
 		return password;
 	}

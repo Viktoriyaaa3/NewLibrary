@@ -29,6 +29,7 @@ import java.util.LongSummaryStatistics; /*vedere come funziona*/
 @RequestMapping("/cliente")
 public class UtentiController {
 	private final static Logger log = Logger.getLogger(UtentiController.class.getName());
+	@Autowired
 	private UtentiService utentiService;
 	
 	List<UtentiModel> um;

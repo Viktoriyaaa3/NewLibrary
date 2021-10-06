@@ -31,13 +31,7 @@ public class LibroImpl /*extends AbstractDao<LibriModel, Integer>*/ implements L
 	public LibroRepo libroRepo;
 	
 	/*jdbc non mi serve. da eliminare tutti i metodi con jdbc*/
-	private JdbcTemplate conn;
-
-
-
-	public LibroImpl(DataSource dataSource) {
-		conn=new JdbcTemplate(dataSource);
-	}
+	
 
 	@Override
 	@Transactional
