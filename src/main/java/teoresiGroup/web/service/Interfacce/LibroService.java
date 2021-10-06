@@ -24,7 +24,7 @@ public interface LibroService {
 	List<LibriModel>ByNome(String nome);
 	List<LibriModel> ByPassAndUsername(String autore, String titolo);
 
-	void delete(LibriModel l);
+	//void delete(LibriModel l);
 	public String getLibro();
 
 }

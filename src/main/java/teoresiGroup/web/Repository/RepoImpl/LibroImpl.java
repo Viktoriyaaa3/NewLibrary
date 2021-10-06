@@ -59,12 +59,7 @@ public class LibroImpl /*extends AbstractDao<LibriModel, Integer>*/ implements L
 		em.merge(l);
 		
 	}
-	@Override
-	@Transactional
-	public void delete(LibriModel l) {
-		em.remove(l);
-		
-	}
+	
 	@Override
 	@Transactional
 	public void delete(int id) {

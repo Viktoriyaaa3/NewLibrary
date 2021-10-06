@@ -21,7 +21,7 @@ public class NewLibroController {
 	@Autowired
 	private LibroService service;
 	
-	@GetMapping("/")
+	@GetMapping("/boo")
 	public ModelAndView index(@RequestParam(name = "id", required = false) String idProdotto, ModelMap mm) {
 		if(idProdotto != null) {
 			mm.addAttribute("prodottoDaModificare", service.getById(Integer.parseInt(idProdotto)));
@@ -44,13 +44,13 @@ public class NewLibroController {
 		
 		return "redirect:/";
 	}
-	
+	/*
 	@GetMapping("/delete")
 	public String delete(@RequestParam("id") String idProdotto) {
 		if(idProdotto != null)
 			service.delete(Integer.parseInt(idProdotto));
 		
 		return "redirect:/";
-	}
+	}*/
 
 }

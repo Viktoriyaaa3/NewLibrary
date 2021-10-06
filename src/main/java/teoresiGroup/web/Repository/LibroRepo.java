@@ -12,7 +12,7 @@ public interface LibroRepo {
 	public void add(LibriModel l);
 	LibriModel getById(int id);
 	void update(LibriModel l);
-	void delete(LibriModel l);
+	//void delete(LibriModel l);
 	void delete(int id);
 	public List<LibriModel> getAll();
 	

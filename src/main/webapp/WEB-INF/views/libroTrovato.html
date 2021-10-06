@@ -20,11 +20,13 @@
             <td><span th:text="${book.autore}"> Author </span></td>
             <td><span th:text="${book.numeroPezzi}"> Numero Pezzi</span></td>
             <td><span th:text="${book.dataPubblicazione}">Data pubblicazione</span></td>
-            <td> <a href="/libreriaProject/book/aggiorna">Aggiorna</a></td>
-            <td> <a href="/libreriaProject/book/delete">Elimina</a></td>
+            <td> <a th:href="@{'/book/edit/'+${book.id}}">Aggiorna</a></td>
+            <td> <a th:href="@{'/book/delete/'+${book.id}}">Elimina</a></td>
+            
         </tr>
     </tbody>
 </table>
-		
+		<h2>Aggiungere Libro</h2>
+		<div><a href="/libreriaProject/book/lb">Aggiungi</a></div>
 </body>
 </html>

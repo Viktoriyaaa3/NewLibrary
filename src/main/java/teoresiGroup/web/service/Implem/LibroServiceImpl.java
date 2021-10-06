@@ -11,9 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import teoresiGroup.web.Repository.LibroCrudRepository;
 import teoresiGroup.web.Repository.LibroRepo;
-
 import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.service.Interfacce.LibroService;
 
@@ -25,29 +23,19 @@ public class LibroServiceImpl implements LibroService {
 	private LibroRepo libroRepo;
 	@PersistenceContext
 	private EntityManager em;
-	@Autowired 
-	private LibroCrudRepository repo;
 	
 	
-	public LibroCrudRepository getRepo() {
-		return repo;
-	}
-	public void setRepo(LibroCrudRepository repo) {
-		this.repo = repo;
-	}
+	
+	
+	
 	public LibroRepo getLibroRepo() {
 		return libroRepo;
 	}
 	public void setLibroRepo(LibroRepo libroRepo) {
 		this.libroRepo=libroRepo;
 	}
+
 	
-	public LibroCrudRepository lcr() {
-		return repo;
-	}
-	public void setCRL(LibroCrudRepository repo) {
-		this.repo=repo;
-	}
 
 	@Override
 	@Transactional
@@ -121,12 +109,12 @@ public class LibroServiceImpl implements LibroService {
 		return libroRepo.ByPassAndUsername(autore, titolo);
 	}
 	
-	@Override
+	/*@Override
 	@Transactional
 	public void delete(LibriModel l) {
 		libroRepo.delete(l);
 		
-	}
+	}*/
 	@Override
 	public String getLibro() {
 		// TODO Auto-generated method stub
@@ -138,6 +126,7 @@ public class LibroServiceImpl implements LibroService {
 		return libroRepo.getAll();
 	
 	}*/
+	
 	
 	
 

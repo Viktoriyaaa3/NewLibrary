@@ -12,6 +12,7 @@
             <th> Autore </th>
             <th> Numero Pezzi</th>
             <th>Data di Pubblicazione</th>
+            <th>&nbsp;</th>
         </tr>
     </thead>
     <tbody>
@@ -23,6 +24,10 @@
             <td><span th:text="${book.autore}"> Author </span></td>
             <td><span th:text="${book.numeroPezzi}"> Numero Pezzi</span></td>
             <td><span th:text="${book.dataPubblicazione}">Data pubblicazione</span></td>
+            <td>
+            	<a href="">Modifica</a>> - 
+            	<a href="">Elimina</a>>
+            </td>
         </tr>
     </tbody>
 </table>
