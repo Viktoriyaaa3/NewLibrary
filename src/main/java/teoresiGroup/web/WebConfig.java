@@ -12,16 +12,26 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import teoresiGroup.web.Repository.LibroRepo;
+import teoresiGroup.web.Repository.OperatoreRepo;
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.service.LibroImpl;
-import teoresiGroup.web.service.UtentiImpl;
+import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
+import teoresiGroup.web.Repository.RepoImpl.OperatoreImpl;
+import teoresiGroup.web.Repository.RepoImpl.UtentiImpl;
+import teoresiGroup.web.service.Implem.LibroServiceImpl;
+import teoresiGroup.web.service.Implem.OperatoreServiceImpl;
+import teoresiGroup.web.service.Implem.UtentiServiceImpl;
+import teoresiGroup.web.service.Interfacce.LibroService;
+import teoresiGroup.web.service.Interfacce.OperatoreService;
+import teoresiGroup.web.service.Interfacce.UtentiService;
 
 import org.springframework.core.env.Environment;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -35,6 +45,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages = " teoresiGroup.web.controller")
 @PropertySource("classpath:NewLibrary.properties")
 @EnableTransactionManagement
+@EnableJpaRepositories(basePackages = "teoresiGroup.web.Repository", entityManagerFactoryRef = "emf", transactionManagerRef = "tmf")
 public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdapter implements ApplicationContextAware */{
 	  @Autowired
 	    private Environment env;
@@ -63,6 +74,8 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	      SpringTemplateEngine templateEngine = new SpringTemplateEngine();
 	      templateEngine.setTemplateResolver(templateResolver());
 	      templateEngine.setEnableSpringELCompiler(true);
+	      /*Questo pezzo per lavorare con date in th*/
+	      templateEngine.addDialect(new Java8TimeDialect());
 	      return templateEngine;
 	   }
 
@@ -83,7 +96,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	        db.setPassword(env.getRequiredProperty("NewLibrary.db.password"));
 	        return db;
 	    }
-	    @Bean
+	    @Bean(name="emf")
 	    public LocalContainerEntityManagerFactoryBean getEntityManagerFactory(){
 	        HibernateJpaVendorAdapter adapter=new HibernateJpaVendorAdapter();
 	        adapter.setDatabase(Database.MYSQL);
@@ -97,7 +110,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	        return factory;
 	    }
 
-	    @Bean
+	    @Bean(name="tmf")
 	    public PlatformTransactionManager getTransactionManager(){
 	       // JpaTransactionManager jtm= new JpaTransactionManager(getEntityManager().getObject());
 	       
@@ -113,6 +126,24 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    
 	    @Bean
 	    public LibroRepo getLibroService() {
-	    	return new LibroImpl(getDataSource());
+	    	return new LibroImpl();
 	    }
+	    @Bean
+	    public UtentiService getUtentiService() {
+	    	return new UtentiServiceImpl();
+	    	
+	    }
+	    @Bean
+	    public LibroService getLibroServic() {
+	    	return new LibroServiceImpl();
+	    }
+	    @Bean
+	    public OperatoreRepo getOp() {
+	    	return new OperatoreImpl();
+	    }
+	    @Bean
+	    public OperatoreService getOpService() {
+	    	return new OperatoreServiceImpl();
+	    }
+	    
 }

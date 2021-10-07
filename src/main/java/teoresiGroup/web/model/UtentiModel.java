@@ -1,22 +1,25 @@
 package teoresiGroup.web.model;
 
 import org.apache.log4j.Logger;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="Utenti")
 public class UtentiModel implements Serializable {
-	 /**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 
@@ -32,6 +35,9 @@ private String nome;
 private String cognome;
 	@Column(name="codFiscale")
 private String codFiscale;
+	@Column(name="dataNascita")
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	private LocalDate dataNascita;
 	@Column(name="telefono")
 private String telefono;
 	@Column(name="email")
@@ -41,7 +47,21 @@ private String email;
 	@Column(name="username")
 	private String username;
 	
+	
+	/*@OneToOne(fetch=FetchType.LAZY)
+	@PrimaryKeyJoinColumn
+	private LibriModel model;
+	
+	
+	
+	
 
+public LibriModel getModel() {
+		return model;
+	}
+	public void setModel(LibriModel model) {
+		this.model = model;
+	}*/
 public String getPassword() {
 		return password;
 	}
@@ -59,6 +79,13 @@ public String getPassword() {
 	}
 	public static Logger getLogger() {
 		return logger;
+	}
+	
+public LocalDate getDataNascita() {
+		return dataNascita;
+	}
+	public void setDataNascita(LocalDate dataNascita) {
+		this.dataNascita = dataNascita;
 	}
 public int getId() {
 	return id;
@@ -122,6 +149,19 @@ public UtentiModel(String nome, String cognome, String codFiscale, String telefo
 	this.nome = nome;
 	this.cognome = cognome;
 	this.codFiscale = codFiscale;
+	this.telefono = telefono;
+	this.email = email;
+	this.password = password;
+	this.username = username;
+}
+
+public UtentiModel(String nome, String cognome, String codFiscale, LocalDate dataNascita, String telefono, String email,
+		String password, String username) {
+	super();
+	this.nome = nome;
+	this.cognome = cognome;
+	this.codFiscale = codFiscale;
+	this.dataNascita = dataNascita;
 	this.telefono = telefono;
 	this.email = email;
 	this.password = password;

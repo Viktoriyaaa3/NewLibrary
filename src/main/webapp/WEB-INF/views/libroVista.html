@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
 <head> 
-    <title>Getting Started: Handling Form Submission</title>
+    <title>Inserisci un nuovo libro</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
@@ -9,7 +9,7 @@
     <form action="#" th:action="@{/book/libro}" th:object="${libroForm}" method="post">
     	<p>Titolo: <input type="text" th:field="*{titolo}" /></p>
         <p>Autore: <input type="text" th:field="*{autore}" /></p>
-       	<p>Data Pubblicazione: <input type="date" th:field="*{dataPubblicazione}" /></p>
+       	<p>Data Pubblicazioine: <input type="text" th:field="*{dataPubblicazione}" placeholder="yyyy-MM-dd" /> </p>
         <p>Numero Pezzi: <input type="number" th:field="*{numeroPezzi}" /></p>
         <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
     </form>
