@@ -8,6 +8,8 @@
 </head>
 <body>
 <div class="container" style="background-color: gray">
+<img src="">
+
    <h1>BENVENUTO</h1>
    <p th:text="${mex}"></p>
    <h1>Format ISO</h1>
@@ -19,7 +21,8 @@
 <p th:text="${#dates.format(standardDate, 'dd-MM-yyyy HH:mm')}"></p>
 <p th:text="${#temporals.format(localDateTime, 'dd-MM-yyyy HH:mm')}"></p>
 <p th:text="${#temporals.format(localDate, 'MM-yyyy')}"></p>
-   <a href="/libreriaProject/login/log">Vai alla pagina di login</a>
-   <a href="/libreriaProject/cliente/registra">Registrati</a>
+   <a href="/libreriaProject/login/log" title="login">Vai alla pagina di login</a>
+   <a href="/libreriaProject/cliente/registra" title="registrazione">Registrati</a>
 </div>
+<div class="container"><img th:src="@{/home/viktoriya/Scrivania/libri.png}" alt="Qua una foto" width="280" height="32"/></div>
 </html>

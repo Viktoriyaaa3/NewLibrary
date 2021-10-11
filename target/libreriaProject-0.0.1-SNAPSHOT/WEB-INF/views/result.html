@@ -1,11 +1,15 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Submission result</title>
+    <title>Nuovo utente salvato</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <h1>Utenti: </h1>
-    <p th:text="'My friend ' + ${utenteForm.nome} + ' is ' + ${utenteForm.cognome} + ' years old'"></p>
+    <h1>Ti sei registrato: </h1>
+    <p th:text=" ${utenteForm.nome} + ' Ti sei reistrato con successo '  "></p>
+
+
+
+	 <a href="/libreriaProject/login/log">Procedi con il Login</a>
 </body>
 </html>

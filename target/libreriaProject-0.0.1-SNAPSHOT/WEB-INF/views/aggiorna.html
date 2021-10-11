@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Inserisci un nuovo libro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<!--  >h1>Form</h1>
+    <form action="#" th:action="@{/book/aggiorna}" th:object="${book}" method="post">
+    	<p>Titolo: <input type="text" th:field="*{titolo}" /></p>
+        <p>Autore: <input type="text" th:field="*{autore}" /></p>
+       	<p>Data Pubblicazioine: <input type="text" th:field="*{dataPubblicazione}" placeholder="yyyy-MM-dd" /> </p>
+        <p>Numero Pezzi: <input type="number" th:field="*{numeroPezzi}" /></p>
+        <p><input type="submit" value="Update" /> <input type="reset" value="Reset" /></p>
+    </form-->
+
+<form action="#" 
+  th:action="@{/book/update/{id}(id=${book.id})}" 
+  th:object="${book}" 
+  method="post">
+  <label for="titolo">Titolo</label>
+    <input type="text" th:field="*{titolo}" id="titolo" placeholder="titolo">
+    <!--  >span th:if="${#fields.hasErrors('titolo')}" th:errors="*{titolo}"></span-->
+    <label for="autore">Autore</label>
+    <input type="text" th:field="*{autore}" id="autore" placeholder="autore">
+    <!--  >span th:if="${#fields.hasErrors('autore')}" th:errors="*{autore}"></span-->
+    <label for="dataPubblicazione">Data di Pubblicazione</label>
+    <input type="text" th:field="*{dataPubblicazione}" id="dataPubblicazione" placeholder="yyyy-MM-dd">
+    <!--  >span th:if="${#fields.hasErrors('dataPubblicazione')}" th:errors="*{dataPubblicazione}"></span-->
+    <label for="numeroPezzi">Numero Pezzi</label>
+    <input type="number" th:field="*{numeroPezzi}" id="numeroPezzi" placeholder="numeroPezzi">
+    <!--  >span th:if="${#fields.hasErrors('numeroPezzi')}" th:errors="*{numeroPezzi}"></span-->
+    
+    <input type="submit" value="Update User">   
+</form>
+<div th:switch="${books}">
+    <h2 th:case="null">No users yet!</h2>
+        <div th:case="*">
+            <h2>Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                          <th> Titolo </th>
+          				  <th> Autore </th>
+          				  <th> Numero Pezzi</th>
+           				 <th>Data di Pubblicazione</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 <tr th:each="book : ${books}">
+            <td><span th:text="${book.titolo}"> Title </span></td>
+            <td><span th:text="${book.autore}"> Author </span></td>
+            <td><span th:text="${book.numeroPezzi}"> Numero Pezzi</span></td>
+            <td><span th:text="${book.dataPubblicazione}">Data pubblicazione</span></td>
+                    <td><a th:href="@{/book/edit/{id}(id=${book.id})}">Edit</a></td>
+                    <td><a th:href="@{/book/delete/{id}(id=${book.id})}">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>      
+    <p><a href="/book/all">Add a new user</a></p>
+</div>
+</body>
+</html>
