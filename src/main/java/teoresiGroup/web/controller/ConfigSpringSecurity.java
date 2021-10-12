@@ -1,7 +1,7 @@
-package teoresiGroup.web;
+package teoresiGroup.web.controller;
+
 
 import org.apache.log4j.Logger;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -9,11 +9,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.User.UserBuilder;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
-import org.springframework.security.web.firewall.HttpFirewall;
-import org.springframework.security.web.firewall.StrictHttpFirewall;
 
 @Configuration
 @EnableWebSecurity
@@ -70,9 +65,10 @@ public class ConfigSpringSecurity  extends WebSecurityConfigurerAdapter {
 		@SuppressWarnings("deprecation")
 		UserBuilder user=User.withDefaultPasswordEncoder();
     	auth.inMemoryAuthentication().withUser(user.username("vik").password("vik").roles("USER"))
-    	.withUser(user.username("prova").password("prova").roles("OPERATORE", "USER"));
+    	.withUser(user.username("prova").password("prova").roles("OPERATORE", "USER"))
+    	.withUser(user.username("admin").password("admin").roles("USER", "OPERATORE", "ADMIN"));
     	
-    	//.wi
+    	
     }
 
 	@Override
@@ -80,11 +76,14 @@ public class ConfigSpringSecurity  extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests().anyRequest().authenticated()
 		.and()
 		.formLogin()
-		.loginPage("/login/log").loginProcessingUrl("/login/controllo}").failureUrl("/cliente/add").permitAll()
+		.loginPage("/login/log").loginProcessingUrl("/login/controllo/")
+		.failureUrl("/cliente/add").permitAll()
+		.and()
+		.logout().permitAll();
 		//.and()
 		//.logout()
-		.permitAll()
-		.and().authorizeRequests().antMatchers("/operatore/**").hasRole("OPERATORE");
+		//.permitAll();
+		//.and().authorizeRequests().antMatchers("/operatore/**").hasRole("OPERATORE");
 		//super.configure(http);
 		/*loginPage("/showMyLoginPage).loginProcessingUrl("/authenticateTheUser")*/
 	}

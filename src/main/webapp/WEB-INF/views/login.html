@@ -25,26 +25,7 @@
 					<div class="panel-title">Inserisci username e password</div>
 				</div>
 								<div style="padding-top: 30px" class="panel-body">
-		<!--h2 class="form-signin-heading">Benvenuto nella libreria. Fai il login per accedere ai contenuti</h2-->
-		<!--  div th:if="${param.error}" class="alert alert-danger">    
-        	Invalid username and password.
-        </div>
-        <div th:if="${param.logout}" class="alert alert-success"> 
-            You have been logged out.
-        </div-->
-		<!--  form class="form-signin" method="POST" th:object="${utentiForm}" th:action="@{/login/controllo}">
-			<p>
-				<label for="username" class="sr-only">Username</label> 
-				<input type="text"  id="username" name="username" class="form-control"
-					placeholder="Username" required autofocus>
-			</p>
-			<p>
-				<label for="password" class="sr-only">Password</label> 
-				<input type="password" id="password" name="password" class="form-control"
-					placeholder="Password" required>
-			</p>
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-		</form-->
+	
 		  <form action="#" th:action="@{/login/controllo}" th:object="${utenteForm}" method="post"  class="form-horizontal" >
         
          <div style="margin-bottom: 25px" class="input-group">
@@ -60,7 +41,8 @@
         <div style="margin-top: 10px" class="form-group">						
 							<div class="col-sm-6 controls">
 							
-        <p><button type="submit" value="Submit"  class="btn btn-success">Invia</button> </p></div>
+        <p><button type="submit" value="Submit"  class="btn btn-success">Invia</button> </p>
+        </div>
       
        </div>
        <input 
