@@ -129,6 +129,12 @@
         <artifactId>log4j-api</artifactId>
         <version>2.14.0</version>
     </dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.14.1</version>
+</dependency>
 
     <dependency>
         <groupId>javax.validation</groupId>
@@ -136,19 +142,8 @@
         <version>2.0.0.Final</version>
     </dependency>
     <!--LOGGER-->
-    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-    <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>1.7.32</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
-    <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-simple</artifactId>
-        <version>1.7.32</version>
-        <scope>test</scope>
-    </dependency>
+   
+   
     <!-- https://mvnrepository.com/artifact/log4j/log4j -->
     <dependency>
         <groupId>log4j</groupId>
@@ -190,26 +185,37 @@
     <version>1.4.200</version>
     <scope>test</scope>
 </dependency>
+<!-- SPRING SECURITY -->
 <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
-<dependency>
+<!--  dependency>
     <groupId>org.springframework.security</groupId>
     <artifactId>spring-security-core</artifactId>
     <version>5.3.11.RELEASE</version>
-</dependency>
-
+</dependency-->
 <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
 <dependency>
     <groupId>org.springframework.security</groupId>
     <artifactId>spring-security-config</artifactId>
-    <version>5.3.11.RELEASE</version>
+    <version>5.3.10.RELEASE</version>
 </dependency>
+<!-- Questa non mi serve -->
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-taglibs</artifactId>
+    <version>5.3.10.RELEASE</version>
+</dependency>
+
 <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
 <dependency>
     <groupId>org.springframework.security</groupId>
     <artifactId>spring-security-web</artifactId>
-    <version>5.3.11.RELEASE</version>
+    <version>5.3.10.RELEASE</version>
 </dependency>
-
+<!--dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+    <version>2.3.3.RELEASE</version>
+</dependency-->
   </dependencies>
   
   <build>

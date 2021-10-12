@@ -5,6 +5,8 @@ import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.FrameworkServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+
+
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 
 	@Override

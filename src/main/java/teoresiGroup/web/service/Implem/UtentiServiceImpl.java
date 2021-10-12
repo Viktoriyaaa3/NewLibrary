@@ -8,6 +8,7 @@ import javax.persistence.PersistenceContext;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -85,5 +86,22 @@ public class UtentiServiceImpl implements UtentiService{
 		return  utentiRepo.ByPassAndUsername(password, username);
 		
 	}
+	/*@Override
+	public User registerNewUserAccount(UserDto accountDto) throws EmailExistsException {
+	 
+	    if (emailExist(accountDto.getEmail())) {
+	        throw new EmailExistsException
+	          ("There is an account with that email adress: " + accountDto.getEmail());
+	    }
+	    User user = new User();
 
+	    user.setFirstName(accountDto.getFirstName());
+	    user.setLastName(accountDto.getLastName());
+	    user.setPassword(passwordEncoder.encode(accountDto.getPassword()));
+	    user.setEmail(accountDto.getEmail());
+
+	    user.setRoles(Arrays.asList(roleRepository.findByName("ROLE_USER")));
+	    return repository.save(user);
+	}
+*/
 }

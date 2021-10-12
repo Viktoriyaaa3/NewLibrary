@@ -8,6 +8,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.Database;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 //import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
@@ -29,16 +38,6 @@ import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 import teoresiGroup.web.service.Interfacce.LibroService;
 import teoresiGroup.web.service.Interfacce.OperatoreService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
-
-import org.springframework.core.env.Environment;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.orm.jpa.vendor.Database;
-import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableWebMvc
@@ -109,7 +108,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	        factory.setPackagesToScan(getClass().getPackage().getName());//classi che utilizzano entity manager
 	        return factory;
 	    }
-
+	    
 	    @Bean(name="tmf")
 	    public PlatformTransactionManager getTransactionManager(){
 	       // JpaTransactionManager jtm= new JpaTransactionManager(getEntityManager().getObject());
@@ -117,6 +116,38 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    	return new JpaTransactionManager(getEntityManagerFactory().getObject());
 
 	    }
+	 /*   @Bean
+	    public RoleHierarchy roleHierarchy() {
+	        RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
+	        String hierarchy = "ROLE_ADMIN > ROLE_STAFF \n ROLE_STAFF > ROLE_USER";
+	        roleHierarchy.setHierarchy(hierarchy);
+	        return roleHierarchy;
+	    }
+	    @Bean
+	    public DefaultWebSecurityExpressionHandler webSecurityExpressionHandler() {
+	        DefaultWebSecurityExpressionHandler expressionHandler = new DefaultWebSecurityExpressionHandler();
+	        expressionHandler.setRoleHierarchy(roleHierarchy());
+	        return expressionHandler;
+	    }*/
+	    /*-------------------
+	    @Override
+	    public void addInterceptors(InterceptorRegistry registry) {
+	        LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
+	        localeChangeInterceptor.setParamName("lang");
+	        registry.addInterceptor(localeChangeInterceptor);
+	    }
+	    @Bean
+	    public LocaleResolver localeResolver() {
+	        CookieLocaleResolver cookieLocaleResolver = new CookieLocaleResolver();
+	        cookieLocaleResolver.setDefaultLocale(Locale.ITALY);
+	        return cookieLocaleResolver;
+	    }
+	    @Bean
+	    public LocaleResolver localeResolve() {
+	        SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
+	        return sessionLocaleResolver;
+	    }*/
+	    /*-----------------------*/
 	    
 	    @Bean
 	    public UtentiRepo getUtenteService() {

@@ -1,6 +1,5 @@
 package teoresiGroup.web.controller;
 
-
 import java.util.Date;
 
 import org.apache.log4j.Logger;
@@ -15,6 +14,9 @@ import java.time.*;
 public class BenvenutoController {
 	//
 	private final static Logger log= Logger.getLogger(BenvenutoController.class.getName());
+	
+	//private final static Logger log= LoggerFactory.getLogger(BenvenutoController.class.getName());
+	
 	@GetMapping("/")
 
 	//@RequestMapping("/")

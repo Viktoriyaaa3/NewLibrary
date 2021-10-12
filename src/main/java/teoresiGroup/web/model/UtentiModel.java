@@ -5,13 +5,16 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Collection;
 
-import javax.persistence.Column;
+import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
@@ -46,7 +49,16 @@ private String email;
 	private String password;
 	@Column(name="username")
 	private String username;
-	
+	/*
+	 @ManyToMany 
+	    @JoinTable( 
+	        name = "users_roles", 
+	        joinColumns = @JoinColumn(
+	          name = "user_id", referencedColumnName = "id"), 
+	        inverseJoinColumns = @JoinColumn(
+	          name = "role_id", referencedColumnName = "id")) 
+	    private Collection<Role> roles;
+	*/
 	
 	/*@OneToOne(fetch=FetchType.LAZY)
 	@PrimaryKeyJoinColumn
