@@ -2,18 +2,16 @@ package teoresiGroup.web.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+//import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
-import org.thymeleaf.expression.Calendars;
 
 
 @Entity
@@ -36,6 +34,20 @@ public class LibriModel implements Serializable {
 	private LocalDate dataPubblicazione;
 	@Column(name="numeroPezzi")
 	private int numeroPezzi;
+	
+	/*@OneToOne(mappedBy="Utenti")
+	private UtentiModel model;
+	
+	
+	public UtentiModel getModel() {
+		return model;
+	}
+	public void setModel(UtentiModel model) {
+		this.model = model;
+	}*/
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 	/*Usare Period per calcolare il periodo del prestito libro*/
 	/*Simple date format*/
 	public int getId() {

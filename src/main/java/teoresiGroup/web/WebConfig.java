@@ -18,21 +18,29 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import teoresiGroup.web.Repository.LibroRepo;
+import teoresiGroup.web.Repository.OperatoreRepo;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
+import teoresiGroup.web.Repository.RepoImpl.OperatoreImpl;
 import teoresiGroup.web.Repository.RepoImpl.UtentiImpl;
 import teoresiGroup.web.service.Implem.LibroServiceImpl;
+import teoresiGroup.web.service.Implem.OperatoreServiceImpl;
 import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 import teoresiGroup.web.service.Interfacce.LibroService;
+import teoresiGroup.web.service.Interfacce.OperatoreService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+//import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
+import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
+import org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -92,7 +100,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	        db.setPassword(env.getRequiredProperty("NewLibrary.db.password"));
 	        return db;
 	    }
-	    @Bean(name="emf")
+	   @Bean//(name="emf")
 	    public LocalContainerEntityManagerFactoryBean getEntityManagerFactory(){
 	        HibernateJpaVendorAdapter adapter=new HibernateJpaVendorAdapter();
 	        adapter.setDatabase(Database.MYSQL);
@@ -115,6 +123,21 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    }
 	    
 	    @Bean
+	    public RoleHierarchy roleHierarchy() {
+	        RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
+	        String hierarchy = "ROLE_ADMIN > ROLE_STAFF \n ROLE_STAFF > ROLE_USER";
+	        roleHierarchy.setHierarchy(hierarchy);
+	        return roleHierarchy;
+	    }
+	    
+	    @Bean
+	    public DefaultWebSecurityExpressionHandler webSecurityExpressionHandler() {
+	        DefaultWebSecurityExpressionHandler expressionHandler = new DefaultWebSecurityExpressionHandler();
+	        expressionHandler.setRoleHierarchy(roleHierarchy());
+	        return expressionHandler;
+	    }
+	    
+	    @Bean
 	    public UtentiRepo getUtenteService() {
 	    	return new UtentiImpl(getDataSource());
 	    }
@@ -122,7 +145,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    
 	    @Bean
 	    public LibroRepo getLibroService() {
-	    	return new LibroImpl(getDataSource());
+	    	return new LibroImpl();
 	    }
 	    @Bean
 	    public UtentiService getUtentiService() {
@@ -133,4 +156,13 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    public LibroService getLibroServic() {
 	    	return new LibroServiceImpl();
 	    }
+	    @Bean
+	    public OperatoreRepo getOp() {
+	    	return new OperatoreImpl();
+	    }
+	    @Bean
+	    public OperatoreService getOpService() {
+	    	return new OperatoreServiceImpl();
+	    }
+	    
 }

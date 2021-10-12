@@ -6,11 +6,19 @@
 </head>
 <body>
     <h1>Cliente Form</h1>
-    <form th:action="@{/newCliente}" th:object="${utenteForm}" method="post">
+    <form action="#" th:action="@{/cliente/add}" th:object="${utenteForm}" method="post" >
         <p>Name: <input type="text" th:field="*{nome}"/></p>
         <p>Cognome: <input type="text" th:field="*{cognome}"/></p>
-       
+       <p>Telefono: <input type="text" th:field="*{telefono}"/></p>
+        <p>Codice Fiscale: <input type="text" th:field="*{codFiscale}"/></p>
+       <p>Data di Nascita: <input type="text" th:field="*{dataNascita}" placeholder="yyyy-MM-dd" /> </p>
+        <p>Email: <input type="email" th:field="*{email}"/></p>
+          <p>Username: <input type="text" th:field="*{username}"/></p>
+            <p>Password: <input type="text" th:field="*{password}"/></p>
+        
         <p><input type="submit" value="Submit"/></p>
     </form>
+    
+   
 </body>
 </html>

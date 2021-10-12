@@ -19,7 +19,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Expression;
 
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.model.Utente;
+
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
@@ -105,12 +105,7 @@ private JdbcTemplate conn;
 		//conn.
 		return null;
 	}
-	@Override
-	public void insert(Utente u) {
-		String sql="INSERT INTO Utenti(nome, cognome, codFiscale, telefono, email) VALUES(?,?,?,?,?)";
-		conn.update(sql, u.getNome(), u.getCognome(), u.getCodFiscale(),u.getTelefono(), u.getEmail() );
-		
-	}
+	
 	@Override
 	public String dammiNome() {
 		String sql="SELECT nome FROM Utenti";
@@ -142,7 +137,7 @@ private JdbcTemplate conn;
 		
 		return ut;
 	}
-	
+
 
 	
 	

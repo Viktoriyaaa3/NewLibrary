@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.model.Utente;
+
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
@@ -66,11 +66,7 @@ public class UtentiServiceImpl implements UtentiService{
 		return utentiRepo.findOne(id);
 	}
 
-	@Override
-	public void insert(Utente u) {
-		utentiRepo.insert(u);
-		
-	}
+	
 
 	@Override
 	public String dammiNome() {
