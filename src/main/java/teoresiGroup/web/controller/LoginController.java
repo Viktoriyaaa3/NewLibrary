@@ -25,6 +25,10 @@ public class LoginController {
 
 	@GetMapping("/log")
 	public ModelAndView logIn(Model model) {
+		/*Authentication auth= SecurityContextHolder.getContext().getAuthentication();
+		if(auth== null || auth instanceof AnonymousAuthenticationToken) {
+			return new ModelAndView("login", "utenteForm", new UtentiModel());}
+		return new ModelAndView("login", "utenteForm", new UtentiModel());*/
 		
 		UtentiModel utenti= new UtentiModel();
 		model.addAttribute("utenteForm", utenti);

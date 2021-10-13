@@ -70,23 +70,24 @@ public class ConfigSpringSecurity  extends WebSecurityConfigurerAdapter {
     	
     	
     }
-
-	@Override
-	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().anyRequest().authenticated()
-		.and()
-		.formLogin()
-		.loginPage("/login/log").loginProcessingUrl("/login/controllo/")
-		.failureUrl("/cliente/add").permitAll()
-		.and()
-		.logout().permitAll();
-		//.and()
-		//.logout()
-		//.permitAll();
-		//.and().authorizeRequests().antMatchers("/operatore/**").hasRole("OPERATORE");
-		//super.configure(http);
-		/*loginPage("/showMyLoginPage).loginProcessingUrl("/authenticateTheUser")*/
-	}
+    @Override
+  	protected void configure(HttpSecurity http) throws Exception {
+  		http.authorizeRequests().anyRequest().authenticated()
+  		.and()
+  		.formLogin()
+  		.loginPage("/login/log").loginProcessingUrl("/login/controllo/").permitAll()
+  		.failureUrl("/cliente/add")//.permitAll()
+  		.and()
+  		.logout().permitAll();
+  	
+  		//.and()
+  		//.logout()
+  		//.permitAll();
+  		//.and().authorizeRequests().antMatchers("/operatore/**").hasRole("OPERATORE");
+  		//super.configure(http);
+  		/*loginPage("/showMyLoginPage).loginProcessingUrl("/authenticateTheUser")*/
+  	}
+  
     
     
 
