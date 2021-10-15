@@ -49,6 +49,11 @@ private String email;
 	private String password;
 	@Column(name="username")
 	private String username;
+	@Column(name="enabled")
+	private String abilitato;
+	@Column(name="ruolo")
+	private String ruolo;
+	
 	/*
 	 @ManyToMany 
 	    @JoinTable( 
@@ -60,7 +65,19 @@ private String email;
 	    private Collection<Role> roles;
 	*/
 	
-	/*@OneToOne(fetch=FetchType.LAZY)
+	public String getRuolo() {
+		return ruolo;
+	}
+	public void setRuolo(String ruolo) {
+		this.ruolo = ruolo;
+	}
+	public String getAbilitato() {
+		return abilitato;
+	}
+	public void setAbilitato(String abilitato) {
+		this.abilitato = abilitato;
+	}
+/*@OneToOne(fetch=FetchType.LAZY)
 	@PrimaryKeyJoinColumn
 	private LibriModel model;
 	

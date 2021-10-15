@@ -75,7 +75,7 @@ public ModelAndView sumbit(@ModelAttribute("utenteForm") UtentiModel utenti)
 	
 	}catch(Exception e) {
 		log.info(e.getMessage());
-		return new ModelAndView("error");// modificare che ritorna sulla pagina di registrazione
+		return new ModelAndView("result", "utenteForm", utenti);// modificare che ritorna sulla pagina di registrazione
 		
 		
 	}

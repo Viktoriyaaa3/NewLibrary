@@ -5,6 +5,9 @@ import java.util.Optional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import teoresiGroup.web.Repository.UtentiRepo;
-
+import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
@@ -115,4 +118,42 @@ public class UtentiServiceImpl implements UtentiService{
 	    return repository.save(user);
 	}
 */
+	@Override
+	public UtentiModel selezionaPerUsername(String username) {
+		
+		return utentiRepo.selezionaPerUsername(username);
+	}
+	
+	/*	
+	public LibriModel getByName(String autore) {
+		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+		CriteriaQuery<LibriModel> query= queryBuilder.createQuery(LibriModel.class);
+		Root<LibriModel> rec= query.from(LibriModel.class);
+		 query.select(rec).where(queryBuilder.equal(rec.get("autore"), autore));
+		 
+		 LibriModel ut=em.createQuery(query).getSingleResult();
+	
+		 em.clear();
+		
+		 return ut;
+	}*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

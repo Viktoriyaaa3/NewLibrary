@@ -14,6 +14,7 @@ public interface UtentiRepo  {
 	UtentiModel getByName(String nome);
 	UtentiModel getByCognome(String cognome);
 	Optional<UtentiModel> findOne(int id);
+	UtentiModel selezionaPerUsername( String username);
 	
 	
 	public String dammiNome();

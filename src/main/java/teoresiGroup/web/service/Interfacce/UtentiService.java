@@ -13,6 +13,8 @@ public interface UtentiService {
 	UtentiModel getByName(String nome);
 	UtentiModel getByCognome(String cognome);
 	Optional<UtentiModel> findOne(int id);
+	UtentiModel selezionaPerUsername( String username);
+	
 
 	public String dammiNome();
 	List<UtentiModel>ByNome(String nome);

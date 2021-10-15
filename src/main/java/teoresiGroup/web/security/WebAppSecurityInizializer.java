@@ -1,4 +1,4 @@
-package teoresiGroup.web;
+package teoresiGroup.web.security;
 
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
