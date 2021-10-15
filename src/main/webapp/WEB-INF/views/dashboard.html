@@ -12,70 +12,42 @@
 </head>
 <body>
     <h1>Hai effettuato il login: </h1>
-    <table>
-    <tr>
-    <td>NOME UTENTE</td>
-    <td><span sec:authentication="name"> </span></td>
-    </tr>
-      <tr>
-    <td>RUOLO</td>
-    <td><span sec:authentication="principal.authorities"> </span></td>
-    </tr>
-    
-    </table>
-    
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" th:href="@{~/index}"><i class="fa fa-home"></i>Home</a>
-                </li>
-                <li sec:authorize="isAuthenticated()" class="nav-item">
-                    <a class="nav-link" href="#" th:href="@{~/login/controllo}">Profile</a>
-                </li>
-                <li sec:authorize="hasRole('ROLE_OPERATORE')" class="nav-item">
-                    <a class="nav-link" href="#" th:href="@{~/operatore/add}">Admin</a>
-                </li>
-                <li sec:authorize="hasAnyRole('ROLE_USER')" class="nav-item">
-                    <a class="nav-link" href="#" th:href="@{~/book/all}">Management</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0" form-method="post" th:action="@{/logout}">
-                <button sec:authorize="isAuthenticated()" class="btn btn-outline-danger my-2 my-sm-0 btn-sm" type="submit">Logout</button>
-                <button sec:authorize="isAnonymous()" th:href="@{~/login}" class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Login</button>
-            </form>
-        </div>
-    Logged user: <span sec:authentication="name">Bob</span>
-Roles: <span sec:authentication="principal.authorities">[ROLE_USER, ROLE_ADMIN]</span>
 
- <h2>Welcome</h2>
-        <p>Spring Security Thymeleaf tutorial</p>
-        <div sec:authorize.isAuthenticated()="hasRole('ROLE_USER')">Text visible to user</div>
-        <div sec:authorize.isAuthenticated()="hasRole('ADMIN')">Text visible to admin.</div>
-        <div sec:authorize.isAuthenticated()="isAuthenticated()">
-            Text visible only to authenticated users.
-        </div>
-        Authenticated username:
-        <div sec:authentication="name"></div>
-        Authenticated user roles:
-        <div sec:authentication="principal.authorities"></div>
-    <!-- display username and role -->
-    <p>
-    Utente: <sec:authentication property="principal.username"/>
-    <br>
-    RUolo:
-    <sec:authentication property="principal.authorities"/>
-    </p>
    <h2>Qua ci saranno altre scelte per l'ultente loggato</h2>
  
    <hr>
-<div>
-    User: <span sec:authentication="name">NOT FOUND</span>
-    Spring Roles: <span sec:authentication="principal.authorities">NOT FOUND</span>
+
+	<p>
+	User: <span sec:authentication="name"></span>
+Role(s): <span sec:authentication="principal.authorities"></span>
+	
+	<hr>
+	<p>
+	<div>
+	<h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+	<div sec:authorize="hasRole('USER')"></div>
+    <h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+    <div sec:authorize="hasRole('OPERATORE')"></div>
+    <h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+     <div sec:authorize="hasRole('ADMIN')">
+    <h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+    </div>
+    
 </div>
-<div sec:authorize="hasRole('USER')">
-<h1>User IS: </h1>
-</div>
+
+	<div th:if="${#httpServletRequest.remoteUser != null}">
+    User: <sec:authentication property="principal.username" />
+		<br><br>
+		Role(s): <sec:authentication property="principal.authorities" />
+		</div>
+     
+      sample_user
+    <h1>PROVA NUOVI TAG</h1>
+     User: <sec:authentication property="principal.username" />
+		<br><br>
+		Role(s): <sec:authentication property="principal.authorities" />
+		
+
 
    <table>
    <thead>

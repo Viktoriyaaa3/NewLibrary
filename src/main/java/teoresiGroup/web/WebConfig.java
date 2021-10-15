@@ -1,7 +1,10 @@
 package teoresiGroup.web;
 
+import java.beans.PropertyVetoException;
+
 import javax.sql.DataSource;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -17,14 +20,18 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.ViewResolver;
 //import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
+
+
 
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.OperatoreRepo;
@@ -46,7 +53,8 @@ import teoresiGroup.web.service.Interfacce.UtentiService;
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "teoresiGroup.web.Repository", entityManagerFactoryRef = "emf", transactionManagerRef = "tmf")
 public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdapter implements ApplicationContextAware */{
-	  @Autowired
+	private static final Logger log= Logger.getLogger(WebConfig.class.getName());
+	@Autowired
 	    private Environment env;
 	
 	
@@ -89,10 +97,18 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	   @Bean(name = "dataSource")
 	    public DataSource getDataSource(){
 	        DriverManagerDataSource db= new DriverManagerDataSource();
+	        try {
 	        db.setDriverClassName(env.getRequiredProperty("NewLibrary.db.driver"));
 	        db.setUrl(env.getRequiredProperty("NewLibrary.db.url"));
 	        db.setUsername(env.getRequiredProperty("NewLibrary.db.username"));
 	        db.setPassword(env.getRequiredProperty("NewLibrary.db.password"));
+	        }
+	        catch(RuntimeException e) {
+	        	log.info(e.getCause());
+	        	throw new RuntimeException(e);
+	        	
+	        	
+	        }
 	        return db;
 	    }
 	    @Bean(name="emf")
@@ -148,7 +164,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	        return sessionLocaleResolver;
 	    }*/
 	    /*-----------------------*/
-	    
+	
 	    @Bean
 	    public UtentiRepo getUtenteService() {
 	    	return new UtentiImpl(getDataSource());

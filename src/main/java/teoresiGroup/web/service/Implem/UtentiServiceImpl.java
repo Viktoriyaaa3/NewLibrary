@@ -9,6 +9,7 @@ import javax.persistence.PersistenceContext;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,6 +26,8 @@ public class UtentiServiceImpl implements UtentiService{
 	private UtentiRepo utentiRepo;
 	@PersistenceContext
 	private EntityManager em;
+	@Autowired
+	private BCryptPasswordEncoder bcpe;
 
 	public UtentiRepo getUtentiRepo() {
 		return utentiRepo;
@@ -40,6 +43,14 @@ public class UtentiServiceImpl implements UtentiService{
 	@Override
 	@Transactional
 	public void add(UtentiModel u) {
+		UtentiModel utente= null;
+		try {u.setPassword(bcpe.encode(utente.getPassword()));
+			
+		}catch(Exception e) {
+			log.info(e.getMessage());
+			
+			
+		}
 		utentiRepo.add(u);
 		
 	}

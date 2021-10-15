@@ -65,6 +65,7 @@ public class LoginController {
 			return new ModelAndView("cliente");
 		}
 		else
+		//model.addAllAttributes(utenti.)
 		return new ModelAndView("dashboard", "utenteForm", utenti);
 		
 
