@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
-@Service("servizioUtenti")
+@Service("userDetailsService")
 public class RicavoDalDb  implements UserDetailsService{
 
 	@Autowired
@@ -24,7 +24,7 @@ public class RicavoDalDb  implements UserDetailsService{
 	@Override
 	@Transactional
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		
+		/*UTENTE DEVE INSERIRE USERNAME E PASSWORD*/
 		//serve per username
 		String[] Username = StringUtils.split(username);
 		if(Username== null || Username.length!=1) {
@@ -44,10 +44,14 @@ public class RicavoDalDb  implements UserDetailsService{
 		builder.disabled((ut.getAbilitato().equals("si")?false:true));// rconverto nel boolean a folase o true
 		builder.password(ut.getPassword());
 		
-		String[] ruolo=null;
+		String[] profili=ut.getProfili().stream().map(a->"ROLE_"+ a.getTipo())
+				.toArray(String[]::new);
+				
+				
+				
 		//manca la stringa che gestisce i ruoli
 		
-		builder.authorities(ruolo);// creare la tabella relazionale ruoli utenti
+		builder.authorities(profili);// creare la tabella relazionale ruoli utenti
 		//per ora ruolo non esiste
 		
 		return builder.build();

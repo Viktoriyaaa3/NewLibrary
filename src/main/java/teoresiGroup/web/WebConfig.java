@@ -1,5 +1,6 @@
 package teoresiGroup.web;
 
+import org.springframework.validation.Validator;
 import java.beans.PropertyVetoException;
 
 import javax.sql.DataSource;
@@ -7,10 +8,12 @@ import javax.sql.DataSource;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -18,8 +21,11 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.ViewResolver;
 //import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -35,12 +41,15 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.OperatoreRepo;
+import teoresiGroup.web.Repository.PersistentToken;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
 import teoresiGroup.web.Repository.RepoImpl.OperatoreImpl;
 import teoresiGroup.web.Repository.RepoImpl.UtentiImpl;
+import teoresiGroup.web.service.RicavoDalDb;
 import teoresiGroup.web.service.Implem.LibroServiceImpl;
 import teoresiGroup.web.service.Implem.OperatoreServiceImpl;
+//import teoresiGroup.web.service.Implem.UserService;
 import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 import teoresiGroup.web.service.Interfacce.LibroService;
 import teoresiGroup.web.service.Interfacce.OperatoreService;
@@ -48,7 +57,7 @@ import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = " teoresiGroup.web.controller")
+@ComponentScan(" teoresiGroup.web.controller")
 @PropertySource("classpath:NewLibrary.properties")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "teoresiGroup.web.Repository", entityManagerFactoryRef = "emf", transactionManagerRef = "tmf")
@@ -60,7 +69,29 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	
 	 @Autowired
 	   private ApplicationContext applicationContext;
+	
 
+	/*@Bean(name="validator")	public LocalValidatorFactoryBean validator() {
+		LocalValidatorFactoryBean bean= new LocalValidatorFactoryBean();
+		bean.setValidationMessageSource(messageSource());
+		return bean;
+		
+	}
+	@Override
+	public Validator getValidator() {
+		return validator();
+	}
+	 */
+	/* @Bean esternalizzazione delle etichette
+	 le metto nel file message properties, cambiare nel frontend le etichette con
+	 ciò che scrivo nel file di properties per ciascun elemento
+	 public MessageSource messageSource() {
+		 ResourceBundleMessageSource res= new ResourceBundleMessageSource();
+		 res.setBasename("message");
+		 return res;
+		 
+	 }*/
+	 
 	   /*
 	    * STEP 1 - Create SpringResourceTemplateResolver
 	    * */
@@ -192,5 +223,17 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    public OperatoreService getOpService() {
 	    	return new OperatoreServiceImpl();
 	    }
+	    @Bean
+	    public UserDetailsService userDetailsService() {
+	        return  new RicavoDalDb();
+	    }
+	@Bean
+	public PersistentTokenRepository peristent() {
+		return new PersistentToken();
+	}
+	/*@Bean
+	public UserDetailsService us() {
+		return new UserService();
+	}*/
 	    
 }

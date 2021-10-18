@@ -1,26 +1,14 @@
 package teoresiGroup.web.model;
-/*
-import java.util.Collection;
 
-import javax.persistence.*;
+import org.springframework.security.core.GrantedAuthority;
 
-@Entity
-public class Role {
- 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public enum Role implements GrantedAuthority{
+	USER, OPERATORE, ADMIN;
 
-    private String name;
-    @ManyToMany(mappedBy = "roles")
-    private Collection<UtentiModel> users;
+	@Override
+	public String getAuthority() {
+		// TODO Auto-generated method stub
+		return name();
+	}
 
-    @ManyToMany
-    @JoinTable(
-        name = "roles_privileges", 
-        joinColumns = @JoinColumn(
-          name = "role_id", referencedColumnName = "id"), 
-        inverseJoinColumns = @JoinColumn(
-          name = "privilege_id", referencedColumnName = "id"))
-    private Collection<Privilege> privileges;
-}*/
+}

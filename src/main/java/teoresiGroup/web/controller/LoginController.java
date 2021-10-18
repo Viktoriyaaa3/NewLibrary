@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,6 +40,7 @@ public class LoginController {
 	
 	@PostMapping("/controllo")
 	public ModelAndView logOk(@ModelAttribute("utenteForm") UtentiModel utenti, Model model) {
+		
 		
 		log.info("Controllo i dati che mi stanno arrivando dall'utente: ");
 		List<UtentiModel> dati=null;

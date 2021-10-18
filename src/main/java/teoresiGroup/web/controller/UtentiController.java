@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -57,7 +58,8 @@ public ModelAndView nuovo(Model model) {
 
 
 @PostMapping("/add")
-public ModelAndView sumbit(@ModelAttribute("utenteForm") UtentiModel utenti)
+public ModelAndView sumbit(@AuthenticationPrincipal 
+		UtentiModel ut,@ModelAttribute("utenteForm") UtentiModel utenti)
 {
 	log.info("Sono nel metodo submit");
 	

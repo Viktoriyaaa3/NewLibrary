@@ -23,7 +23,7 @@ import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Service
 @Transactional
-public class UtentiServiceImpl implements UtentiService{
+public class UtentiServiceImpl implements UtentiService {
 	private final static Logger log= Logger.getLogger(UtentiServiceImpl.class.getName());
 	@Autowired
 	private UtentiRepo utentiRepo;
