@@ -4,6 +4,7 @@ import javax.persistence.*;
 @Entity
 @Table(name="Profili")
 public class Profili {
+	/*password non mi serve*/
 	@Id
 	@Column(name="userId")
 	public String userId;

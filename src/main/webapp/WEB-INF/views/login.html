@@ -25,6 +25,7 @@ IMPORT PER POTER USARE SCE:AUTHORIZE!!!!!!!!!! -->
 	<div class="panel-heading">
 					<div class="panel-title">Inserisci username e password</div>
 				</div>
+				<!--  >p th:if="${loginError}" class="error">Username o password sbagliati</p-->
 								<div style="padding-top: 30px" class="panel-body">
 	
 		  <form action="#" th:action="@{/login/controllo}" th:object="${utenteForm}" method="post"  class="form-horizontal" >
@@ -41,7 +42,7 @@ IMPORT PER POTER USARE SCE:AUTHORIZE!!!!!!!!!! -->
         </div>
         <div style="margin-top: 10px" class="form-group">						
 							<div class="col-sm-6 controls">
-							
+					<input type="hidden" th:name="${_csrf.parameterName}"	th:value="${_csrf.token}"	>
         <p><button type="submit" value="Submit"  class="btn btn-success">Invia</button> </p>
         </div>
       

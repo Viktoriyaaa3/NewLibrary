@@ -1,10 +1,11 @@
 package teoresiGroup.web.security;
 
 
-import java.util.logging.Logger;
+
 
 import javax.sql.DataSource;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -60,6 +61,8 @@ public class ConfigSpringSecurity  extends WebSecurityConfigurerAdapter {
 	{
 		return new BCryptPasswordEncoder();
 	};
+	
+	
 	@Bean
 	public HttpFirewall allowUrlEncodedSlashHttpFirewall() 
 	{
@@ -73,7 +76,7 @@ public class ConfigSpringSecurity  extends WebSecurityConfigurerAdapter {
 	public void configure(WebSecurity web) throws Exception 
 	{
 	  super.configure(web);
-	  
+	  logger.info(web.toString() + "controllo cosa ce in configure webSecurity");
 	  web.httpFirewall(allowUrlEncodedSlashHttpFirewall());
 	 
 	}
@@ -143,18 +146,27 @@ public class ConfigSpringSecurity  extends WebSecurityConfigurerAdapter {
 		return tokenRepositoryImpl;
 		
 	}*/
+	private static final String[] EMPLOYEE_MATCHER= {
+			"/book/**", "/book/search/**", "/book/all/**", "/book/autore/**",
+			"/book/lb/**", "/book/libro/**", "/book/trovato/**"
+	};
 	@Override
    	protected void configure(HttpSecurity http) throws Exception {
    		http
    		.authorizeRequests()//.anyRequest().authenticated()
+   		.antMatchers("/resources/**").permitAll()
    		.antMatchers("/").permitAll()
-   		//.antMatchers("/book/**").hasRole("EMPLOYEE")
+   		.antMatchers("/login/**").permitAll()
+   		.antMatchers(EMPLOYEE_MATCHER).access("hasRole('EMPLOYEE')")
    		.and()
    		.addFilterBefore(authenticationFilter(), UsernamePasswordAuthenticationFilter.class)
    		.formLogin()
-   		.loginPage("/login/log").loginProcessingUrl("/login/controllo/").permitAll()
-   		
-   		;
+   		.loginPage("/login/log").loginProcessingUrl("/login/log").failureUrl("/login/error")
+   		.usernameParameter("username").passwordParameter("password")
+   		.and().exceptionHandling().accessDeniedPage("/login/log?forbidden")
+   		.and()
+   		.logout()
+   		.logoutUrl("/login/log?logout");
    		
    	
    		//.and()

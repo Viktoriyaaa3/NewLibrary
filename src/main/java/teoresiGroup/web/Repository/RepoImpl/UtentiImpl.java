@@ -139,19 +139,19 @@ private JdbcTemplate conn;
 	}
 	@Override
 	public UtentiModel selezionaPerUsername(String username) {
-	/*	CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
 		CriteriaQuery<UtentiModel> query= queryBuilder.createQuery(UtentiModel.class);
 		Root<UtentiModel> rec= query.from(UtentiModel.class);
 		 query.select(rec).where(queryBuilder.equal(rec.get("username"), username));
 		 
-		 UtentiModel ut=em.createQuery(query)).getSingleResult();
+		 UtentiModel ut=em.createQuery(query).getSingleResult();
 	
 		 em.clear();
-		return ut;*/
+		//return ut;
 		
-		UtentiModel ut;
-		String jpql ="SELECT a FROM Utenti a WHERE a.username=:username";
-		ut=(UtentiModel) em.createQuery(jpql).setParameter("username", username).getSingleResult();
+		//UtentiModel ut;
+		//String jpql ="SELECT a FROM Utenti a WHERE a.username=:username";
+		//ut=(UtentiModel) em.createQuery(jpql).setParameter("username", username).getSingleResult();
         return ut;
 	}
 	

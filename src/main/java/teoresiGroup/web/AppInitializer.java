@@ -11,6 +11,7 @@ import teoresiGroup.web.security.ConfigSpringSecurity;
 
 
 
+
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 
 	@Override

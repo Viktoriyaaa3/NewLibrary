@@ -3,7 +3,7 @@ package teoresiGroup.web.model;
 import org.springframework.security.core.GrantedAuthority;
 
 public enum Role implements GrantedAuthority{
-	USER, OPERATORE, ADMIN;
+	USER, OPERATORE,  EMPLOYEE, ADMIN;
 
 	@Override
 	public String getAuthority() {

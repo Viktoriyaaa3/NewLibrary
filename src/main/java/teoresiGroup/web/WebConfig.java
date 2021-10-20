@@ -2,6 +2,7 @@ package teoresiGroup.web;
 
 import org.springframework.validation.Validator;
 import java.beans.PropertyVetoException;
+import java.util.Locale;
 
 import javax.sql.DataSource;
 
@@ -26,11 +27,16 @@ import org.springframework.security.web.authentication.rememberme.PersistentToke
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.ViewResolver;
 //import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.i18n.CookieLocaleResolver;
+import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
+import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring5.SpringTemplateEngine;
@@ -42,17 +48,21 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.OperatoreRepo;
 import teoresiGroup.web.Repository.PersistentToken;
+import teoresiGroup.web.Repository.ProfiliRepo;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
 import teoresiGroup.web.Repository.RepoImpl.OperatoreImpl;
+import teoresiGroup.web.Repository.RepoImpl.ProfiliImpl;
 import teoresiGroup.web.Repository.RepoImpl.UtentiImpl;
 import teoresiGroup.web.service.RicavoDalDb;
 import teoresiGroup.web.service.Implem.LibroServiceImpl;
 import teoresiGroup.web.service.Implem.OperatoreServiceImpl;
+import teoresiGroup.web.service.Implem.ProfiliServiceImpl;
 //import teoresiGroup.web.service.Implem.UserService;
 import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 import teoresiGroup.web.service.Interfacce.LibroService;
 import teoresiGroup.web.service.Interfacce.OperatoreService;
+import teoresiGroup.web.service.Interfacce.ProfiliService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Configuration
@@ -195,7 +205,23 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	        return sessionLocaleResolver;
 	    }*/
 	    /*-----------------------*/
-	
+	 /*   @Bean
+	    public LocaleResolver localeResolver() {
+	        CookieLocaleResolver cookieLocaleResolver = new CookieLocaleResolver();
+	        cookieLocaleResolver.setDefaultLocale(Locale.ITALY);
+	        return cookieLocaleResolver;
+	    }
+	    @Bean
+	    public LocaleResolver localeResolve() {
+	        SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
+	        return sessionLocaleResolver;
+	    }
+	    @Override
+	    public void addInterceptors(InterceptorRegistry registry) {
+	        LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
+	        localeChangeInterceptor.setParamName("lang");
+	        registry.addInterceptor(localeChangeInterceptor);
+	    }*/
 	    @Bean
 	    public UtentiRepo getUtenteService() {
 	    	return new UtentiImpl(getDataSource());
@@ -230,6 +256,13 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	@Bean
 	public PersistentTokenRepository peristent() {
 		return new PersistentToken();
+	}
+	@Bean
+	public ProfiliRepo getProfili() {
+		return new ProfiliImpl();
+	}
+	@Bean ProfiliService getProfiliService() {
+		return new ProfiliServiceImpl();
 	}
 	/*@Bean
 	public UserDetailsService us() {

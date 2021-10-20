@@ -20,7 +20,7 @@ import teoresiGroup.web.model.LibriModel;
 
 @Repository
 @Transactional
-public class LibroImpl /*extends AbstractDao<LibriModel, Integer>*/ implements LibroRepo{
+public class LibroImpl  implements LibroRepo{
 	private static final Logger log= Logger.getLogger(LibroImpl.class.getName());
 	
 	@PersistenceContext

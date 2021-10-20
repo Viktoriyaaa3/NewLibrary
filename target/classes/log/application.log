@@ -1,0 +1,110 @@
+2021-10-19 10:34:15 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 10:35:25 INFO  [http-nio-8080-exec-4]: Sono nel metodo iniziale
+2021-10-19 10:35:47 INFO  [http-nio-8080-exec-5]: Sono nel metodo iniziale
+2021-10-19 10:37:02 INFO  [http-nio-8080-exec-10]: Sono nel metodo iniziale
+2021-10-19 10:37:21 INFO  [http-nio-8080-exec-3]: Sono nel metodo iniziale
+2021-10-19 10:37:39 INFO  [http-nio-8080-exec-6]: Sono nel metodo iniziale
+2021-10-19 10:38:11 INFO  [http-nio-8080-exec-1]: Sono nel metodo iniziale
+2021-10-19 10:47:36 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 10:47:56 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-19 10:47:56 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik
+2021-10-19 10:47:56 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-19 10:47:56 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-19 11:42:00 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 11:42:12 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-19 11:42:12 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john
+2021-10-19 11:42:12 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-19 11:42:12 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-19 11:43:55 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 11:50:37 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 11:57:00 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 12:04:39 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 12:11:02 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 12:12:19 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-19 13:02:24 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 09:33:21 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 09:36:08 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 09:36:16 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 09:36:16 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik
+2021-10-20 09:36:17 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 09:36:17 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 09:36:28 INFO  [http-nio-8080-exec-10]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 09:36:28 INFO  [http-nio-8080-exec-10]: I dati che sono arrivati: vik vik
+2021-10-20 09:36:28 INFO  [http-nio-8080-exec-10]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 09:36:29 INFO  [http-nio-8080-exec-10]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 10:19:18 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 10:19:34 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 10:19:34 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john
+2021-10-20 10:19:34 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 10:19:34 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-20 10:52:49 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@14c28421controllo cosa ce in configure webSecurity
+2021-10-20 10:53:03 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 10:53:03 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john
+2021-10-20 10:53:03 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 10:53:03 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-20 10:54:36 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@3f34c57bcontrollo cosa ce in configure webSecurity
+2021-10-20 10:54:36 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 10:54:49 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 10:54:49 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john
+2021-10-20 10:54:49 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 10:54:50 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-20 10:58:03 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@3f34c57bcontrollo cosa ce in configure webSecurity
+2021-10-20 10:58:04 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 10:58:15 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 10:58:15 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john null null null null
+2021-10-20 10:58:15 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 10:58:15 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-20 11:00:11 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@3f34c57bcontrollo cosa ce in configure webSecurity
+2021-10-20 11:00:12 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 11:00:21 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:00:21 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 11:00:21 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:00:21 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 11:01:27 INFO  [http-nio-8080-exec-2]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:01:27 INFO  [http-nio-8080-exec-2]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 11:01:27 INFO  [http-nio-8080-exec-2]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:01:27 INFO  [http-nio-8080-exec-2]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 11:01:54 INFO  [http-nio-8080-exec-3]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:01:54 INFO  [http-nio-8080-exec-3]: I dati che sono arrivati: vikNJK vik null null null null
+2021-10-20 11:01:54 INFO  [http-nio-8080-exec-3]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:01:54 INFO  [http-nio-8080-exec-3]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 11:02:02 INFO  [http-nio-8080-exec-5]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:02:02 INFO  [http-nio-8080-exec-5]: I dati che sono arrivati: vikNJK vikNJK null null null null
+2021-10-20 11:02:02 INFO  [http-nio-8080-exec-5]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:02:02 INFO  [http-nio-8080-exec-5]: []
+2021-10-20 11:03:15 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@3f34c57bcontrollo cosa ce in configure webSecurity
+2021-10-20 11:03:16 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 11:03:26 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:03:26 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 11:03:26 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:03:26 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 11:07:35 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@3f34c57bcontrollo cosa ce in configure webSecurity
+2021-10-20 11:07:35 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 11:07:43 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:07:43 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 11:07:44 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:07:44 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 11:10:15 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@3f34c57bcontrollo cosa ce in configure webSecurity
+2021-10-20 11:10:16 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 11:11:56 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@3f34c57bcontrollo cosa ce in configure webSecurity
+2021-10-20 11:11:56 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 11:12:09 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:12:09 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 11:12:09 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:12:09 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 11:27:56 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@4aa39a18controllo cosa ce in configure webSecurity
+2021-10-20 11:27:57 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 11:28:07 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:28:07 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 11:28:07 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:28:07 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 11:28:17 INFO  [http-nio-8080-exec-8]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:28:17 INFO  [http-nio-8080-exec-8]: I dati che sono arrivati: vnkrdntvgk vufbd null null null null
+2021-10-20 11:28:17 INFO  [http-nio-8080-exec-8]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:28:17 INFO  [http-nio-8080-exec-8]: []
+2021-10-20 11:33:00 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@3f34c57bcontrollo cosa ce in configure webSecurity
+2021-10-20 11:33:01 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 11:33:11 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 11:33:11 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 11:33:11 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 11:33:12 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]

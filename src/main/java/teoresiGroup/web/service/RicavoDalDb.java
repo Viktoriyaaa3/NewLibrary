@@ -24,8 +24,6 @@ public class RicavoDalDb  implements UserDetailsService{
 	@Override
 	@Transactional
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		/*UTENTE DEVE INSERIRE USERNAME E PASSWORD*/
-		//serve per username
 		String[] Username = StringUtils.split(username);
 		if(Username== null || Username.length!=1) {
 			throw new UsernameNotFoundException("Questo username non è presente");
@@ -41,23 +39,16 @@ public class RicavoDalDb  implements UserDetailsService{
 		UserBuilder builder=null;
 		builder=User.withUsername(ut.getUsername());
 		
-		builder.disabled((ut.getAbilitato().equals("si")?false:true));// rconverto nel boolean a folase o true
+		builder.disabled((ut.getAbilitato().equals(1)?false:true));// rconverto nel boolean a folase o true
 		builder.password(ut.getPassword());
 		
 		String[] profili=ut.getProfili().stream().map(a->"ROLE_"+ a.getTipo())
 				.toArray(String[]::new);
 				
-				
-				
-		//manca la stringa che gestisce i ruoli
 		
-		builder.authorities(profili);// creare la tabella relazionale ruoli utenti
-		//per ora ruolo non esiste
+		builder.authorities(profili);
 		
 		return builder.build();
 	}
-	
-	
-	
 
 }
