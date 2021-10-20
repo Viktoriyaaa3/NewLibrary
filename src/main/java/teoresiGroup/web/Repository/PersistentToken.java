@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import org.apache.log4j.Logger;
 import org.springframework.data.mapping.AccessOptions.SetOptions.Propagation;
 import org.springframework.security.web.authentication.rememberme.PersistentRememberMeToken;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
@@ -18,7 +19,7 @@ import teoresiGroup.web.model.Logins;
 @Repository("persistentTokenRepo")
 @Transactional(isolation=Isolation.READ_COMMITTED/*, propagation = Propagation.REQUIRES_NEW*/)
 public class PersistentToken implements PersistentTokenRepository {
-
+private static final Logger log= Logger.getLogger(PersistentToken.class.getName());
 	@PersistenceContext
 	protected EntityManager em;
 	
@@ -35,6 +36,7 @@ public class PersistentToken implements PersistentTokenRepository {
 		logins.setUsato(token.getDate());
 		
 		this.em.persist(logins);
+		log.info(logins + " createNewTken" + PersistentToken.class);
 		flushAndClear();
 		
 	}

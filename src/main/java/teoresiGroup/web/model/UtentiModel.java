@@ -32,6 +32,12 @@ public class UtentiModel implements UserDetails {
 	
 
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
 	final static Logger logger=Logger.getLogger(UtentiModel.class.getName());
 	 
 	 
@@ -206,7 +212,10 @@ public UtentiModel(String nome, String cognome, String codFiscale, LocalDate dat
 }
 @Override
 public String toString() {
-	return "UtentiModel [password=" + password + ", username=" + username + "]";
+	return "UtentiModel [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", codFiscale=" + codFiscale
+			+ ", dataNascita=" + dataNascita + ", telefono=" + telefono + ", email=" + email + ", password=" + password
+			+ ", username=" + username + ", abilitato=" + abilitato + ", ruolo=" + ruolo + ", roles=" + roles
+			+ ", profili=" + "]";
 }
 
 
@@ -250,7 +259,7 @@ public boolean isEnabled() {
 
 
 //@OneToOne(mappedBy="um", cascade=CascadeType.ALL, orphanRemoval=true)
-@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL, mappedBy="um" , orphanRemoval=true)
+/*@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="um" , orphanRemoval=true)
 
 private Set<Profili> profili= new HashSet<>();
 
@@ -260,6 +269,40 @@ public Set<Profili> getProfili() {
 public void setProfili(Set<Profili> profili) {
 	this.profili = profili;
 }
-
+public UtentiModel(int id, String nome, String cognome, String codFiscale, LocalDate dataNascita, String telefono,
+		String email, String password, String username, String abilitato, String ruolo, Set<Role> roles,
+		Set<Profili> profili) {
+	super();
+	this.id = id;
+	this.nome = nome;
+	this.cognome = cognome;
+	this.codFiscale = codFiscale;
+	this.dataNascita = dataNascita;
+	this.telefono = telefono;
+	this.email = email;
+	this.password = password;
+	this.username = username;
+	this.abilitato = abilitato;
+	this.ruolo = ruolo;
+	this.roles = roles;
+	this.profili = profili;
+}
+public UtentiModel(String nome, String cognome, String codFiscale, LocalDate dataNascita, String telefono, String email,
+		String password, String username, String abilitato, String ruolo, Set<Role> roles, Set<Profili> profili) {
+	super();
+	this.nome = nome;
+	this.cognome = cognome;
+	this.codFiscale = codFiscale;
+	this.dataNascita = dataNascita;
+	this.telefono = telefono;
+	this.email = email;
+	this.password = password;
+	this.username = username;
+	this.abilitato = abilitato;
+	this.ruolo = ruolo;
+	this.roles = roles;
+	this.profili = profili;
+}
+*/
 
 }

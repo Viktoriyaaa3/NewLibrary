@@ -15,7 +15,7 @@ public interface UtentiService {
 	Optional<UtentiModel> findOne(int id);
 	UtentiModel selezionaPerUsername( String username);
 	
-
+	public List<UtentiModel> getAll();
 	public String dammiNome();
 	List<UtentiModel>ByNome(String nome);
 	List<UtentiModel> ByPassAndUsername(String password, String username);

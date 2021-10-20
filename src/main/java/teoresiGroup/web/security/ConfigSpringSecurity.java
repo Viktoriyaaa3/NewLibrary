@@ -167,6 +167,8 @@ public class ConfigSpringSecurity  extends WebSecurityConfigurerAdapter {
    		.and()
    		.logout()
    		.logoutUrl("/login/log?logout");
+   		//.and()
+   		//.csrf().csrfTokenRepository(null);
    		
    	
    		//.and()

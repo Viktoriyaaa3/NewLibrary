@@ -123,6 +123,11 @@ public class UtentiServiceImpl implements UtentiService {
 		
 		return utentiRepo.selezionaPerUsername(username);
 	}
+	@Override
+	public List<UtentiModel> getAll() {
+		
+		return utentiRepo.getAll();
+	}
 	
 	/*	
 	public LibriModel getByName(String autore) {

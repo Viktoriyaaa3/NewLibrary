@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.bind.annotation.MatrixVariable;
 import teoresiGroup.web.Repository.UtentiRepo;
+import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.model.UtentiModel;
 //Simport teoresiGroup.web.service.Interfacce.UtentiService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
@@ -33,6 +34,8 @@ public class UtentiController {
 	private final static Logger log = Logger.getLogger(UtentiController.class.getName());
 	@Autowired
 	private UtentiService utentiService;
+	@Autowired
+	private BCryptPasswordEncoder passwordEncoder;
 	
 	
 	@Autowired
@@ -95,13 +98,11 @@ public ModelAndView sumbit(@AuthenticationPrincipal
 /*-----------------NON ANCORA USATE----------------*/
 
 @GetMapping("/cNome")
-public String nome() {
+public ModelAndView nome() {
 	log.info("sono nel metodo cerca nome");
 	log.info(utentiService.dammiNome());
 	
-	return "result";
-	
-}
+	return new ModelAndView("result", "utenteForm", utentiService.dammiNome());}
 
 @GetMapping //senza il path sarà il metodo di apertura
 public String getUtenti(Model model) {
@@ -175,6 +176,18 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 	
 }
 
+@GetMapping("/all")
+public ModelAndView all(Model model) {
+	Iterable<UtentiModel> lib= utentiService.getAll();
+	lib.forEach((UtentiModel l)->{
+		model.addAttribute("utenti", lib);
+	});
+	
+	
+	
+	return new ModelAndView("tuttiOperatori", "utenti" ,lib);
+	
+}
 
 
 
