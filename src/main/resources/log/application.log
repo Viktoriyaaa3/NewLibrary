@@ -114,3 +114,100 @@
 2021-10-20 12:22:48 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
 2021-10-20 12:22:49 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
 2021-10-20 12:22:49 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 12:28:20 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@59aa07cfcontrollo cosa ce in configure webSecurity
+2021-10-20 12:28:20 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 12:29:41 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@10238795controllo cosa ce in configure webSecurity
+2021-10-20 12:29:42 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 12:30:30 INFO  [http-nio-8080-exec-9]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 12:30:30 INFO  [http-nio-8080-exec-9]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 12:30:31 INFO  [http-nio-8080-exec-9]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 12:30:31 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 12:49:17 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@10238795controllo cosa ce in configure webSecurity
+2021-10-20 12:49:18 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 12:49:39 INFO  [http-nio-8080-exec-9]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 12:49:39 INFO  [http-nio-8080-exec-9]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 12:49:39 INFO  [http-nio-8080-exec-9]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 12:49:39 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 12:56:23 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@10238795controllo cosa ce in configure webSecurity
+2021-10-20 12:56:24 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 12:56:34 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 12:56:34 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john null null null null
+2021-10-20 12:56:35 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 12:56:35 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-20 12:56:51 INFO  [http-nio-8080-exec-3]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 12:56:51 INFO  [http-nio-8080-exec-3]: I dati che sono arrivati: test123 john null null null null
+2021-10-20 12:56:51 INFO  [http-nio-8080-exec-3]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 12:56:51 INFO  [http-nio-8080-exec-3]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-20 13:16:13 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@472f2a80controllo cosa ce in configure webSecurity
+2021-10-20 13:16:13 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 13:16:22 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 13:16:22 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 13:16:22 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 13:16:22 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 13:16:26 INFO  [http-nio-8080-exec-7]: SOno nel metodo per cercare un libro: get search
+2021-10-20 13:17:27 INFO  [http-nio-8080-exec-6]: Sono nel metodo per registrare gli utenti
+2021-10-20 13:17:46 INFO  [http-nio-8080-exec-7]: sono nel metodo cerca nome
+2021-10-20 13:17:46 INFO  [http-nio-8080-exec-7]: 
+2021-10-20 13:27:30 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@14200fedcontrollo cosa ce in configure webSecurity
+2021-10-20 13:27:31 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 13:27:40 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 13:27:40 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 13:27:41 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 13:27:41 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 13:27:50 INFO  [http-nio-8080-exec-7]: Sono nel metodo per registrare gli utenti
+2021-10-20 13:28:16 INFO  [http-nio-8080-exec-3]: sono nel metodo cerca nome
+2021-10-20 13:28:16 INFO  [http-nio-8080-exec-3]: 
+2021-10-20 13:29:32 INFO  [http-nio-8080-exec-6]: Sono nel metodo per registrare gli utenti
+2021-10-20 13:29:56 INFO  [http-nio-8080-exec-8]: Sono nel metodo submit
+2021-10-20 13:29:56 INFO  [http-nio-8080-exec-8]: Scrivo i dati ricevuti nel post, metodo add : bhjd brsj65 trd vuksd@vfs 543 cbhsjd bhvjd 1999-11-11
+2021-10-20 13:29:56 INFO  [http-nio-8080-exec-8]: Cannot invoke "teoresiGroup.web.model.UtentiModel.getPassword()" because "utente" is null
+2021-10-20 13:29:56 INFO  [http-nio-8080-exec-8]: Sono nel metodo add di UtentiImpl
+2021-10-20 13:29:56 INFO  [http-nio-8080-exec-8]: UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]
+2021-10-20 13:31:24 INFO  [http-nio-8080-exec-10]: Sono nel metodo iniziale
+2021-10-20 13:31:33 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 13:31:33 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 13:31:33 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 13:31:33 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 13:34:56 INFO  [http-nio-8080-exec-1]: Sono nel metodo per registrare gli utenti
+2021-10-20 13:46:58 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@2d5edbadcontrollo cosa ce in configure webSecurity
+2021-10-20 13:46:59 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 13:47:09 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 13:47:09 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 13:47:09 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 13:47:09 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 13:56:33 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@59d768decontrollo cosa ce in configure webSecurity
+2021-10-20 13:56:34 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 13:56:43 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 13:56:43 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 13:56:44 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 13:56:44 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 14:01:14 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@6999c848controllo cosa ce in configure webSecurity
+2021-10-20 14:01:15 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 14:01:25 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 14:01:25 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 14:01:25 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 14:01:25 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]
+2021-10-20 14:30:56 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@5616950bcontrollo cosa ce in configure webSecurity
+2021-10-20 14:30:57 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 14:31:05 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 14:31:05 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 14:31:06 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 14:31:06 INFO  [http-nio-8080-exec-6]: [UtentiModel [id=18, nome=vik, cognome= jk, codFiscale=jk, dataNascita=null, telefono=kl, email=njk@n, password=vik, username=vik, abilitato=1, ruolo=EMPLOYEE, roles=[], profili=]]
+2021-10-20 14:36:31 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@5616950bcontrollo cosa ce in configure webSecurity
+2021-10-20 14:36:31 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 14:36:41 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 14:36:41 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 14:36:41 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 14:36:41 INFO  [http-nio-8080-exec-6]: [UtentiModel [id=18, nome=vik, cognome= jk, codFiscale=jk, dataNascita=null, telefono=kl, email=njk@n, password=vik, username=vik, abilitato=1, ruolo=EMPLOYEE, roles=[], profili=]]
+2021-10-20 14:46:09 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@5616950bcontrollo cosa ce in configure webSecurity
+2021-10-20 14:46:10 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 14:46:20 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 14:46:20 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john null null null null
+2021-10-20 14:46:20 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 14:46:20 INFO  [http-nio-8080-exec-6]: [UtentiModel [id=33, nome=john, cognome=tul, codFiscale=bvjfk, dataNascita=2000-11-11, telefono=12345, email=nejk@js, password={noop}test123, username=john, abilitato=1, ruolo=EMPLOYEE, roles=[], profili=]]
+2021-10-20 20:10:19 INFO  [main]: org.springframework.security.config.annotation.web.builders.WebSecurity@47c67c19controllo cosa ce in configure webSecurity
+2021-10-20 20:10:20 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-20 20:10:28 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-20 20:10:28 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: vik vik null null null null
+2021-10-20 20:10:29 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-20 20:10:29 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=vik, username=vik]]

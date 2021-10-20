@@ -212,10 +212,7 @@ public UtentiModel(String nome, String cognome, String codFiscale, LocalDate dat
 }
 @Override
 public String toString() {
-	return "UtentiModel [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", codFiscale=" + codFiscale
-			+ ", dataNascita=" + dataNascita + ", telefono=" + telefono + ", email=" + email + ", password=" + password
-			+ ", username=" + username + ", abilitato=" + abilitato + ", ruolo=" + ruolo + ", roles=" + roles
-			+ ", profili=" + "]";
+	return "UtentiModel [password=" + password + ", username=" + username + "]";
 }
 
 
@@ -223,14 +220,14 @@ public String toString() {
 @ElementCollection(targetClass=Role.class, fetch=FetchType.EAGER )
  @CollectionTable(name="user_role", joinColumns=@JoinColumn(name="user_id"))/*tabella non eiste nel db, crea inautomatico*/
 @Enumerated(EnumType.STRING)
-private Set<Role> roles;
+private Collection<? extends GrantedAuthority> roles;
 
-public Set<Role> getRoles() {
+public Collection<? extends GrantedAuthority> getRoles() {
 	return roles;
 }
-public void setRoles(Set<Role> roles) {
+/*public void setRoles(Set<Role> roles) {
 	this.roles = roles;
-}
+}*/
 @Override
 public Collection<? extends GrantedAuthority> getAuthorities() {
 	// TODO Auto-generated method stub
@@ -259,7 +256,7 @@ public boolean isEnabled() {
 
 
 //@OneToOne(mappedBy="um", cascade=CascadeType.ALL, orphanRemoval=true)
-/*@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="um" , orphanRemoval=true)
+@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL, mappedBy="um" , orphanRemoval=true)
 
 private Set<Profili> profili= new HashSet<>();
 
@@ -284,7 +281,7 @@ public UtentiModel(int id, String nome, String cognome, String codFiscale, Local
 	this.username = username;
 	this.abilitato = abilitato;
 	this.ruolo = ruolo;
-	this.roles = roles;
+	//this.roles = roles;
 	this.profili = profili;
 }
 public UtentiModel(String nome, String cognome, String codFiscale, LocalDate dataNascita, String telefono, String email,
@@ -300,9 +297,9 @@ public UtentiModel(String nome, String cognome, String codFiscale, LocalDate dat
 	this.username = username;
 	this.abilitato = abilitato;
 	this.ruolo = ruolo;
-	this.roles = roles;
+	//this.roles = roles;
 	this.profili = profili;
 }
-*/
+
 
 }
