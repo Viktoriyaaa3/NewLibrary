@@ -18,3 +18,78 @@
 2021-10-21 14:02:42 INFO  [main]: avvenuta connessione ad db
 2021-10-21 14:03:55 INFO  [main]: avvenuta connessione ad db
 2021-10-21 14:07:23 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:17:28 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:21:50 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:23:31 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:35:53 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:40:29 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:40:46 INFO  [http-nio-8080-exec-5]: Sono nel metodo iniziale
+2021-10-21 14:49:10 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:49:12 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@7b97c11
+2021-10-21 14:49:12 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@59d59316
+2021-10-21 14:49:13 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 14:49:34 INFO  [http-nio-8080-exec-8]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 14:49:34 INFO  [http-nio-8080-exec-8]: I dati che sono arrivati: vik vik
+2021-10-21 14:49:34 INFO  [http-nio-8080-exec-8]: UtentiService usenrame e passwordvik vik
+2021-10-21 14:49:34 INFO  [http-nio-8080-exec-8]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-21 14:49:34 INFO  [http-nio-8080-exec-8]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-21 14:49:34 INFO  [http-nio-8080-exec-8]: UtentiService usenrame e passwordvik vik
+2021-10-21 14:49:34 INFO  [http-nio-8080-exec-8]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-21 14:49:34 INFO  [http-nio-8080-exec-8]: [UtentiModel [password=vik, username=vik]]
+2021-10-21 14:50:27 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:50:29 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@17444cb9
+2021-10-21 14:50:29 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@1414800e
+2021-10-21 14:50:30 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 14:50:41 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 14:50:41 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john
+2021-10-21 14:50:41 INFO  [http-nio-8080-exec-6]: UtentiService usenrame e passwordtest123 john
+2021-10-21 14:50:41 INFO  [http-nio-8080-exec-6]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-21 14:50:41 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-21 14:50:41 INFO  [http-nio-8080-exec-6]: UtentiService usenrame e passwordtest123 john
+2021-10-21 14:50:41 INFO  [http-nio-8080-exec-6]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-21 14:50:41 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-21 14:52:06 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:52:08 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@76a72a1b
+2021-10-21 14:52:08 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@1414800e
+2021-10-21 14:52:09 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 14:52:20 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 14:52:20 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john
+2021-10-21 14:52:20 INFO  [http-nio-8080-exec-6]: UtentiService usenrame e passwordtest123 john
+2021-10-21 14:52:20 INFO  [http-nio-8080-exec-6]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-21 14:52:20 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-21 14:52:20 INFO  [http-nio-8080-exec-6]: UtentiService usenrame e passwordtest123 john
+2021-10-21 14:52:20 INFO  [http-nio-8080-exec-6]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-21 14:52:20 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-21 14:54:58 INFO  [main]: avvenuta connessione ad db
+2021-10-21 14:55:00 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@17444cb9
+2021-10-21 14:55:00 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@1414800egetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@17444cb9
+2021-10-21 14:55:01 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 14:55:11 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 14:55:11 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: test123 john
+2021-10-21 14:55:11 INFO  [http-nio-8080-exec-6]: UtentiService usenrame e passwordtest123 john
+2021-10-21 14:55:11 INFO  [http-nio-8080-exec-6]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-21 14:55:11 INFO  [http-nio-8080-exec-6]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-21 14:55:11 INFO  [http-nio-8080-exec-6]: UtentiService usenrame e passwordtest123 john
+2021-10-21 14:55:11 INFO  [http-nio-8080-exec-6]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-21 14:55:11 INFO  [http-nio-8080-exec-6]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-21 15:30:17 INFO  [main]: avvenuta connessione ad db
+2021-10-21 15:30:19 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@17444cb9
+2021-10-21 15:30:19 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@1414800egetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@17444cb9
+2021-10-21 15:56:01 INFO  [main]: avvenuta connessione ad db
+2021-10-21 15:56:03 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
+2021-10-21 15:56:03 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@76b36d98getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
+2021-10-21 16:07:15 INFO  [main]: avvenuta connessione ad db
+2021-10-21 16:07:17 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
+2021-10-21 16:07:17 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@76b36d98getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
+2021-10-21 16:30:06 INFO  [main]: avvenuta connessione ad db
+2021-10-21 16:30:08 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
+2021-10-21 16:30:08 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@76b36d98getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
+2021-10-21 16:37:09 INFO  [main]: avvenuta connessione ad db
+2021-10-21 16:37:12 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@3c12ee82
+2021-10-21 16:37:12 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@5fe14f1bgetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@3c12ee82
+2021-10-21 17:20:47 INFO  [main]: avvenuta connessione ad db
+2021-10-21 17:20:49 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@18ae9e1b
+2021-10-21 17:20:49 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@aca7766getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@18ae9e1b
+2021-10-21 17:22:55 INFO  [main]: avvenuta connessione ad db
+2021-10-21 17:22:57 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5d0637ba
+2021-10-21 17:22:57 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@5ac4f417getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5d0637ba

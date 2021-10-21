@@ -26,7 +26,7 @@ import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Repository
 @Transactional
-public class UtentiImpl /*extends AbstractDao<UtentiModel, Integer>*/ implements UtentiRepo {
+public class UtentiImpl implements UtentiRepo {
 	private static final Logger log= Logger.getLogger(UtentiImpl.class.getName());
 @PersistenceContext
 private EntityManager em;
@@ -115,6 +115,7 @@ private JdbcTemplate conn;
 	}
 	@Override
 	public List<UtentiModel> ByPassAndUsername(String password, String username) {
+		log.info("UtentiImpl ByPassAndUsername" + password + " " + username);
 		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
 		CriteriaQuery<UtentiModel> query= queryBuilder.createQuery(UtentiModel.class);
 

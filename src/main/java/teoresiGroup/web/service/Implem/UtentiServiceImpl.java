@@ -97,6 +97,7 @@ public class UtentiServiceImpl implements UtentiService {
 
 	@Override
 	public List<UtentiModel> ByPassAndUsername(String password, String username) {
+		log.info("UtentiService usenrame e password" + password + " " + username);
 		return  utentiRepo.ByPassAndUsername(password, username);
 		
 	}
@@ -125,7 +126,7 @@ public class UtentiServiceImpl implements UtentiService {
 */
 	@Override
 	public UtentiModel selezionaPerUsername(String username) {
-		
+		log.info("UtentiService seleziona per username" +  " " + username);
 		return utentiRepo.selezionaPerUsername(username);
 	}
 	
