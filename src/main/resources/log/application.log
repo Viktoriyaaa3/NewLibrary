@@ -1,0 +1,10 @@
+2021-10-21 12:04:59 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 12:05:22 INFO  [http-nio-8080-exec-9]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 12:05:22 INFO  [http-nio-8080-exec-9]: I dati che sono arrivati: vik vik
+2021-10-21 12:05:22 INFO  [http-nio-8080-exec-9]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-21 12:05:22 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=vik, username=vik]]
+2021-10-21 12:16:39 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 12:17:04 INFO  [http-nio-8080-exec-9]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 12:17:04 INFO  [http-nio-8080-exec-9]: I dati che sono arrivati: vik vik
+2021-10-21 12:17:04 INFO  [http-nio-8080-exec-9]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-21 12:17:04 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=vik, username=vik]]

@@ -8,6 +8,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.sql.DataSource;
 import javax.transaction.Transactional;
 //import teoresiGroup.web.Repository.AbstractDao;
@@ -154,7 +155,11 @@ private JdbcTemplate conn;
 		ut=(UtentiModel) em.createQuery(jpql).setParameter("username", username).getSingleResult();
         return ut;
 	}
-	
+	@Override
+	public List<UtentiModel> getAll() {
+		Query q=em.createQuery("Select p FROM UtentiModel p");
+		return q.getResultList();
+	}
 
 
 	

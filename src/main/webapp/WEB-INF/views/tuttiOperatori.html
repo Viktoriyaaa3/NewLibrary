@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Modifcia Libro</title>
+    <title>Lista Utenti</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
@@ -16,10 +16,10 @@
         </tr>
     </thead>
     <tbody>
-	<tr th:if="${books.empty}">
+	<tr th:if="${utenti.empty}">
             <td colspan="2"> No Books Available </td>
         </tr>
-        <tr th:each="book : ${books}">
+        <tr th:each="book : ${utenti}">
             <td><span th:text="${book.nome}"> Nome </span></td>
             <td><span th:text="${book.cognome}"> Cognome </span></td>
            <td>

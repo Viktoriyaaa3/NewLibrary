@@ -1,19 +1,14 @@
 package teoresiGroup.web;
 
-import org.springframework.validation.Validator;
-import java.beans.PropertyVetoException;
-
 import javax.sql.DataSource;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -21,32 +16,25 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
-import org.springframework.web.servlet.ViewResolver;
 //import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
-
-
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.OperatoreRepo;
-import teoresiGroup.web.Repository.PersistentToken;
+//import teoresiGroup.web.Repository.PersistentToken;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
 import teoresiGroup.web.Repository.RepoImpl.OperatoreImpl;
 import teoresiGroup.web.Repository.RepoImpl.UtentiImpl;
-import teoresiGroup.web.service.RicavoDalDb;
+//import teoresiGroup.web.service.RicavoDalDb;
 import teoresiGroup.web.service.Implem.LibroServiceImpl;
 import teoresiGroup.web.service.Implem.OperatoreServiceImpl;
 //import teoresiGroup.web.service.Implem.UserService;
@@ -223,14 +211,14 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    public OperatoreService getOpService() {
 	    	return new OperatoreServiceImpl();
 	    }
-	    @Bean
+	/*    @Bean
 	    public UserDetailsService userDetailsService() {
 	        return  new RicavoDalDb();
 	    }
 	@Bean
 	public PersistentTokenRepository peristent() {
 		return new PersistentToken();
-	}
+	}*/
 	/*@Bean
 	public UserDetailsService us() {
 		return new UserService();

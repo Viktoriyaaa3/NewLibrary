@@ -35,8 +35,8 @@ public class UtentiController {
 	private UtentiService utentiService;
 	
 	
-	@Autowired
-	private BCryptPasswordEncoder bcpe;//da aggiungere la password criptata
+	//@Autowired
+	//private BCryptPasswordEncoder bcpe;//da aggiungere la password criptata
 	
 	
 	List<UtentiModel> um;
@@ -73,7 +73,7 @@ public ModelAndView sumbit(@AuthenticationPrincipal
 		return new ModelAndView("error");
 
 	/*aggiungere espressioni regolari per controllare email in arrivo*/
-	try {utenti.setPassword(bcpe.encode(utenti.getPassword()));
+	try {utenti.setPassword(utenti.getPassword());
 	
 	}catch(Exception e) {
 		log.info(e.getMessage());
@@ -175,7 +175,18 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 	
 }
 
-
+@GetMapping("/all")
+public ModelAndView all(Model model) {
+	Iterable<UtentiModel> lib= utentiService.getAll();
+	lib.forEach((UtentiModel l)->{
+		model.addAttribute("utenti", lib);
+	});
+	
+	
+	
+	return new ModelAndView("tuttiOperatori", "utenti" ,lib);
+	
+}
 
 
 }

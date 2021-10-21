@@ -29,8 +29,8 @@ public class UtentiServiceImpl implements UtentiService {
 	private UtentiRepo utentiRepo;
 	@PersistenceContext
 	private EntityManager em;
-	@Autowired
-	private BCryptPasswordEncoder bcpe;
+	//@Autowired
+	//private BCryptPasswordEncoder bcpe;
 
 	public UtentiRepo getUtentiRepo() {
 		return utentiRepo;
@@ -47,7 +47,7 @@ public class UtentiServiceImpl implements UtentiService {
 	@Transactional
 	public void add(UtentiModel u) {
 		UtentiModel utente= null;
-		try {u.setPassword(bcpe.encode(utente.getPassword()));
+		try {u.setPassword(u.getPassword());
 			
 		}catch(Exception e) {
 			log.info(e.getMessage());
@@ -99,6 +99,11 @@ public class UtentiServiceImpl implements UtentiService {
 	public List<UtentiModel> ByPassAndUsername(String password, String username) {
 		return  utentiRepo.ByPassAndUsername(password, username);
 		
+	}
+	@Override
+	public List<UtentiModel> getAll() {
+		
+		return utentiRepo.getAll();
 	}
 	/*@Override
 	public User registerNewUserAccount(UserDto accountDto) throws EmailExistsException {
