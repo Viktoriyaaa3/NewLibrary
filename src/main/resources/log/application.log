@@ -93,3 +93,11 @@
 2021-10-21 17:22:55 INFO  [main]: avvenuta connessione ad db
 2021-10-21 17:22:57 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5d0637ba
 2021-10-21 17:22:57 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@5ac4f417getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5d0637ba
+2021-10-21 18:03:52 INFO  [main]: avvenuta connessione ad db
+2021-10-21 18:03:54 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5555eb81
+2021-10-21 18:03:54 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@1f8c7cd7getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5555eb81
+2021-10-21 18:08:06 INFO  [main]: avvenuta connessione ad db
+2021-10-21 18:08:08 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
+2021-10-21 18:08:08 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@76b36d98getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
+2021-10-21 18:18:31 INFO  [main]: avvenuta connessione ad db
+2021-10-21 18:18:39 INFO  [http-nio-8080-exec-5]: Sono nel metodo iniziale
