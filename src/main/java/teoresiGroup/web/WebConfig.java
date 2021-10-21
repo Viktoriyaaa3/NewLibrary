@@ -128,6 +128,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	        	
 	        	
 	        }
+	        log.info("avvenuta connessione ad db");
 	        return db;
 	    }
 	    @Bean(name="emf")

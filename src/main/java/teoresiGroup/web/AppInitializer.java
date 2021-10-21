@@ -5,6 +5,8 @@ import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.FrameworkServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import teoresiGroup.web.security.SecurityConfig;
+
 //import teoresiGroup.web.security.ConfigSpringSecurity;
 
 
@@ -22,7 +24,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		
-		return new Class<?>[] {WebConfig.class/*, ConfigSpringSecurity.class*/};
+		return new Class<?>[] {WebConfig.class, SecurityConfig.class};
 	}
 
 	@Override

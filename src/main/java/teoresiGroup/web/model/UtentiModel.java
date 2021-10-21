@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
-@Table(name="Utenti")
+@Table(name="users")
 public class UtentiModel  {
 
 	
