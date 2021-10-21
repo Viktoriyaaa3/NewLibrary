@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import teoresiGroup.web.Repository.LibroRepo;
-import teoresiGroup.web.model.Libri;
 import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.service.Interfacce.LibroService;
 
@@ -25,12 +24,17 @@ public class LibroServiceImpl implements LibroService {
 	@PersistenceContext
 	private EntityManager em;
 	
+	
+	
+	
+	
 	public LibroRepo getLibroRepo() {
 		return libroRepo;
 	}
 	public void setLibroRepo(LibroRepo libroRepo) {
 		this.libroRepo=libroRepo;
 	}
+
 	
 
 	@Override
@@ -58,7 +62,19 @@ public class LibroServiceImpl implements LibroService {
 	}
 	
 	
+	@Override
+	@Transactional
+	public void delete(int id) {
+		libroRepo.delete(id);
+		
+	}
+	@Override
+	public List<LibriModel> getAll() {
+		
+		return libroRepo.getAll();
+	}
 	
+
 	
 	
 	@Override
@@ -76,13 +92,6 @@ public class LibroServiceImpl implements LibroService {
 		return libroRepo.findOne(id);
 	}
 
-	@Override
-	@Transactional
-	public void insert(LibriModel u) {
-		 libroRepo.insert(u);
-		 
-		
-	}
 
 	@Override
 	public String dammiNome() {
@@ -100,12 +109,12 @@ public class LibroServiceImpl implements LibroService {
 		return libroRepo.ByPassAndUsername(autore, titolo);
 	}
 	
-	@Override
+	/*@Override
 	@Transactional
 	public void delete(LibriModel l) {
 		libroRepo.delete(l);
 		
-	}
+	}*/
 	@Override
 	public String getLibro() {
 		// TODO Auto-generated method stub
@@ -117,6 +126,7 @@ public class LibroServiceImpl implements LibroService {
 		return libroRepo.getAll();
 	
 	}*/
+	
 	
 	
 

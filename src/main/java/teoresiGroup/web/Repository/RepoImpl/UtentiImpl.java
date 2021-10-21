@@ -8,6 +8,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.sql.DataSource;
 import javax.transaction.Transactional;
 //import teoresiGroup.web.Repository.AbstractDao;
@@ -19,7 +20,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Expression;
 
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.model.Utente;
+
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
@@ -105,12 +106,7 @@ private JdbcTemplate conn;
 		//conn.
 		return null;
 	}
-	@Override
-	public void insert(Utente u) {
-		String sql="INSERT INTO Utenti(nome, cognome, codFiscale, telefono, email) VALUES(?,?,?,?,?)";
-		conn.update(sql, u.getNome(), u.getCognome(), u.getCodFiscale(),u.getTelefono(), u.getEmail() );
-		
-	}
+	
 	@Override
 	public String dammiNome() {
 		String sql="SELECT nome FROM Utenti";
@@ -142,7 +138,29 @@ private JdbcTemplate conn;
 		
 		return ut;
 	}
+	@Override
+	public UtentiModel selezionaPerUsername(String username) {
+	/*	CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+		CriteriaQuery<UtentiModel> query= queryBuilder.createQuery(UtentiModel.class);
+		Root<UtentiModel> rec= query.from(UtentiModel.class);
+		 query.select(rec).where(queryBuilder.equal(rec.get("username"), username));
+		 
+		 UtentiModel ut=em.createQuery(query)).getSingleResult();
 	
+		 em.clear();
+		return ut;*/
+		
+		UtentiModel ut;
+		String jpql ="SELECT a FROM Utenti a WHERE a.username=:username";
+		ut=(UtentiModel) em.createQuery(jpql).setParameter("username", username).getSingleResult();
+        return ut;
+	}
+	@Override
+	public List<UtentiModel> getAll() {
+		Query q=em.createQuery("Select p FROM UtentiModel p");
+		return q.getResultList();
+	}
+
 
 	
 	

@@ -1,9 +1,5 @@
 package teoresiGroup.web.model;
 
-import org.apache.log4j.Logger;
-import org.springframework.format.annotation.DateTimeFormat;
-
-import java.io.Serializable;
 import java.time.LocalDate;
 
 import javax.persistence.Column;
@@ -13,11 +9,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="Utenti")
-public class UtentiModel implements Serializable {
+import org.apache.log4j.Logger;
+import org.springframework.format.annotation.DateTimeFormat;
 
-	private static final long serialVersionUID = 1L;
+@Entity
+@Table(name="users")
+public class UtentiModel  {
+
+	
 
 
 	final static Logger logger=Logger.getLogger(UtentiModel.class.getName());
@@ -39,12 +38,56 @@ private String codFiscale;
 private String telefono;
 	@Column(name="email")
 private String email;
+	
+	
+	
+	/*SERVE PER I RUOLI E AUTENTICAZIONE*/
 	@Column(name="password")
 	private String password;
 	@Column(name="username")
 	private String username;
+	@Column(name="enabled")
+	private String abilitato;
+	@Column(name="ruolo")
+	private String ruolo;
+	
+	/*
+	 @ManyToMany 
+	    @JoinTable( 
+	        name = "users_roles", 
+	        joinColumns = @JoinColumn(
+	          name = "user_id", referencedColumnName = "id"), 
+	        inverseJoinColumns = @JoinColumn(
+	          name = "role_id", referencedColumnName = "id")) 
+	    private Collection<Role> roles;
+	*/
+	
+	public String getRuolo() {
+		return ruolo;
+	}
+	public void setRuolo(String ruolo) {
+		this.ruolo = ruolo;
+	}
+	public String getAbilitato() {
+		return abilitato;
+	}
+	public void setAbilitato(String abilitato) {
+		this.abilitato = abilitato;
+	}
+/*@OneToOne(fetch=FetchType.LAZY)
+	@PrimaryKeyJoinColumn
+	private LibriModel model;
+	
+	
+	
 	
 
+public LibriModel getModel() {
+		return model;
+	}
+	public void setModel(LibriModel model) {
+		this.model = model;
+	}*/
 public String getPassword() {
 		return password;
 	}
@@ -57,9 +100,7 @@ public String getPassword() {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
+	
 	public static Logger getLogger() {
 		return logger;
 	}

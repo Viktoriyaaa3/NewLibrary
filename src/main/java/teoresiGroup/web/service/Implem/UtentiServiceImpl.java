@@ -5,25 +5,32 @@ import java.util.Optional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.model.Utente;
+import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Service
 @Transactional
-public class UtentiServiceImpl implements UtentiService{
+public class UtentiServiceImpl implements UtentiService {
 	private final static Logger log= Logger.getLogger(UtentiServiceImpl.class.getName());
 	@Autowired
 	private UtentiRepo utentiRepo;
 	@PersistenceContext
 	private EntityManager em;
+	//@Autowired
+	//private BCryptPasswordEncoder bcpe;
 
 	public UtentiRepo getUtentiRepo() {
 		return utentiRepo;
@@ -39,6 +46,14 @@ public class UtentiServiceImpl implements UtentiService{
 	@Override
 	@Transactional
 	public void add(UtentiModel u) {
+		UtentiModel utente= null;
+		try {u.setPassword(u.getPassword());
+			
+		}catch(Exception e) {
+			log.info(e.getMessage());
+			
+			
+		}
 		utentiRepo.add(u);
 		
 	}
@@ -66,11 +81,7 @@ public class UtentiServiceImpl implements UtentiService{
 		return utentiRepo.findOne(id);
 	}
 
-	@Override
-	public void insert(Utente u) {
-		utentiRepo.insert(u);
-		
-	}
+	
 
 	@Override
 	public String dammiNome() {
@@ -89,5 +100,65 @@ public class UtentiServiceImpl implements UtentiService{
 		return  utentiRepo.ByPassAndUsername(password, username);
 		
 	}
+	@Override
+	public List<UtentiModel> getAll() {
+		
+		return utentiRepo.getAll();
+	}
+	/*@Override
+	public User registerNewUserAccount(UserDto accountDto) throws EmailExistsException {
+	 
+	    if (emailExist(accountDto.getEmail())) {
+	        throw new EmailExistsException
+	          ("There is an account with that email adress: " + accountDto.getEmail());
+	    }
+	    User user = new User();
 
+	    user.setFirstName(accountDto.getFirstName());
+	    user.setLastName(accountDto.getLastName());
+	    user.setPassword(passwordEncoder.encode(accountDto.getPassword()));
+	    user.setEmail(accountDto.getEmail());
+
+	    user.setRoles(Arrays.asList(roleRepository.findByName("ROLE_USER")));
+	    return repository.save(user);
+	}
+*/
+	@Override
+	public UtentiModel selezionaPerUsername(String username) {
+		
+		return utentiRepo.selezionaPerUsername(username);
+	}
+	
+	/*	
+	public LibriModel getByName(String autore) {
+		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+		CriteriaQuery<LibriModel> query= queryBuilder.createQuery(LibriModel.class);
+		Root<LibriModel> rec= query.from(LibriModel.class);
+		 query.select(rec).where(queryBuilder.equal(rec.get("autore"), autore));
+		 
+		 LibriModel ut=em.createQuery(query).getSingleResult();
+	
+		 em.clear();
+		
+		 return ut;
+	}*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

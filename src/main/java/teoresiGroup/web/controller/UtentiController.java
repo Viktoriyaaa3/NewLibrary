@@ -10,6 +10,8 @@ import java.util.regex.Pattern;
 import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,7 +31,13 @@ import java.util.LongSummaryStatistics; /*vedere come funziona*/
 @RequestMapping("/cliente")
 public class UtentiController {
 	private final static Logger log = Logger.getLogger(UtentiController.class.getName());
+	@Autowired
 	private UtentiService utentiService;
+	
+	
+	//@Autowired
+	//private BCryptPasswordEncoder bcpe;//da aggiungere la password criptata
+	
 	
 	List<UtentiModel> um;
 UtentiModel utenti;
@@ -50,7 +58,8 @@ public ModelAndView nuovo(Model model) {
 
 
 @PostMapping("/add")
-public ModelAndView sumbit(@ModelAttribute("utenteForm") UtentiModel utenti)
+public ModelAndView sumbit(@AuthenticationPrincipal 
+		UtentiModel ut,@ModelAttribute("utenteForm") UtentiModel utenti)
 {
 	log.info("Sono nel metodo submit");
 	
@@ -64,7 +73,14 @@ public ModelAndView sumbit(@ModelAttribute("utenteForm") UtentiModel utenti)
 		return new ModelAndView("error");
 
 	/*aggiungere espressioni regolari per controllare email in arrivo*/
+	try {utenti.setPassword(utenti.getPassword());
+	
+	}catch(Exception e) {
+		log.info(e.getMessage());
+		return new ModelAndView("result", "utenteForm", utenti);// modificare che ritorna sulla pagina di registrazione
 		
+		
+	}
 		utentiService.add(utenti);
 	return new ModelAndView("result", "utenteForm", utenti);}
 	else 
@@ -159,7 +175,18 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 	
 }
 
-
+@GetMapping("/all")
+public ModelAndView all(Model model) {
+	Iterable<UtentiModel> lib= utentiService.getAll();
+	lib.forEach((UtentiModel l)->{
+		model.addAttribute("utenti", lib);
+	});
+	
+	
+	
+	return new ModelAndView("tuttiOperatori", "utenti" ,lib);
+	
+}
 
 
 }

@@ -1,43 +1,62 @@
-
+<!-- xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+IMPORT PER POTER USARE SCE:AUTHORIZE!!!!!!!!!! -->
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Benvenuto nella libreria</title>
-<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-	<div class="container">
-		<h2 class="form-signin-heading">Benvenuto nella libreria. Fai il login per accedere ai contenuti</h2>
-		<!--  div th:if="${param.error}" class="alert alert-danger">    
-        	Invalid username and password.
-        </div>
-        <div th:if="${param.logout}" class="alert alert-success"> 
-            You have been logged out.
-        </div-->
-		<!--  form class="form-signin" method="POST" th:object="${utentiForm}" th:action="@{/login/controllo}">
-			<p>
-				<label for="username" class="sr-only">Username</label> 
-				<input type="text"  id="username" name="username" class="form-control"
-					placeholder="Username" required autofocus>
-			</p>
-			<p>
-				<label for="password" class="sr-only">Password</label> 
-				<input type="password" id="password" name="password" class="form-control"
-					placeholder="Password" required>
-			</p>
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-		</form-->
-		  <form action="#" th:action="@{/login/controllo}" th:object="${utenteForm}" method="post" >
-          <p>Username: <input type="text" th:field="*{username}"/></p>
-            <p>Password: <input type="text" th:field="*{password}"/></p>
-        
-        <p><input type="submit" value="Submit"/></p>
-    </form>
+	<div>
 		
+		<div id="loginbox" style="margin-top: 50px;"
+			class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+
+
+	<div class="panel panel-info">
+	<div class="panel-heading">
+					<div class="panel-title">Inserisci username e password</div>
+				</div>
+								<div style="padding-top: 30px" class="panel-body">
+	
+		  <form action="#" th:action="@{/login/controllo}" th:object="${utenteForm}" method="post"  class="form-horizontal" >
+        
+         <div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+							
+          <p>Username: <input type="text" th:field="*{username}"  class="form-control"/></p>
+          </div>
+          	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span> 
+						
+            <p>Password: <input type="text" th:field="*{password}" class="form-control"/></p>
+        </div>
+        <div style="margin-top: 10px" class="form-group">						
+							<div class="col-sm-6 controls">
+							
+        <p><button type="submit" value="Submit"  class="btn btn-success">Invia</button> </p>
+        </div>
+      
+      
+       </div>
+       <!--  input 
+  type="hidden" 
+  th:name="${_csrf.parameterName}" 
+  th:value="${_csrf.token}" /-->
+       
+    </form>
+		</div>
+		
+		</div>
+		</div>
 	</div>
 </body>
 </html>

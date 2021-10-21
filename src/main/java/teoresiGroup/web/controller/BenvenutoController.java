@@ -1,6 +1,5 @@
 package teoresiGroup.web.controller;
 
-
 import java.util.Date;
 
 import org.apache.log4j.Logger;
@@ -15,10 +14,13 @@ import java.time.*;
 public class BenvenutoController {
 	//
 	private final static Logger log= Logger.getLogger(BenvenutoController.class.getName());
+	
+	//private final static Logger log= LoggerFactory.getLogger(BenvenutoController.class.getName());
+	
 	@GetMapping("/")
 
 	//@RequestMapping("/")
-public String ciao(Model model) {
+public String welcome(Model model) {
 		log.info("Sono nel metodo iniziale");
 		model.addAttribute("mex", "Effettua una scelta");
 		
