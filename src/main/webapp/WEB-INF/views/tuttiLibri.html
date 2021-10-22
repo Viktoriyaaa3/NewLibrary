@@ -3,10 +3,17 @@
 <head>
     <title>Modifcia Libro</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
-<table>
-    <thead>
+<table class="table">
+    <thead class="table-light">
         <tr>
             <th> Titolo </th>
             <th> Autore </th>
@@ -25,8 +32,8 @@
             <td><span th:text="${book.numeroPezzi}"> Numero Pezzi</span></td>
             <td><span th:text="${book.dataPubblicazione}">Data pubblicazione</span></td>
             <td>
-            	<a href="">Modifica</a>> - 
-            	<a href="">Elimina</a>>
+            	<a href="" class="btn btn-success">Modifica</a></td>
+            <td>	<a href="" class="btn btn-success">Elimina</a>
             </td>
         </tr>
     </tbody>

@@ -101,3 +101,50 @@
 2021-10-21 18:08:08 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@76b36d98getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@316245b6
 2021-10-21 18:18:31 INFO  [main]: avvenuta connessione ad db
 2021-10-21 18:18:39 INFO  [http-nio-8080-exec-5]: Sono nel metodo iniziale
+2021-10-21 22:10:37 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:10:42 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:10:43 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@74aad2f9
+2021-10-21 22:10:43 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@7986dddegetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@74aad2f9
+2021-10-21 22:10:57 INFO  [http-nio-8080-exec-5]: Sono nel metodo iniziale
+2021-10-21 22:11:06 INFO  [http-nio-8080-exec-1]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 22:11:18 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 22:11:20 INFO  [http-nio-8080-exec-6]: SOno nel metodo per cercare un libro: get search
+2021-10-21 22:11:30 INFO  [http-nio-8080-exec-9]: Sono nel metodo iniziale
+2021-10-21 22:26:52 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:26:57 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:26:58 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:26:58 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:26:59 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 22:31:05 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:31:11 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:31:12 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@6de9bbef
+2021-10-21 22:31:12 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@273f0f93getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@6de9bbef
+2021-10-21 22:31:13 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 22:32:57 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:33:03 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:33:04 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:33:04 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:33:05 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 22:33:21 INFO  [http-nio-8080-exec-5]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 22:41:19 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:41:24 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:41:26 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:41:26 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:41:27 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 22:41:35 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 22:42:34 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:42:39 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:42:40 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:42:40 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:42:41 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 22:42:51 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 22:46:41 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:46:46 INFO  [main]: avvenuta connessione ad db
+2021-10-21 22:46:48 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:46:48 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-21 22:46:49 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-21 22:46:56 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 22:47:16 INFO  [http-nio-8080-exec-9]: SOno nel metodo per cercare un libro: get search
+2021-10-21 22:48:26 INFO  [http-nio-8080-exec-3]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 22:48:34 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-21 22:48:43 INFO  [http-nio-8080-exec-5]: Controllo i dati che mi stanno arrivando dall'utente: 

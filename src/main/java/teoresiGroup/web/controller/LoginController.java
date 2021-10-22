@@ -43,7 +43,7 @@ public class LoginController {
 		
 		
 		log.info("Controllo i dati che mi stanno arrivando dall'utente: ");
-		/*List<UtentiModel> dati=null;
+		List<UtentiModel> dati=null;
 		String nome;
 		
 		if(utenti!=null)
@@ -66,7 +66,7 @@ public class LoginController {
 		{
 			return new ModelAndView("cliente");
 		}
-		else*/
+		else
 		//model.addAllAttributes(utenti.)
 		return new ModelAndView("dashboard", "utenteForm", utenti);
 		

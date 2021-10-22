@@ -1,5 +1,5 @@
 package teoresiGroup.web.service;
-
+/*
 import org.apache.maven.shared.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
@@ -24,9 +24,9 @@ public class RicavoDalDb  implements UserDetailsService{
 	@Override
 	@Transactional
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		/*UTENTE DEVE INSERIRE USERNAME E PASSWORD*/
+	*/	/*UTENTE DEVE INSERIRE USERNAME E PASSWORD*/
 		//serve per username
-		String[] Username = StringUtils.split(username);
+		/*String[] Username = StringUtils.split(username);
 		if(Username== null || Username.length!=1) {
 			throw new UsernameNotFoundException("Questo username non è presente");
 		}
@@ -60,4 +60,4 @@ public class RicavoDalDb  implements UserDetailsService{
 	
 	
 
-}
+}*/
