@@ -387,3 +387,358 @@
 2021-10-22 10:08:34 INFO  [http-nio-8080-exec-1]: Vedo cosa mi dice la lLibriModel [id=0, titolo=Java, autore=Bald, dataPubblicazione=2000-11-11, numeroPezzi=10]
 2021-10-22 10:08:34 INFO  [http-nio-8080-exec-1]: sono nem metodo add di LibroImpl
 2021-10-22 10:08:34 INFO  [http-nio-8080-exec-1]: Vedo dato che arriva qua: LibriModel [id=0, titolo=Java, autore=Bald, dataPubblicazione=2000-11-11, numeroPezzi=10]
+2021-10-22 11:00:33 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:00:38 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:00:40 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@1e7a1097
+2021-10-22 11:00:40 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@c90d38dgetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@1e7a1097
+2021-10-22 11:23:54 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:24:00 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:24:02 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5c099ba3
+2021-10-22 11:24:02 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@39853799getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5c099ba3
+2021-10-22 11:24:02 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 11:24:14 INFO  [http-nio-8080-exec-7]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:24:14 INFO  [http-nio-8080-exec-7]: I dati che sono arrivati: vik vik
+2021-10-22 11:24:14 INFO  [http-nio-8080-exec-7]: UtentiService usenrame e passwordvik vik
+2021-10-22 11:24:14 INFO  [http-nio-8080-exec-7]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 11:24:14 INFO  [http-nio-8080-exec-7]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 11:24:14 INFO  [http-nio-8080-exec-7]: UtentiService usenrame e passwordvik vik
+2021-10-22 11:24:14 INFO  [http-nio-8080-exec-7]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 11:24:14 INFO  [http-nio-8080-exec-7]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 11:24:18 INFO  [http-nio-8080-exec-8]: SOno nel metodo per cercare un libro: get search
+2021-10-22 11:24:54 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:25:00 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:25:02 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@7bbf623a
+2021-10-22 11:25:02 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@2b579862getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@7bbf623a
+2021-10-22 11:25:03 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 11:25:09 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:25:09 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 11:25:10 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 11:25:10 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 11:25:10 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 11:25:10 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 11:25:10 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 11:25:10 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 11:25:13 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 11:37:33 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:37:40 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:37:42 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5facc67
+2021-10-22 11:37:42 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@2c37626fgetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5facc67
+2021-10-22 11:37:43 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 11:37:51 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:37:51 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 11:37:51 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 11:37:51 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 11:37:51 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 11:37:51 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 11:37:51 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 11:37:51 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 11:38:09 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:38:14 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:38:15 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@4eeb2c6
+2021-10-22 11:38:15 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@6e15af5bgetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@4eeb2c6
+2021-10-22 11:38:16 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 11:38:22 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:38:22 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: user user
+2021-10-22 11:38:22 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworduser user
+2021-10-22 11:38:22 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameuser user
+2021-10-22 11:38:22 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 11:38:22 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworduser user
+2021-10-22 11:38:22 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameuser user
+2021-10-22 11:38:22 INFO  [http-nio-8080-exec-4]: []
+2021-10-22 11:39:20 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:39:25 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:39:26 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5c74a6d5
+2021-10-22 11:39:26 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@2fe12475getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5c74a6d5
+2021-10-22 11:39:27 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 11:39:36 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:39:36 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: user user
+2021-10-22 11:39:36 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworduser user
+2021-10-22 11:39:36 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameuser user
+2021-10-22 11:39:36 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 11:39:36 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworduser user
+2021-10-22 11:39:36 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameuser user
+2021-10-22 11:39:36 INFO  [http-nio-8080-exec-4]: []
+2021-10-22 11:42:38 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:42:43 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:42:44 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5c74a6d5
+2021-10-22 11:42:44 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@2fe12475getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5c74a6d5
+2021-10-22 11:42:45 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 11:42:52 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:51:17 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:51:22 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:51:24 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5bed9cd9
+2021-10-22 11:51:24 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@280f9319getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5bed9cd9
+2021-10-22 11:51:24 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 11:51:31 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:51:31 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 11:51:32 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 11:51:32 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 11:51:32 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 11:51:32 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 11:51:32 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 11:51:32 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 11:51:35 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 11:51:53 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:51:58 INFO  [main]: avvenuta connessione ad db
+2021-10-22 11:51:59 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@1fdc4233
+2021-10-22 11:51:59 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@12cc49b0getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@1fdc4233
+2021-10-22 11:52:00 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 11:52:11 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:52:11 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: test123 john
+2021-10-22 11:52:11 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 11:52:11 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 11:52:11 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 11:52:11 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 11:52:11 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 11:52:11 INFO  [http-nio-8080-exec-4]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 11:52:52 INFO  [http-nio-8080-exec-8]: SOno nel metodo per cercare un libro: get search
+2021-10-22 11:52:58 INFO  [http-nio-8080-exec-9]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 11:53:02 INFO  [http-nio-8080-exec-10]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 11:53:08 INFO  [http-nio-8080-exec-1]: Sono in libri form
+2021-10-22 11:53:08 INFO  [http-nio-8080-exec-1]: Dati inseriti: LibriModel [id=0, titolo=null, autore=null, dataPubblicazione=null, numeroPezzi=0]
+2021-10-22 11:53:25 INFO  [http-nio-8080-exec-4]: Sono in Libri aggiungi post
+2021-10-22 11:53:25 INFO  [http-nio-8080-exec-4]: i dati che sono arrivati: Java Java 20
+2021-10-22 11:53:25 INFO  [http-nio-8080-exec-4]: Sono nel metodo per aggiungere dati al libro. Classe ServiceImpl
+2021-10-22 11:53:25 INFO  [http-nio-8080-exec-4]: Vedo cosa mi dice la lLibriModel [id=0, titolo=Java, autore=Java, dataPubblicazione=2001-11-11, numeroPezzi=20]
+2021-10-22 11:53:25 INFO  [http-nio-8080-exec-4]: sono nem metodo add di LibroImpl
+2021-10-22 11:53:25 INFO  [http-nio-8080-exec-4]: Vedo dato che arriva qua: LibriModel [id=0, titolo=Java, autore=Java, dataPubblicazione=2001-11-11, numeroPezzi=20]
+2021-10-22 11:57:05 INFO  [http-nio-8080-exec-7]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 11:57:07 INFO  [http-nio-8080-exec-8]: SOno nel metodo per cercare un libro: get search
+2021-10-22 11:57:08 INFO  [http-nio-8080-exec-9]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 11:57:08 INFO  [http-nio-8080-exec-9]: I dati che sono arrivati: test123 john
+2021-10-22 11:57:08 INFO  [http-nio-8080-exec-9]: UtentiService usenrame e passwordtest123 john
+2021-10-22 11:57:08 INFO  [http-nio-8080-exec-9]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 11:57:08 INFO  [http-nio-8080-exec-9]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 11:57:08 INFO  [http-nio-8080-exec-9]: UtentiService usenrame e passwordtest123 john
+2021-10-22 11:57:08 INFO  [http-nio-8080-exec-9]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 11:57:08 INFO  [http-nio-8080-exec-9]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 12:04:10 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:04:15 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:04:16 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:04:16 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@20bc49f4getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:04:17 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:04:26 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:04:26 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: test123 john
+2021-10-22 12:04:27 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 12:04:27 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 12:04:27 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:04:27 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 12:04:27 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 12:04:27 INFO  [http-nio-8080-exec-4]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 12:06:39 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:06:44 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:06:46 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:06:46 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@20bc49f4getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:06:47 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:06:53 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:06:53 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 12:06:53 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:06:53 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:06:53 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:06:53 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:06:53 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:06:53 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 12:08:59 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:09:04 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:09:06 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:09:06 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@20bc49f4getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:09:06 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:09:15 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:09:15 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 12:09:15 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:09:15 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:09:16 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:09:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:09:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:09:16 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 12:09:43 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:09:48 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:09:49 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:09:49 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@20bc49f4getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:09:50 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:09:59 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:09:59 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: test123 john
+2021-10-22 12:09:59 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 12:09:59 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 12:09:59 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:09:59 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 12:09:59 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 12:09:59 INFO  [http-nio-8080-exec-4]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 12:11:37 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:11:42 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:11:44 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@157c7ac2
+2021-10-22 12:11:44 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@67f6ad2bgetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@157c7ac2
+2021-10-22 12:11:45 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:11:53 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:11:53 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: test123 john
+2021-10-22 12:11:54 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 12:11:54 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 12:11:54 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:11:54 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 12:11:54 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 12:11:54 INFO  [http-nio-8080-exec-4]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 12:13:02 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:13:07 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:13:08 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:13:08 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@20bc49f4getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:13:09 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:13:20 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:13:20 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: test123 john null null
+2021-10-22 12:13:20 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 12:13:20 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 12:13:21 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:13:21 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 12:13:21 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 12:13:21 INFO  [http-nio-8080-exec-4]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 12:35:19 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:35:24 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:35:26 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@1e7a1097
+2021-10-22 12:35:26 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@c90d38dgetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@1e7a1097
+2021-10-22 12:35:27 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:35:33 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:35:33 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 12:35:33 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:35:33 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:35:33 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:35:33 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:35:33 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:35:33 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 12:44:20 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:44:27 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:44:29 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:44:29 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@20bc49f4getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@77501428
+2021-10-22 12:44:30 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@47cd74b8
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:44:36 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 12:47:47 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:47:50 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:47:57 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:47:57 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 12:48:48 INFO  [main]: avvenuta connessione ad db
+2021-10-22 12:48:51 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@7412480f
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 12:48:58 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 13:20:09 INFO  [main]: avvenuta connessione ad db
+2021-10-22 13:20:12 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 13:20:21 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 13:22:33 INFO  [main]: avvenuta connessione ad db
+2021-10-22 13:25:21 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 13:25:30 INFO  [http-nio-8080-exec-4]: Sono nel metodo iniziale
+2021-10-22 13:25:59 INFO  [http-nio-8080-exec-8]: Sono nel metodo iniziale
+2021-10-22 13:27:19 INFO  [http-nio-8080-exec-1]: Sono nel metodo iniziale
+2021-10-22 13:27:51 INFO  [main]: avvenuta connessione ad db
+2021-10-22 13:27:54 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 13:28:01 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 13:31:52 INFO  [main]: avvenuta connessione ad db
+2021-10-22 13:31:55 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@4de6fb3d
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 13:32:02 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 13:35:19 INFO  [main]: avvenuta connessione ad db
+2021-10-22 13:35:22 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@73bb9af5
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 13:35:29 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 13:37:05 INFO  [main]: avvenuta connessione ad db
+2021-10-22 13:37:08 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 13:37:15 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 13:37:15 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: modl non è vuoto
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@39377e59
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 13:37:16 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 13:39:45 INFO  [main]: avvenuta connessione ad db
+2021-10-22 13:39:48 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl0
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl1
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl2
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl3
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl4
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl5
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl6
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl7
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl8
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl9
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl10
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl11
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl12
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl13
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl14
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl15
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl16
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl17
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl18
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl19
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl20
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl21
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl22
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl23
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl24
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl25
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl26
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl27
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl28
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl29
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: lunghezza modl30
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: modl non è vuoto
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@d716438
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 13:39:54 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]

@@ -1,5 +1,6 @@
 package teoresiGroup.web.Repository.RepoImpl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -160,6 +161,16 @@ private JdbcTemplate conn;
 	public List<UtentiModel> getAll() {
 		Query q=em.createQuery("Select p FROM UtentiModel p");
 		return q.getResultList();
+	}
+	@Override
+	public List<UtentiModel> cerca(List<UtentiModel> utenti, java.util.function.Predicate<UtentiModel> predicato) {
+		List<UtentiModel> utentiTrovati= new ArrayList<UtentiModel>();
+		for(UtentiModel u:utenti) {
+			if(predicato.test(u)){
+				utentiTrovati.get(u.getId());
+			}
+		}
+		return null;
 	}
 
 

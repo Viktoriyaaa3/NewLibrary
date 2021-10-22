@@ -44,17 +44,46 @@ public class LoginController {
 		
 		log.info("Controllo i dati che mi stanno arrivando dall'utente: ");
 		List<UtentiModel> dati=null;
+		List<UtentiModel> modl=null;
 		String nome;
-		
+		/*List<UtentiModel> provo=null;
+		provo=utentiService.getAll();
+		log.info("variabile provo" + provo.toString());*/
+		String cercoUsername=utenti.getUsername();
 		if(utenti!=null)
 		{
-		
+			/*
+			List<UtentiModel> ceracre=utentiService.cerca(provo, utente->utente.getNome().equals(cercoUsername));
+			log.info("VEDO COSA MI ARRIVA CON PREDICATE");
+			log.info("vediamo.."+ceracre.toArray().toString());
+			log.info("vediamo.."+ceracre.toArray());
+			log.info("vediamo.."+ceracre);*/
 			utenti.getPassword();
-			utenti.getUsername();
-			log.info("I dati che sono arrivati: " + utenti.getPassword() + " " + utenti.getUsername() );
+			
+			utenti.getNome();
+			utenti.getRuolo();
+			log.info("I dati che sono arrivati: " + utenti.getPassword() + " " + utenti.getUsername() + " "
+					+utenti.getNome()+ " " + utenti.getRuolo());
 		
-		
+		modl=utentiService.getAll();
+		if(modl!=null && !modl.isEmpty())
+		{
+			for(int i=0; i<modl.size(); i++) {
+				log.info("lunghezza modl" + i);
+			}
+			log.info("modl non è vuoto");
+			//modl.forEach(null);
+			log.info(modl.containsAll(modl));
+			log.info(modl.iterator());
+		}else {
+			log.info("l'oggetto e vuoto");
+		}
+		List<UtentiModel> provo=null;
+		provo=utentiService.getAll();
+		log.info("variabile provo" + provo.toString());
 		dati = utentiService.ByPassAndUsername(utenti.getPassword(), utenti.getUsername());
+		log.info("GURADO COSA È ARRIVATO IN UTENTI SERVICE");
+		log.info("GURADO COSA È ARRIVATO IN DATI");
 		log.info("Vedo cosa mi ha trovato trimite CriteriaAPi");
 		log.info(utentiService.ByPassAndUsername(utenti.getPassword().toString(), utenti.getUsername().toString()));
 		

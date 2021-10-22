@@ -1,15 +1,26 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+<link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <title>Nuovo libro Salvato</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <h1>Ti sei registrato: </h1>
+<div class="panel-heading">
+    <h1>Hai salvato nuovo libro con sucesso: </h1>
+    </div>
     <p th:text=" ${libroForm.autore} + ' Hai reistrato con successo '  "></p>
 
 
 
-	 <a href="/libreriaProject/login">Procedi con il Login</a>
+	 <a href="/libreriaProject/book/all"  class="btn btn-success">Torna alla lista dei libri</a>
+	 <a href="/libreriaProject/book/autore" class="btn btn-success">Cerca altri libri</a>
+	 <a href="/libreriaProject/login/controllo" class="btn btn-success">Torna alla home page</a>
 </body>
 </html>

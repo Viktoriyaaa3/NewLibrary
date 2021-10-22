@@ -2,6 +2,7 @@ package teoresiGroup.web.service.Implem;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -128,6 +129,11 @@ public class UtentiServiceImpl implements UtentiService {
 	public UtentiModel selezionaPerUsername(String username) {
 		log.info("UtentiService seleziona per username" +  " " + username);
 		return utentiRepo.selezionaPerUsername(username);
+	}
+	@Override
+	public List<UtentiModel> cerca(List<UtentiModel> utenti, Predicate<UtentiModel> predicato) {
+		
+		return utentiRepo.cerca(utenti, predicato);
 	}
 	
 	/*	
