@@ -136,8 +136,11 @@ private JdbcTemplate conn;
 		query.select(rec).where(p);
 		
 		List<UtentiModel> ut=em.createQuery(query).getResultList();
+		log.info("vedo cosa arriva in em: ");
+		log.info(em.toString());
 		em.clear();
-		
+		log.info("vedo cosa arriva nella query: ");
+		log.info(ut.toString());
 		return ut;
 	}
 	@Override

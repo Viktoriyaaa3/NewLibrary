@@ -742,3 +742,490 @@
 2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
 2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
 2021-10-22 13:39:55 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 13:55:43 INFO  [main]: avvenuta connessione ad db
+2021-10-22 13:59:08 INFO  [main]: avvenuta connessione ad db
+2021-10-22 14:01:02 INFO  [main]: avvenuta connessione ad db
+2021-10-22 14:04:05 INFO  [http-nio-8080-exec-10]: Sono nel metodo iniziale
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik null null
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl0
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl1
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl2
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl3
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl4
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl5
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl6
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl7
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl8
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl9
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl10
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl11
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl12
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl13
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl14
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl15
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl16
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl17
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl18
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl19
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl20
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl21
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl22
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl23
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl24
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl25
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl26
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl27
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl28
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl29
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: lunghezza modl30
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: modl non è vuoto
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@6e3a1ea7
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 14:04:16 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 14:19:55 INFO  [main]: avvenuta connessione ad db
+2021-10-22 14:20:00 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 0
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 1
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 2
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 3
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 4
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 5
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 6
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 7
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 8
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 9
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 10
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 11
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 12
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 13
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 14
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 15
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 16
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 17
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 18
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 19
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 20
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 21
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 22
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 23
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 24
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 25
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 26
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 27
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 28
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 29
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 30
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: modl non è vuoto
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@6e52bfc3
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@40fc9cce]
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@40fc9cce]
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 14:20:16 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: I dati che sono arrivati: 0 - viksdgsdfgsflihbslkfjgblisfhgiljs vik null null
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 0
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 1
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 2
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 3
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 4
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 5
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 6
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 7
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 8
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 9
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 10
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 11
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 12
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 13
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 14
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 15
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 16
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 17
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 18
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 19
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 20
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 21
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 22
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 23
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 24
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 25
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 26
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 27
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 28
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 29
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: lunghezza modl: 30
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: modl non è vuoto
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: true
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: java.util.ArrayList$Itr@5c3b8fa3
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: UtentiService usenrame e passwordviksdgsdfgsflihbslkfjgblisfhgiljs vik
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: UtentiImpl ByPassAndUsernameviksdgsdfgsflihbslkfjgblisfhgiljs vik
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: vedo cosa arriva in em: 
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@40fc9cce]
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: vedo cosa arriva nella query: 
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: UtentiService usenrame e passwordviksdgsdfgsflihbslkfjgblisfhgiljs vik
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: UtentiImpl ByPassAndUsernameviksdgsdfgsflihbslkfjgblisfhgiljs vik
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: vedo cosa arriva in em: 
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@40fc9cce]
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: vedo cosa arriva nella query: 
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 14:23:26 INFO  [http-nio-8080-exec-8]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 14:23:52 INFO  [main]: avvenuta connessione ad db
+2021-10-22 14:23:57 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - Ciaosonoio Lamicotuo null null
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 0
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 1
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 2
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 3
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 4
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 5
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 6
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 7
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 8
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 9
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 10
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 11
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 12
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 13
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 14
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 15
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 16
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 17
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 18
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 19
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 20
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 21
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 22
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 23
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 24
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 25
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 26
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 27
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 28
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 29
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: lunghezza modl: 30
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: modl non è vuoto
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@174f8cc9
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordCiaosonoio Lamicotuo
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameCiaosonoio Lamicotuo
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@dda90c0]
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: []
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordCiaosonoio Lamicotuo
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameCiaosonoio Lamicotuo
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@dda90c0]
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: []
+2021-10-22 14:24:16 INFO  [http-nio-8080-exec-4]: []
+2021-10-22 14:55:53 INFO  [main]: avvenuta connessione ad db
+2021-10-22 14:56:25 INFO  [http-nio-8080-exec-5]: Sono nel metodo iniziale
+2021-10-22 15:34:45 INFO  [main]: avvenuta connessione ad db
+2021-10-22 15:37:58 INFO  [main]: avvenuta connessione ad db
+2021-10-22 15:39:22 INFO  [main]: avvenuta connessione ad db
+2021-10-22 15:39:34 INFO  [http-nio-8080-exec-3]: Sono nel metodo iniziale
+2021-10-22 15:39:34 INFO  [http-nio-8080-exec-5]: Sono nel metodo iniziale
+2021-10-22 15:40:06 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 15:40:06 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 15:40:06 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 15:40:06 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 16:00:21 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:00:42 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 16:02:50 INFO  [http-nio-8080-exec-10]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 16:03:04 INFO  [http-nio-8080-exec-10]: I dati che sono arrivati: vik vik
+2021-10-22 16:08:08 INFO  [http-nio-8080-exec-10]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 16:12:52 INFO  [http-nio-8080-exec-10]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 16:20:00 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:22:08 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:22:35 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 16:23:04 INFO  [http-nio-8080-exec-7]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 16:25:24 INFO  [http-nio-8080-exec-7]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-22 16:26:58 INFO  [http-nio-8080-exec-7]: lunghezza modl: 0
+2021-10-22 16:27:05 INFO  [http-nio-8080-exec-7]: modl non è vuoto
+2021-10-22 16:27:06 INFO  [http-nio-8080-exec-7]: true
+2021-10-22 16:27:07 INFO  [http-nio-8080-exec-7]: java.util.ArrayList$Itr@18d26057
+2021-10-22 16:33:53 INFO  [http-nio-8080-exec-7]: variabile provo[UtentiModel [password=vik, username=vik]]
+2021-10-22 16:34:52 INFO  [http-nio-8080-exec-2]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 16:35:03 INFO  [http-nio-8080-exec-2]: I dati che sono arrivati: 0 - byukuvb bjbhk null null
+2021-10-22 16:35:16 INFO  [http-nio-8080-exec-2]: lunghezza modl: 0
+2021-10-22 16:35:17 INFO  [http-nio-8080-exec-2]: modl non è vuoto
+2021-10-22 16:35:17 INFO  [http-nio-8080-exec-2]: true
+2021-10-22 16:35:18 INFO  [http-nio-8080-exec-2]: java.util.ArrayList$Itr@66197b09
+2021-10-22 16:35:39 INFO  [http-nio-8080-exec-2]: variabile provo[UtentiModel [password=vik, username=vik]]
+2021-10-22 16:37:32 INFO  [http-nio-8080-exec-2]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 16:37:32 INFO  [http-nio-8080-exec-2]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 16:37:32 INFO  [http-nio-8080-exec-2]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 16:37:49 INFO  [http-nio-8080-exec-7]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 16:37:49 INFO  [http-nio-8080-exec-7]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 16:37:49 INFO  [http-nio-8080-exec-7]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 16:43:57 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:45:14 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:46:26 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:47:35 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:50:39 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:52:30 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:54:34 INFO  [main]: avvenuta connessione ad db
+2021-10-22 16:58:01 INFO  [main]: avvenuta connessione ad db
+2021-10-22 17:36:03 INFO  [main]: avvenuta connessione ad db
+2021-10-22 17:39:27 INFO  [http-nio-8080-exec-7]: Sono nel metodo iniziale
+2021-10-22 17:41:33 INFO  [main]: avvenuta connessione ad db
+2021-10-22 17:41:38 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 17:41:54 INFO  [http-nio-8080-exec-3]: Sono nel metodo iniziale
+2021-10-22 17:48:22 INFO  [main]: avvenuta connessione ad db
+2021-10-22 17:48:26 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 17:49:59 INFO  [main]: avvenuta connessione ad db
+2021-10-22 17:50:02 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 17:51:46 INFO  [main]: avvenuta connessione ad db
+2021-10-22 17:51:50 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 17:54:05 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 17:54:13 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 0
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 1
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 2
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 3
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 4
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 5
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 6
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 7
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 8
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 9
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 10
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 11
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 12
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 13
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 14
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 15
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 16
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 17
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 18
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 19
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 20
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 21
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 22
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 23
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 24
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 25
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 26
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 27
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 28
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 29
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: lunghezza modl: 30
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: modl non è vuoto
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 17:58:29 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@46995064
+2021-10-22 17:58:30 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 17:58:30 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 17:58:30 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 17:58:32 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 17:58:32 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@338e421f]
+2021-10-22 17:58:32 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 17:58:32 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 17:58:32 INFO  [http-nio-8080-exec-7]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 0
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 1
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 2
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 3
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 4
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 5
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 6
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 7
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 8
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 9
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 10
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 11
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 12
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 13
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 14
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 15
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 16
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 17
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 18
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 19
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 20
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 21
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 22
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 23
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 24
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 25
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 26
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 27
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 28
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 29
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: lunghezza modl: 30
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: modl non è vuoto
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: true
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: java.util.ArrayList$Itr@525beadd
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: UtentiService usenrame e passwordvik vik
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: vedo cosa arriva in em: 
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@338e421f]
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: vedo cosa arriva nella query: 
+2021-10-22 17:58:33 INFO  [http-nio-8080-exec-7]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 18:04:34 INFO  [main]: avvenuta connessione ad db
+2021-10-22 18:06:05 INFO  [main]: avvenuta connessione ad db
+2021-10-22 18:06:08 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - test123 john null null
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 0
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 1
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 2
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 3
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 4
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 5
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 6
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 7
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 8
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 9
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 10
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 11
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 12
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 13
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 14
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 15
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 16
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 17
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 18
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 19
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 20
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 21
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 22
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 23
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 24
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 25
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 26
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 27
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 28
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 29
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: lunghezza modl: 30
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: modl non è vuoto
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@5aa7e359
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 18:06:20 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@40fc9cce]
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordtest123 john
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernametest123 john
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@40fc9cce]
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 18:06:21 INFO  [http-nio-8080-exec-4]: [UtentiModel [password={noop}test123, username=john]]
+2021-10-22 18:09:41 INFO  [main]: avvenuta connessione ad db
+2021-10-22 18:09:44 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 18:09:52 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 18:09:52 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 0
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 1
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 2
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 3
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 4
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 5
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 6
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 7
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 8
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 9
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 10
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 11
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 12
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 13
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 14
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 15
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 16
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 17
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 18
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 19
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 20
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 21
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 22
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 23
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 24
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 25
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 26
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 27
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 28
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 29
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: lunghezza modl: 30
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: modl non è vuoto
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: true
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: java.util.ArrayList$Itr@39377e59
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: variabile provo[UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=null, username=null], UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd]]
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@dda90c0]
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN UTENTI SERVICE
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: GURADO COSA È ARRIVATO IN DATI
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@dda90c0]
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 18:26:37 INFO  [main]: avvenuta connessione ad db
+2021-10-22 18:26:41 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 18:38:04 INFO  [main]: avvenuta connessione ad db
+2021-10-22 18:38:07 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@dda90c0]
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@dda90c0]
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
