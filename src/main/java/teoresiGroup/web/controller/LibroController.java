@@ -45,7 +45,7 @@ public class LibroController {
 			
 		}catch(Exception e) {
 			model.addAttribute("book", null);
-			return new ModelAndView("error");
+			return new ModelAndView("cercoAutore", "book", new LibriModel());
 		}
 		
 	}

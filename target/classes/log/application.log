@@ -148,3 +148,102 @@
 2021-10-21 22:48:26 INFO  [http-nio-8080-exec-3]: Controllo i dati che mi stanno arrivando dall'utente: 
 2021-10-21 22:48:34 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
 2021-10-21 22:48:43 INFO  [http-nio-8080-exec-5]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:14:30 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:14:35 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:14:37 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@4e0cac2f
+2021-10-22 09:14:37 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@42cd8661getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@4e0cac2f
+2021-10-22 09:14:42 INFO  [http-nio-8080-exec-5]: Sono nel metodo iniziale
+2021-10-22 09:14:48 INFO  [http-nio-8080-exec-7]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:14:48 INFO  [http-nio-8080-exec-7]: I dati che sono arrivati: vik vik
+2021-10-22 09:14:49 INFO  [http-nio-8080-exec-7]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:14:49 INFO  [http-nio-8080-exec-7]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:14:49 INFO  [http-nio-8080-exec-7]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 09:14:49 INFO  [http-nio-8080-exec-7]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:14:49 INFO  [http-nio-8080-exec-7]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:14:49 INFO  [http-nio-8080-exec-7]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 09:14:53 INFO  [http-nio-8080-exec-8]: SOno nel metodo per cercare un libro: get search
+2021-10-22 09:16:36 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:16:41 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:16:42 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@79761963
+2021-10-22 09:16:42 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@55416dfcgetAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@79761963
+2021-10-22 09:16:43 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 09:16:52 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:16:52 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 09:16:52 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:16:52 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:16:53 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 09:16:53 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:16:53 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:16:53 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 09:16:55 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 09:19:23 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:19:28 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:19:30 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:19:30 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:19:31 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 09:19:36 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:19:36 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 09:19:36 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:19:36 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:19:37 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 09:19:37 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:19:37 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:19:37 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 09:19:39 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 09:20:34 INFO  [http-nio-8080-exec-1]: Sono nel metodo iniziale
+2021-10-22 09:21:50 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:21:50 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 09:21:50 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:21:50 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:21:50 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 09:21:50 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:21:50 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:21:50 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 09:21:52 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 09:23:10 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:23:15 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:23:17 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:23:17 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:23:17 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 09:23:24 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:23:24 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 09:23:24 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:23:24 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:23:24 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 09:23:24 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:23:24 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:23:24 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 09:23:26 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 09:23:36 INFO  [http-nio-8080-exec-7]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 09:28:05 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:28:10 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:28:11 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:28:11 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:28:12 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 09:28:21 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:28:21 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 09:28:21 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:28:21 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:28:21 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 09:28:21 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:28:21 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:28:21 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 09:28:24 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 09:28:28 INFO  [http-nio-8080-exec-6]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 09:28:54 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:28:59 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:29:00 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:29:00 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:29:01 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 09:29:07 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:29:07 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 09:29:07 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:29:07 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:29:07 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 09:29:07 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:29:07 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:29:07 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 09:29:09 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 09:29:12 INFO  [http-nio-8080-exec-6]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 09:29:46 INFO  [http-nio-8080-exec-1]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 09:31:39 INFO  [http-nio-8080-exec-3]: Son nel metodo per cercare i libri: post trovato
