@@ -247,3 +247,21 @@
 2021-10-22 09:29:12 INFO  [http-nio-8080-exec-6]: Son nel metodo per cercare i libri: post trovato
 2021-10-22 09:29:46 INFO  [http-nio-8080-exec-1]: Son nel metodo per cercare i libri: post trovato
 2021-10-22 09:31:39 INFO  [http-nio-8080-exec-3]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 09:33:58 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:34:03 INFO  [main]: avvenuta connessione ad db
+2021-10-22 09:34:05 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:34:05 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@52e281e5getAuth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@78096810
+2021-10-22 09:34:06 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 09:34:12 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 09:34:12 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: vik vik
+2021-10-22 09:34:12 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:34:12 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:34:12 INFO  [http-nio-8080-exec-4]: Vedo cosa mi ha trovato trimite CriteriaAPi
+2021-10-22 09:34:12 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 09:34:12 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 09:34:12 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 09:34:14 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-22 09:34:17 INFO  [http-nio-8080-exec-6]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 09:34:20 INFO  [http-nio-8080-exec-7]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 09:34:25 INFO  [http-nio-8080-exec-8]: Son nel metodo per cercare i libri: post trovato
+2021-10-22 09:34:36 INFO  [http-nio-8080-exec-2]: Son nel metodo per cercare i libri: post trovato

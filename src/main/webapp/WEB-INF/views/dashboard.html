@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
-    <title>Submission result</title>
+    <title>Pagina di Benvenuto</title>
     <link rel="stylesheet"
 		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	
@@ -11,6 +11,7 @@
 	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class="jumbotron jumbotron-billboard">
     <h1>Hai effettuato il login: </h1>
 
    <h2>Qua ci saranno altre scelte per l'ultente loggato</h2>
@@ -49,28 +50,29 @@ Role(s): <span sec:authentication="principal.authorities"></span>
 		
 
 
-   <table>
-   <thead>
+   <table class="table">
+   <thead class="table-light">
    <tr>
    <th>Vedi elenco dei libri</th>
    <th>Cerca un libro per nome</th>
    <th>Controlla i libri che hai prenotato</th>
+   <th>Elenco tutti utenti</th>
    </tr>
    </thead>
    <tbody>
    
-   </tbody>
+  <tr>
+  <td> <a href="/libreriaProject/book/all" class="btn btn-success">Elenco</a></td>
+  <td>  <a href="/libreriaProject/book/autore" class="btn btn-success">Cerca</a></td>
+   <td>  <a href="" class="btn btn-success">Per ora vuoto</a></td>
+   <td>   <a href="/libreriaProject/cliente/all" class="btn btn-success">Elenco Tutti utenti</a></td>
+     </tr>
+      </tbody>
    </table>
-   <div>
-   <a href="/libreriaProject/book/all">Elenco</a>
-    <a href="/libreriaProject/book/autore">Cerca</a>
-     <a href="">Per ora vuoto</a></div>
-      <a href="/libreriaProject/cliente/all">Elenco Tutti utenti</a>
-     
-     
      
   <div class="panel-heading"><form action="#" th:action="@{/login/log}" th:object="${utenteForm}" method="get" >
-  <input type="submit" value="Logout"/>
+  <input type="submit" value="Logout" class="btn btn-success"/>
   </form></div> 
+  </div>
 </body>
 </html>
