@@ -1,5 +1,5 @@
 package teoresiGroup.web.model;
-
+/*
 import javax.persistence.*;
 @Entity
 @Table(name="Profili")
@@ -45,7 +45,7 @@ public class Profili {
 	@ManyToOne
 	@JoinColumn(name="username", referencedColumnName="username")
 	private UtentiModel um;
-	/*mettere username come primaryKey*/
+	//mettere username come primaryKey/
 	public UtentiModel getUm() {
 		return um;
 	}
@@ -57,4 +57,4 @@ public class Profili {
 	
 	
 
-}
+}*/

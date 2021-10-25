@@ -2,9 +2,15 @@ package teoresiGroup.web.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
 
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +19,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import teoresiGroup.web.model.UserDettagli;
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
-
+@SessionAttributes({"currentUser", "currentUserId"})
 @Controller
 @RequestMapping("/login")
 public class LoginController {
@@ -31,15 +38,33 @@ public class LoginController {
 			return new ModelAndView("login", "utenteForm", new UtentiModel());}
 		return new ModelAndView("login", "utenteForm", new UtentiModel());*/
 		
-		UtentiModel utenti= new UtentiModel();
-		model.addAttribute("utenteForm", utenti);
+	//	UtentiModel utenti= new UtentiModel();
+		//model.addAttribute("utenteForm", utenti);
+		boolean myBooleanVariable = true;
+		model.addAttribute("myBooleanVariable", myBooleanVariable);
+		return new ModelAndView("login", "utenteForm", new UtentiModel());
+		
+	}
 	
+
+
+	@GetMapping("/controllo")
+	public ModelAndView test(Model model) {
+		/*Authentication auth= SecurityContextHolder.getContext().getAuthentication();
+		if(auth== null || auth instanceof AnonymousAuthenticationToken) {
+			return new ModelAndView("login", "utenteForm", new UtentiModel());}
+		return new ModelAndView("login", "utenteForm", new UtentiModel());*/
+		
+	//	UtentiModel utenti= new UtentiModel();
+		//model.addAttribute("utenteForm", utenti);
+		boolean myBooleanVariable = true;
+		model.addAttribute("myBooleanVariable", myBooleanVariable);
 		return new ModelAndView("login", "utenteForm", new UtentiModel());
 		
 	}
 	
 	@PostMapping("/controllo")
-	public ModelAndView logOk(@ModelAttribute("utenteForm") UtentiModel utenti, Model model) {
+	public ModelAndView logOk(@ModelAttribute("utenteForm") UtentiModel utenti, Model model, HttpSession session) {
 		
 		//users=utentiService.getAll();
 		log.info("Controllo i dati che mi stanno arrivando dall'utente: ");
@@ -66,14 +91,28 @@ public class LoginController {
 		{
 			return new ModelAndView("cliente");
 		}
-		else
-		
-		return new ModelAndView("dashboard", "utenteForm", dati.get(0));
-		
-
+		else {
+			/* UsernamePasswordAuthenticationToken authentication = (UsernamePasswordAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
+		        validatePrinciple(authentication.getPrincipal());
+		       UtentiModel logged=((UserDettagli) authentication.getPrincipal()).getUtenti();
+		       model.addAttribute("currentUserId", logged.getId());
+		       model.addAttribute("currentUser", logged.getUsername());
+		       session.setAttribute("userId", logged.getId());*/
+			boolean myBooleanVariable = true;
+			log.info("dati.get(0): " +dati.get(0).getNome());
+			model.addAttribute("myBooleanVariable", myBooleanVariable);
+		   	return new ModelAndView("dashboard", "utenteForm", dati.get(0).getNome());
+		}
+		       
+		     
 	
-		
+	
 			
+	}
+	private void validatePrinciple(Object principal) {
+        if (!(principal instanceof UserDettagli)) {
+            throw new  IllegalArgumentException("Principal can not be null!");
+        }
 	}
 
 }

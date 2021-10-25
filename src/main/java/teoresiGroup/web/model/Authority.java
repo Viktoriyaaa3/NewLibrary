@@ -3,6 +3,8 @@ package teoresiGroup.web.model;
 import java.util.Set;
 //import lombok.NoArgsConstructor
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -18,7 +20,55 @@ public class Authority {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
+	 @Enumerated(EnumType.STRING)
+	 private Role name;
+
+	public Authority() {
+		
+	}
+
+	public Authority(Role name) {
+		
+		this.name = name;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Role getName() {
+		return name;
+	}
+
+	public void setName(Role name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Authority [id=" + id + ", name=" + name + "]";
+	}
+
 	
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	
+/*	
 private String role;
 @ManyToMany(mappedBy="authorities")
 private Set<User> users;
@@ -48,6 +98,6 @@ public Authority(Integer id, String role, Set<User> users) {
 }
 public Authority() {
 	super();
-}
+}*/
 
 }

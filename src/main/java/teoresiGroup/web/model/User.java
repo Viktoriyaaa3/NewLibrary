@@ -1,5 +1,5 @@
 package teoresiGroup.web.model;
-
+/*
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -100,4 +100,4 @@ public User() {
 
 
 
-}
+}*/

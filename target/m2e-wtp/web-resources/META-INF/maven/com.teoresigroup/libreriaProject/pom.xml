@@ -12,6 +12,13 @@
 </properties>
      
   <dependencies>
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
+<!--dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+    <version>2.5.6</version>
+</dependency-->
+
   <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
 <dependency>
     <groupId>org.hibernate.validator</groupId>
@@ -163,12 +170,12 @@
         <version>1.2.17</version>
     </dependency>
   <!-- https://mvnrepository.com/artifact/junit/junit -->
-<dependency>
+<!-- dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
     <version>4.13.2</version>
     <scope>test</scope>
-</dependency>
+</dependency-->
   <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
 <dependency>
     <groupId>org.springframework</groupId>
@@ -195,7 +202,7 @@
     <groupId>com.h2database</groupId>
     <artifactId>h2</artifactId>
     <version>1.4.200</version>
-    <scope>test</scope>
+    
 </dependency>
 <!-- SPRING SECURITY -->
 <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
@@ -237,6 +244,24 @@
     <groupId>org.thymeleaf.extras</groupId>
     <artifactId>thymeleaf-extras-springsecurity5</artifactId>
     <version>3.0.4.RELEASE</version>
+</dependency>
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>5.7.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.7.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>5.3.3</version>
+    <scope>test</scope>
 </dependency>
 
   </dependencies>

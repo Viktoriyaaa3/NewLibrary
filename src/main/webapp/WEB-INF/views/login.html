@@ -13,7 +13,14 @@ IMPORT PER POTER USARE SCE:AUTHORIZE!!!!!!!!!! -->
 	
 	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<!-- baseLogin:
 
+ titolo:
+  e 
+  content: 
+  
+  
+  name:baseLogin:accesso al sito-->
 <body>
 	<div>
 		
@@ -27,7 +34,7 @@ IMPORT PER POTER USARE SCE:AUTHORIZE!!!!!!!!!! -->
 				</div>
 								<div style="padding-top: 30px" class="panel-body">
 	
-		  <form action="#" th:action="@{/login/controllo}" th:object="${utenteForm}" method="post"  class="form-horizontal" >
+		  <form action="doLogin" th:action="@{/login/controllo}" th:object="${utenteForm}" method="post"  class="form-horizontal" >
         
          <div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
@@ -41,7 +48,11 @@ IMPORT PER POTER USARE SCE:AUTHORIZE!!!!!!!!!! -->
         </div>
         <div style="margin-top: 10px" class="form-group">						
 							<div class="col-sm-6 controls">
-							
+				<div class="checkbox">
+        <p><input 
+      type="checkbox" 
+      name="myBooleanVariable" 
+      th:checked="${myBooleanVariable}"/>Ricordami 	</p>	</div>
         <p><button type="submit" value="Submit"  class="btn btn-success">Invia</button> </p>
         </div>
       

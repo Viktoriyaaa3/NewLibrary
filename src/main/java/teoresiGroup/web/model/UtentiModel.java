@@ -1,16 +1,25 @@
 package teoresiGroup.web.model;
 
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import org.apache.log4j.Logger;
 import org.springframework.format.annotation.DateTimeFormat;
+
+
 
 @Entity
 @Table(name="Utenti")
@@ -88,6 +97,24 @@ public LibriModel getModel() {
 	public void setModel(LibriModel model) {
 		this.model = model;
 	}*/
+	
+	
+	  @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	    @JoinTable(name = "user_authority",
+	            joinColumns = { @JoinColumn(name = "user_id") },
+	            inverseJoinColumns = { @JoinColumn(name = "authority_id") })
+	    private Set<Authority> authorities = new HashSet<>();
+	  
+	  public Set<Authority> getAuthorities() {
+	        return authorities;
+	    }
+
+	    public void setAuthorities(Set<Authority> authorities) {
+	        this.authorities = authorities;
+	    }
+	  
+	  
+	  
 public String getPassword() {
 		return password;
 	}

@@ -1212,3 +1212,723 @@
 2021-10-22 18:09:53 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
 2021-10-22 18:26:37 INFO  [main]: avvenuta connessione ad db
 2021-10-22 18:26:41 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 18:38:04 INFO  [main]: avvenuta connessione ad db
+2021-10-22 18:38:07 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@dda90c0]
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@dda90c0]
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-22 18:38:13 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:03:37 INFO  [main]: avvenuta connessione ad db
+2021-10-23 12:03:40 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-23 12:03:47 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-23 12:03:47 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-23 12:03:47 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-23 12:03:47 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4407b019]
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4407b019]
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:03:48 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:05:51 INFO  [main]: avvenuta connessione ad db
+2021-10-23 12:05:54 INFO  [main]: vedo cosa ho in security config -auth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@208718b3
+2021-10-23 12:05:54 INFO  [main]: vedo cosa ho in sessione org.springframework.security.config.annotation.web.builders.HttpSecurity@31fc2a08
+2021-10-23 12:05:55 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@6d8beeb3]
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@6d8beeb3]
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:06:02 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:08:46 INFO  [main]: avvenuta connessione ad db
+2021-10-23 12:08:49 INFO  [main]: vedo cosa ho in security config -auth org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@4f45a09c
+2021-10-23 12:08:49 INFO  [main]: vedo cosa ho in sessione org.springframework.security.config.annotation.web.builders.HttpSecurity@e7906af
+2021-10-23 12:08:50 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4407b019]
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4407b019]
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:08:56 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-23 12:20:41 INFO  [main]: avvenuta connessione ad db
+2021-10-23 12:20:44 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-23 12:22:26 INFO  [main]: avvenuta connessione ad db
+2021-10-23 12:22:30 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 14:40:42 INFO  [main]: avvenuta connessione ad db
+2021-10-24 14:42:13 INFO  [main]: avvenuta connessione ad db
+2021-10-24 14:42:16 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 14:47:25 INFO  [main]: avvenuta connessione ad db
+2021-10-24 14:47:28 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 14:47:39 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 14:51:29 INFO  [main]: avvenuta connessione ad db
+2021-10-24 14:51:32 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 14:51:41 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 18:01:09 INFO  [main]: avvenuta connessione ad db
+2021-10-24 18:01:13 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 18:31:00 INFO  [main]: avvenuta connessione ad db
+2021-10-24 18:31:03 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 18:33:04 INFO  [main]: avvenuta connessione ad db
+2021-10-24 18:33:07 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 18:35:22 INFO  [main]: avvenuta connessione ad db
+2021-10-24 18:35:26 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 18:58:54 INFO  [http-nio-8080-exec-8]: Sono nel metodo iniziale
+2021-10-24 18:59:28 INFO  [http-nio-8080-exec-4]: Sono nel metodo iniziale
+2021-10-24 19:02:09 INFO  [http-nio-8080-exec-6]: Sono nel metodo iniziale
+2021-10-24 19:08:10 INFO  [main]: avvenuta connessione ad db
+2021-10-24 19:08:13 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 19:10:11 INFO  [main]: avvenuta connessione ad db
+2021-10-24 19:10:14 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 19:11:03 INFO  [http-nio-8080-exec-9]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 19:11:03 INFO  [http-nio-8080-exec-9]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-24 19:11:03 INFO  [http-nio-8080-exec-9]: UtentiService usenrame e passwordvik vik
+2021-10-24 19:11:03 INFO  [http-nio-8080-exec-9]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: vedo cosa arriva in em: 
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: vedo cosa arriva nella query: 
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: UtentiService usenrame e passwordvik vik
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: vedo cosa arriva in em: 
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: vedo cosa arriva nella query: 
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:11:04 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:11:55 INFO  [main]: avvenuta connessione ad db
+2021-10-24 19:11:58 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 19:12:59 INFO  [http-nio-8080-exec-2]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 19:12:59 INFO  [http-nio-8080-exec-2]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: UtentiService usenrame e passwordvik vik
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: vedo cosa arriva in em: 
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: vedo cosa arriva nella query: 
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: UtentiService usenrame e passwordvik vik
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: vedo cosa arriva in em: 
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: vedo cosa arriva nella query: 
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:13:00 INFO  [http-nio-8080-exec-2]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:26:36 INFO  [main]: avvenuta connessione ad db
+2021-10-24 19:26:39 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
+2021-10-24 19:28:10 INFO  [main]: avvenuta connessione ad db
+2021-10-24 19:28:13 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - vik vik null null
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@3009336e]
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordvik vik
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamevik vik
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@3009336e]
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:28:22 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=vik, username=vik]]
+2021-10-24 19:33:07 INFO  [main]: avvenuta connessione ad db
+2021-10-24 19:33:10 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 19:33:18 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 19:41:20 INFO  [main]: avvenuta connessione ad db
+2021-10-24 19:41:23 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 19:41:31 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 20:54:00 INFO  [main]: avvenuta connessione ad db
+2021-10-24 20:54:02 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 20:54:08 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 20:54:54 INFO  [main]: avvenuta connessione ad db
+2021-10-24 20:54:56 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 20:54:57 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 20:55:19 INFO  [http-nio-8080-exec-5]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 20:55:19 INFO  [http-nio-8080-exec-5]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-24 20:55:19 INFO  [http-nio-8080-exec-5]: UtentiService usenrame e passwordadmin admin
+2021-10-24 20:55:19 INFO  [http-nio-8080-exec-5]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 20:55:19 INFO  [http-nio-8080-exec-5]: vedo cosa arriva in em: 
+2021-10-24 20:55:19 INFO  [http-nio-8080-exec-5]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 20:55:19 INFO  [http-nio-8080-exec-5]: vedo cosa arriva nella query: 
+2021-10-24 20:55:19 INFO  [http-nio-8080-exec-5]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 20:55:20 INFO  [http-nio-8080-exec-5]: UtentiService usenrame e passwordadmin admin
+2021-10-24 20:55:20 INFO  [http-nio-8080-exec-5]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 20:55:20 INFO  [http-nio-8080-exec-5]: vedo cosa arriva in em: 
+2021-10-24 20:55:20 INFO  [http-nio-8080-exec-5]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 20:55:20 INFO  [http-nio-8080-exec-5]: vedo cosa arriva nella query: 
+2021-10-24 20:55:20 INFO  [http-nio-8080-exec-5]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 20:55:20 INFO  [http-nio-8080-exec-5]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 20:57:03 INFO  [main]: avvenuta connessione ad db
+2021-10-24 20:57:05 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@6cef2367
+2021-10-24 20:57:05 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@6d0bf784
+2021-10-24 20:57:05 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 20:57:06 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: UtentiService usenrame e passwordadmin admin
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: vedo cosa arriva in em: 
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: vedo cosa arriva nella query: 
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: UtentiService usenrame e passwordadmin admin
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: vedo cosa arriva in em: 
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: vedo cosa arriva nella query: 
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 20:58:27 INFO  [http-nio-8080-exec-6]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 20:59:41 INFO  [main]: avvenuta connessione ad db
+2021-10-24 20:59:44 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@6cef2367
+2021-10-24 20:59:44 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@6d0bf784
+2021-10-24 20:59:44 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 20:59:44 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:06:10 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:06:12 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@44082844
+2021-10-24 21:06:12 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@43549693
+2021-10-24 21:06:12 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:06:13 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:07:33 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:07:35 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@2e1189ce
+2021-10-24 21:07:35 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@5680639f
+2021-10-24 21:07:35 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:07:36 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:08:40 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:08:42 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@84a9f40
+2021-10-24 21:08:42 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@56c802bc
+2021-10-24 21:08:42 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:08:43 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:13:31 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:13:34 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@3930437d
+2021-10-24 21:13:34 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@7fed4326
+2021-10-24 21:13:34 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:13:35 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:14:45 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:14:47 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@33176d2e
+2021-10-24 21:14:47 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@35982083
+2021-10-24 21:14:47 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:14:48 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:16:52 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:16:54 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@41288da3
+2021-10-24 21:16:54 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@521090f1
+2021-10-24 21:16:54 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:17:40 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:17:42 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@3c3b5d1
+2021-10-24 21:17:42 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@67d9abfb
+2021-10-24 21:17:42 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:20:36 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:20:38 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@3c3b5d1
+2021-10-24 21:20:38 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@67d9abfb
+2021-10-24 21:20:38 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:21:34 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:21:36 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@41288da3
+2021-10-24 21:21:36 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@521090f1
+2021-10-24 21:21:36 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:23:54 INFO  [http-nio-8080-exec-6]: Sono nel metodo iniziale
+2021-10-24 21:24:45 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:24:47 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@47b0bffc
+2021-10-24 21:24:47 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@652c7ba2
+2021-10-24 21:24:47 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:24:47 INFO  [http-nio-8080-exec-2]: Sono nel metodo per registrare gli utenti
+2021-10-24 21:25:56 INFO  [http-nio-8080-exec-6]: Sono nel metodo submit
+2021-10-24 21:25:56 INFO  [http-nio-8080-exec-6]: Scrivo i dati ricevuti nel post, metodo add : Damian Gomez dam aaaaa@aa.it 1234 damian damian 2000-11-20
+2021-10-24 21:25:56 INFO  [http-nio-8080-exec-6]: Sono nel metodo add di UtentiImpl
+2021-10-24 21:25:56 INFO  [http-nio-8080-exec-6]: UtentiModel [password=damian, username=damian]
+2021-10-24 21:35:29 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:35:31 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@41288da3
+2021-10-24 21:35:31 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@521090f1
+2021-10-24 21:35:31 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:35:32 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: vedo cosa arriva in em: 
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@299bdcbf]
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: vedo cosa arriva nella query: 
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: vedo cosa arriva in em: 
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@299bdcbf]
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: vedo cosa arriva nella query: 
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:35:44 INFO  [http-nio-8080-exec-5]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:36:59 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:37:01 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@41288da3
+2021-10-24 21:37:01 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@521090f1
+2021-10-24 21:37:01 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:37:01 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@299bdcbf]
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@299bdcbf]
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:37:10 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:39:08 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:39:10 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@20c8457f
+2021-10-24 21:39:10 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4506f295
+2021-10-24 21:39:10 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:39:11 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4fd0f03c]
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4fd0f03c]
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:39:17 INFO  [http-nio-8080-exec-4]: dati.get(0): UtentiModel [password=damian, username=damian]
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: vedo cosa arriva in em: 
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4fd0f03c]
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: vedo cosa arriva nella query: 
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: vedo cosa arriva in em: 
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4fd0f03c]
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: vedo cosa arriva nella query: 
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:41:32 INFO  [http-nio-8080-exec-2]: dati.get(0): UtentiModel [password=damian, username=damian]
+2021-10-24 21:52:26 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:52:29 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@3c3b5d1
+2021-10-24 21:52:29 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@652c7ba2
+2021-10-24 21:52:29 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:52:29 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: vedo cosa arriva in em: 
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@19321c7a]
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: vedo cosa arriva nella query: 
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: vedo cosa arriva in em: 
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@19321c7a]
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: vedo cosa arriva nella query: 
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:52:40 INFO  [http-nio-8080-exec-3]: dati.get(0): UtentiModel [password=damian, username=damian]
+2021-10-24 21:52:58 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:53:00 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5154f526
+2021-10-24 21:53:00 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@5d585ca0
+2021-10-24 21:53:00 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:53:01 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@7d8d797c]
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@7d8d797c]
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:53:15 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:53:19 INFO  [http-nio-8080-exec-4]: dati.get(0): UtentiModel [password=damian, username=damian]
+2021-10-24 21:54:23 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:54:25 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@1002e64a
+2021-10-24 21:54:25 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@68c29d64
+2021-10-24 21:54:25 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:54:59 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:54:59 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:54:59 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:54:59 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@70e9af2b]
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@70e9af2b]
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:55:00 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:56:08 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:56:10 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@58ccbb00
+2021-10-24 21:56:10 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@3e00d115
+2021-10-24 21:56:10 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:56:11 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@6dd40b43]
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@6dd40b43]
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:56:21 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:57:33 INFO  [main]: avvenuta connessione ad db
+2021-10-24 21:57:36 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@29a3e9e8
+2021-10-24 21:57:36 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@6e76c502
+2021-10-24 21:57:36 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 21:57:37 INFO  [http-nio-8080-exec-1]: Sono nel metodo iniziale
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@2ef28b4b]
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@2ef28b4b]
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:57:45 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 21:58:03 INFO  [http-nio-8080-exec-4]: dati.get(0): Damian
+2021-10-24 22:01:27 INFO  [main]: avvenuta connessione ad db
+2021-10-24 22:01:30 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@33176d2e
+2021-10-24 22:01:30 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@35982083
+2021-10-24 22:01:30 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 22:01:30 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@657cce4d]
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@657cce4d]
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:01:40 INFO  [http-nio-8080-exec-4]: dati.get(0): Damian
+2021-10-24 22:03:34 INFO  [main]: avvenuta connessione ad db
+2021-10-24 22:03:36 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@6cef2367
+2021-10-24 22:03:36 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@6d0bf784
+2021-10-24 22:03:36 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 22:03:37 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@22360505]
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:03:46 INFO  [http-nio-8080-exec-4]: dati.get(0): Damian
+2021-10-24 22:04:59 INFO  [main]: avvenuta connessione ad db
+2021-10-24 22:05:01 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 22:05:01 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 22:05:01 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 22:05:01 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:05:09 INFO  [http-nio-8080-exec-4]: dati.get(0): Damian
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: vedo cosa arriva in em: 
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: vedo cosa arriva nella query: 
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: vedo cosa arriva in em: 
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: vedo cosa arriva nella query: 
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:05:34 INFO  [http-nio-8080-exec-8]: dati.get(0): Damian
+2021-10-24 22:22:26 INFO  [main]: avvenuta connessione ad db
+2021-10-24 22:22:30 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@32f5a26b
+2021-10-24 22:22:30 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@5ed59e7f
+2021-10-24 22:22:30 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 22:22:31 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 22:22:39 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 22:22:39 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 22:22:39 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:22:39 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@34f8564d]
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@34f8564d]
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 22:22:40 INFO  [http-nio-8080-exec-4]: dati.get(0): Damian
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: UtentiService usenrame e passwordadmin admin
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: vedo cosa arriva in em: 
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@34f8564d]
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: vedo cosa arriva nella query: 
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: UtentiService usenrame e passwordadmin admin
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: vedo cosa arriva in em: 
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@34f8564d]
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: vedo cosa arriva nella query: 
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:22:52 INFO  [http-nio-8080-exec-7]: dati.get(0): provaaa
+2021-10-24 22:30:23 INFO  [main]: avvenuta connessione ad db
+2021-10-24 22:30:25 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@120d4d37
+2021-10-24 22:30:25 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@107f5239
+2021-10-24 22:30:25 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 22:30:26 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@6e297f29]
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@6e297f29]
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:30:38 INFO  [http-nio-8080-exec-4]: dati.get(0): provaaa
+2021-10-24 22:31:38 INFO  [main]: avvenuta connessione ad db
+2021-10-24 22:31:40 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@5c37d3a8
+2021-10-24 22:31:40 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@7d4069b0
+2021-10-24 22:31:40 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 22:31:40 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@7d4069b0
+2021-10-24 22:31:41 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 22:31:48 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 22:31:48 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@76cc7e87]
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@76cc7e87]
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-24 22:31:49 INFO  [http-nio-8080-exec-4]: dati.get(0): provaaa
+2021-10-24 22:57:13 INFO  [main]: avvenuta connessione ad db
+2021-10-24 22:57:16 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 22:57:16 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 22:57:16 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 22:57:16 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 22:57:17 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 22:59:23 INFO  [main]: avvenuta connessione ad db
+2021-10-24 22:59:25 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 22:59:25 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 22:59:25 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 22:59:25 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 22:59:26 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 23:03:48 INFO  [main]: avvenuta connessione ad db
+2021-10-24 23:03:50 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 23:03:50 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:03:50 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 23:03:50 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:03:51 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 23:04:46 INFO  [main]: avvenuta connessione ad db
+2021-10-24 23:04:48 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 23:04:48 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:04:48 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 23:04:48 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:04:49 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 23:09:52 INFO  [main]: avvenuta connessione ad db
+2021-10-24 23:09:55 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 23:09:55 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:09:55 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 23:09:55 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:09:56 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 23:10:07 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 23:10:07 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 -   null null
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e password 
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsername 
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd], UtentiModel [password=damian, username=damian]]
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e password 
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsername 
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd], UtentiModel [password=damian, username=damian]]
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=bgf, username=bgfd], UtentiModel [password=mvkdlf, username=vmkld], UtentiModel [password=vsd, username=sd], UtentiModel [password=vik, username=vik], UtentiModel [password= vc, username= vc], UtentiModel [password=viik, username=viik], UtentiModel [password=cnjkds, username=njkfd], UtentiModel [password=prova, username=prova], UtentiModel [password=aaaaaaaa, username=aaaaaaaa], UtentiModel [password=gf, username=gf], UtentiModel [password=yooo, username=yooo], UtentiModel [password=yo, username=yo], UtentiModel [password=df, username=v], UtentiModel [password=aaaaaaaaa, username=aaaaaaaaa], UtentiModel [password=v, username=v], UtentiModel [password=ciao, username=ciao], UtentiModel [password=prova, username=prova], UtentiModel [password=ciaoo, username=ciaoo], UtentiModel [password={noop}test123, username=john], UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin], UtentiModel [password=$2a$10$C2nwA1NkVOP1OxuLUMD.Ae.O3VCOiE/UHqJRkig3/JST1NWiepfAm, username=EMPLOYEE], UtentiModel [password=$2a$10$8HWemEbvbBgUpLUY9w7f2OhQ2cVuSD0TW13K5JqgWr2jtvcg0K8/m, username=bhvjd], UtentiModel [password=damian, username=damian]]
+2021-10-24 23:10:08 INFO  [http-nio-8080-exec-4]: dati.get(0): njfdkb
+2021-10-24 23:11:46 INFO  [main]: avvenuta connessione ad db
+2021-10-24 23:11:49 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@782c927d
+2021-10-24 23:11:49 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@2c7c805f
+2021-10-24 23:11:49 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 23:11:49 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@2c7c805f
+2021-10-24 23:11:50 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 23:14:18 INFO  [main]: avvenuta connessione ad db
+2021-10-24 23:14:20 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 23:14:20 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:14:20 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 23:14:20 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:14:21 INFO  [http-nio-8080-exec-3]: Sono nel metodo iniziale
+2021-10-24 23:15:42 INFO  [main]: avvenuta connessione ad db
+2021-10-24 23:15:45 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@782c927d
+2021-10-24 23:15:45 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@2c7c805f
+2021-10-24 23:15:45 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 23:15:45 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@2c7c805f
+2021-10-24 23:15:46 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 23:16:59 INFO  [main]: avvenuta connessione ad db
+2021-10-24 23:17:01 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 23:17:01 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:17:01 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 23:17:01 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:17:02 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 23:17:17 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 23:17:17 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - null null null null
+2021-10-24 23:17:17 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordnull null
+2021-10-24 23:17:17 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamenull null
+2021-10-24 23:17:17 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 23:17:17 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 23:17:17 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 23:17:17 INFO  [http-nio-8080-exec-4]: []
+2021-10-24 23:20:18 INFO  [main]: avvenuta connessione ad db
+2021-10-24 23:20:20 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-24 23:20:20 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:20:20 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-24 23:20:20 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-24 23:20:21 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - damian damian null null
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passworddamian damian
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernamedamian damian
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
+2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: dati.get(0): Damian
