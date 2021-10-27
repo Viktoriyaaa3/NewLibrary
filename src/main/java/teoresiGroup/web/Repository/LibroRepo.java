@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import teoresiGroup.web.model.LibriModel;
 
-public interface LibroRepo extends CrudRepository <LibriModel, Integer>{
+public interface LibroRepo{
 	
 	
 	public void add(LibriModel l);
