@@ -6,20 +6,14 @@ import java.util.function.Predicate;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import teoresiGroup.web.RepoitoryConCrudRepository.UtentiCrudRepository;
+import teoresiGroup.web.Repository.UtentiCrudRepository;
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
@@ -31,8 +25,8 @@ public class UtentiServiceImpl implements UtentiService {
 	private UtentiRepo utentiRepo;
 	@PersistenceContext
 	private EntityManager em;
-	@Autowired
-	private UtentiCrudRepository crudRepo;
+	//@Autowired
+	//private UtentiCrudRepository crudRepo;
 	//@Autowired
 	//private BCryptPasswordEncoder bcpe;
 
@@ -48,19 +42,11 @@ public class UtentiServiceImpl implements UtentiService {
 		return null;
 	}
 	
-	@Transactional
+	/*@Transactional
 	public void add(UtentiModel u) {
 		//UtentiModel u= new UtentiModel();
-		try {
-			u.setNome(u.getNome());
-			u.setCognome(u.getCognome());
-			u.setDataNascita(u.getDataNascita());
-			crudRepo.save(u);
-		}catch(Exception e) {
-			
-		}
-		
-	}
+		crudRepo.save(u);
+	}*/
 	/*UtentiModel utente= null;
 	try {u.setPassword(u.getPassword());
 		

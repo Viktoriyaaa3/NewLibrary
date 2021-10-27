@@ -1,4 +1,4 @@
-package teoresiGroup.web.RepoitoryConCrudRepository;
+package teoresiGroup.web.Repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

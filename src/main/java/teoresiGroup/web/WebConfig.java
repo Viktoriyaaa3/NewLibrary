@@ -4,14 +4,11 @@ import javax.sql.DataSource;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -21,7 +18,6 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 //import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
@@ -33,6 +29,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.OperatoreRepo;
+import teoresiGroup.web.Repository.UtentiCrudRepository;
 //import teoresiGroup.web.Repository.PersistentToken;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
@@ -46,6 +43,7 @@ import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 import teoresiGroup.web.service.Interfacce.LibroService;
 import teoresiGroup.web.service.Interfacce.OperatoreService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
+import teoresiGroup.web.service.Interfacce.provaUserService;
 
 @Configuration
 @EnableWebMvc
@@ -215,6 +213,10 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    public OperatoreService getOpService() {
 	    	return new OperatoreServiceImpl();
 	    }
+	    @Bean provaUserService getCrud() {
+	    	return new provaUserService();
+	    }
+	   
 	/*    @Bean
 	    public UserDetailsService userDetailsService() {
 	        return  new RicavoDalDb();

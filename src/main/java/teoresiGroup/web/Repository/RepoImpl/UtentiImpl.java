@@ -20,6 +20,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Expression;
 
+import teoresiGroup.web.Repository.UtentiCrudRepository;
 import teoresiGroup.web.Repository.UtentiRepo;
 
 import teoresiGroup.web.model.UtentiModel;
@@ -35,7 +36,8 @@ private EntityManager em;
 public UtentiRepo utentiRepo;
 
 private JdbcTemplate conn;
-
+//@Autowired
+//public UtentiCrudRepository crudRepo;
 /*@Override
 	@Transactional
 	public void add(UtentiModel u) {
@@ -43,6 +45,18 @@ private JdbcTemplate conn;
 		em.persist(u);
 		log.info(u);
 	}*/
+/*@Transactional
+public void add(UtentiModel u) {
+try {
+	u.setNome(u.getNome());
+	u.setCognome(u.getCognome());
+	u.setDataNascita(u.getDataNascita());
+	crudRepo.save(u);
+}catch(Exception e) {
+	log.info("non è stato possibile salvare nuovo utente" + e.getStackTrace());
+	
+}}*/
+
 	public UtentiImpl(DataSource ds) {
 		conn= new JdbcTemplate(ds);
 	}

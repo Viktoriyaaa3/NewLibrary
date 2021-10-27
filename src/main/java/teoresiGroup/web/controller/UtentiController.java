@@ -11,7 +11,6 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.MatrixVariable;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -19,11 +18,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import teoresiGroup.web.RepoitoryConCrudRepository.UtentiCrudRepository;
+import teoresiGroup.web.Repository.UtentiCrudRepository;
 import teoresiGroup.web.model.UtentiModel;
-import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 //Simport teoresiGroup.web.service.Interfacce.UtentiService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
+import teoresiGroup.web.service.Interfacce.provaUserService;
 
 @Controller
 @RequestMapping("/cliente")
@@ -31,9 +30,12 @@ public class UtentiController {
 	private final static Logger log = Logger.getLogger(UtentiController.class.getName());
 	@Autowired
 	private UtentiService utentiService;
-	@Autowired UtentiServiceImpl uImpl;
+	//@Autowired UtentiServiceImpl uImpl;
+	@Autowired
+	private provaUserService prova;
 	
-	
+	//@Autowired
+	//private UtentiCrudRepository crudRepo;
 	//@Autowired
 	//private BCryptPasswordEncoder bcpe;//da aggiungere la password criptata
 	
@@ -95,7 +97,8 @@ public ModelAndView sumbit( @Valid @ModelAttribute("utenteForm") UtentiModel ute
 	if(utenti!=null) {
 		
 		try {
-			uImpl.add(utenti);
+			//crudRepo.add(utenti);
+			prova.add(utenti);
 			return new ModelAndView("result", "utenteForm", utenti);
 		}
 		catch(Exception e) {

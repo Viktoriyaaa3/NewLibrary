@@ -2099,3 +2099,22 @@
 2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: UtentiImpl ByPassAndUsernameadmin admin
 2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
 2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: dati.get(0): provaaa
+2021-10-27 12:28:24 INFO  [main]: avvenuta connessione ad db
+2021-10-27 12:28:26 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
+2021-10-27 12:39:06 INFO  [main]: avvenuta connessione ad db
+2021-10-27 12:39:09 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
+2021-10-27 12:43:23 INFO  [main]: avvenuta connessione ad db
+2021-10-27 12:43:26 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
+2021-10-27 12:47:57 INFO  [main]: avvenuta connessione ad db
+2021-10-27 12:47:59 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
+2021-10-27 12:55:35 INFO  [main]: avvenuta connessione ad db
+2021-10-27 12:55:38 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
+2021-10-27 12:59:55 INFO  [main]: avvenuta connessione ad db
+2021-10-27 12:59:58 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
+2021-10-27 13:02:42 INFO  [main]: avvenuta connessione ad db
+2021-10-27 13:02:44 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-27 13:02:44 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@5fbbe7aa
+2021-10-27 13:02:45 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-27 13:02:55 INFO  [http-nio-8080-exec-4]: Sono nel metodo per registrare gli utenti
+2021-10-27 13:27:49 INFO  [main]: avvenuta connessione ad db
+2021-10-27 13:27:51 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
