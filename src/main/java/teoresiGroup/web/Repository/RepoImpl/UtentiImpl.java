@@ -34,15 +34,15 @@ private EntityManager em;
 @Autowired
 public UtentiRepo utentiRepo;
 
-
 private JdbcTemplate conn;
-	@Override
+
+/*@Override
 	@Transactional
 	public void add(UtentiModel u) {
 		log.info("Sono nel metodo add di UtentiImpl");
 		em.persist(u);
 		log.info(u);
-	}
+	}*/
 	public UtentiImpl(DataSource ds) {
 		conn= new JdbcTemplate(ds);
 	}

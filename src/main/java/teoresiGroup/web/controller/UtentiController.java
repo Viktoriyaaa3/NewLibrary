@@ -19,7 +19,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import teoresiGroup.web.RepoitoryConCrudRepository.UtentiCrudRepository;
 import teoresiGroup.web.model.UtentiModel;
+import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 //Simport teoresiGroup.web.service.Interfacce.UtentiService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
@@ -29,6 +31,7 @@ public class UtentiController {
 	private final static Logger log = Logger.getLogger(UtentiController.class.getName());
 	@Autowired
 	private UtentiService utentiService;
+	@Autowired UtentiServiceImpl uImpl;
 	
 	
 	//@Autowired
@@ -53,9 +56,8 @@ public ModelAndView nuovo(Model model) {
 }
 
 
-@PostMapping("/add")
-public ModelAndView sumbit(/*@AuthenticationPrincipal 
-		UtentiModel ut,*/ @Valid @ModelAttribute("utenteForm") UtentiModel utenti, BindingResult res)
+/*@PostMapping("/add")
+public ModelAndView sumbit( @Valid @ModelAttribute("utenteForm") UtentiModel utenti, BindingResult res)
 {
 	log.info("Sono nel metodo submit");
 	//String err=
@@ -68,7 +70,7 @@ public ModelAndView sumbit(/*@AuthenticationPrincipal
 	if(utenti.getPassword().isEmpty() || utenti.getUsername().isEmpty())
 		return new ModelAndView("error");
 
-	/*aggiungere espressioni regolari per controllare email in arrivo*/
+	
 	try {utenti.setPassword(utenti.getPassword());
 	
 	}catch(Exception e) {
@@ -85,9 +87,25 @@ public ModelAndView sumbit(/*@AuthenticationPrincipal
 	else 
 		return new ModelAndView("error");
 	
+}*/
+
+@PostMapping("/add")
+public ModelAndView sumbit( @Valid @ModelAttribute("utenteForm") UtentiModel utenti)
+{
+	if(utenti!=null) {
+		
+		try {
+			uImpl.add(utenti);
+			return new ModelAndView("result", "utenteForm", utenti);
+		}
+		catch(Exception e) {
+			log.info("errore nel savalre nuov utente" + e.getStackTrace());
+			return new ModelAndView("result", "utenteForm", utenti);
+		}
+	}
+	else return new ModelAndView("result", "utenteForm", utenti);
+
 }
-
-
 
 
 
