@@ -21,6 +21,7 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 //import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
@@ -66,7 +67,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 		bean.setValidationMessageSource(messageSource());
 		return bean;
 		
-	}
+	}/*
 	@Override
 	public Validator getValidator() {
 		return validator();

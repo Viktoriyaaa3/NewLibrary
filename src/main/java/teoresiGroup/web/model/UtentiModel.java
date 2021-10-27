@@ -15,9 +15,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.apache.log4j.Logger;
 import org.springframework.format.annotation.DateTimeFormat;
+
+
 
 
 
@@ -35,7 +39,10 @@ public class UtentiModel  {
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private int id;
 	@Column(name="nome")
+	@NotNull(message="inserire il nome")
+	@Size(min=2)
 private String nome;
+	
 	@Column(name="cognome")
 private String cognome;
 	@Column(name="codFiscale")

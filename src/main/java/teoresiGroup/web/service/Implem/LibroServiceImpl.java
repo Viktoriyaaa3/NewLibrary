@@ -25,9 +25,6 @@ public class LibroServiceImpl implements LibroService {
 	private EntityManager em;
 	
 	
-	
-	
-	
 	public LibroRepo getLibroRepo() {
 		return libroRepo;
 	}
@@ -47,7 +44,7 @@ public class LibroServiceImpl implements LibroService {
 	}
 
 	@Override
-	@Transactional
+	
 	public LibriModel getById(int id) {
 		log.info("Sono nel metodo find by ID");
 		log.info("vedo che id mi è arrivato: " + id);

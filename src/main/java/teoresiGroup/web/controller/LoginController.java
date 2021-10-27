@@ -50,15 +50,9 @@ public class LoginController {
 
 	@GetMapping("/controllo")
 	public ModelAndView test(Model model) {
-		/*Authentication auth= SecurityContextHolder.getContext().getAuthentication();
-		if(auth== null || auth instanceof AnonymousAuthenticationToken) {
-			return new ModelAndView("login", "utenteForm", new UtentiModel());}
-		return new ModelAndView("login", "utenteForm", new UtentiModel());*/
 		
-	//	UtentiModel utenti= new UtentiModel();
-		//model.addAttribute("utenteForm", utenti);
-		boolean myBooleanVariable = true;
-		model.addAttribute("myBooleanVariable", myBooleanVariable);
+		//boolean myBooleanVariable = true;
+		//model.addAttribute("myBooleanVariable", myBooleanVariable);
 		return new ModelAndView("login", "utenteForm", new UtentiModel());
 		
 	}
@@ -92,22 +86,13 @@ public class LoginController {
 			return new ModelAndView("cliente");
 		}
 		else {
-			/* UsernamePasswordAuthenticationToken authentication = (UsernamePasswordAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
-		        validatePrinciple(authentication.getPrincipal());
-		       UtentiModel logged=((UserDettagli) authentication.getPrincipal()).getUtenti();
-		       model.addAttribute("currentUserId", logged.getId());
-		       model.addAttribute("currentUser", logged.getUsername());
-		       session.setAttribute("userId", logged.getId());*/
+			
 			boolean myBooleanVariable = true;
 			log.info("dati.get(0): " +dati.get(0).getNome());
 			model.addAttribute("myBooleanVariable", myBooleanVariable);
 		   	return new ModelAndView("dashboard", "utenteForm", dati.get(0).getNome());
 		}
-		       
-		     
-	
-	
-			
+		
 	}
 	private void validatePrinciple(Object principal) {
         if (!(principal instanceof UserDettagli)) {

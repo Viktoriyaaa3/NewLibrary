@@ -2,30 +2,26 @@ package teoresiGroup.web.controller;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+import javax.validation.Valid;
 
 import org.apache.log4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.MatrixVariable;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.bind.annotation.MatrixVariable;
-import teoresiGroup.web.Repository.UtentiRepo;
+
 import teoresiGroup.web.model.UtentiModel;
 //Simport teoresiGroup.web.service.Interfacce.UtentiService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
-
-import java.util.LongSummaryStatistics; /*vedere come funziona*/
 
 @Controller
 @RequestMapping("/cliente")
@@ -58,11 +54,11 @@ public ModelAndView nuovo(Model model) {
 
 
 @PostMapping("/add")
-public ModelAndView sumbit(@AuthenticationPrincipal 
-		UtentiModel ut,@ModelAttribute("utenteForm") UtentiModel utenti)
+public ModelAndView sumbit(/*@AuthenticationPrincipal 
+		UtentiModel ut,*/ @Valid @ModelAttribute("utenteForm") UtentiModel utenti, BindingResult res)
 {
 	log.info("Sono nel metodo submit");
-	
+	//String err=
 	if(utenti!=null)
 	{ 
 		log.info("Scrivo i dati ricevuti nel post, metodo add : " + utenti.getNome() + " " + utenti.getCognome() + " " + utenti.getCodFiscale()
@@ -83,6 +79,9 @@ public ModelAndView sumbit(@AuthenticationPrincipal
 	}
 		utentiService.add(utenti);
 	return new ModelAndView("result", "utenteForm", utenti);}
+	if(res.hasErrors()) {
+		return new ModelAndView("cliente", "utenteForm", new UtentiModel());
+	}
 	else 
 		return new ModelAndView("error");
 	

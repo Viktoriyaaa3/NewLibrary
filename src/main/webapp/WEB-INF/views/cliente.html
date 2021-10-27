@@ -3,21 +3,103 @@
 <head>
     <title>Cliente form</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
+
+<div>
+<div id="loginbox" style="margin-top: 50px;"
+			class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+
+				
+
+	<div class="panel panel-info">
+	<div class="panel-heading">
+	<div class="panel-title">
+
     <h1>Cliente Form</h1>
-    <form action="#" th:action="@{/cliente/add}" th:object="${utenteForm}" method="post" >
-        <p>Name: <input type="text" th:field="*{nome}"/></p>
-        <p>Cognome: <input type="text" th:field="*{cognome}"/></p>
-       <p>Telefono: <input type="text" th:field="*{telefono}"/></p>
-        <p>Codice Fiscale: <input type="text" th:field="*{codFiscale}"/></p>
-       <p>Data di Nascita: <input type="text" th:field="*{dataNascita}" placeholder="yyyy-MM-dd" /> </p>
-        <p>Email: <input type="email" th:field="*{email}"/></p>
-          <p>Username: <input type="text" th:field="*{username}"/></p>
-            <p>Password: <input type="text" th:field="*{password}"/></p>
+    
+    </div></div>
+    
+    <div style="padding-top: 30px" class="panel-body">
+    <form action="#" th:action="@{/cliente/add}" th:object="${utenteForm}" method="post" class="form-horizontal">
+       	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    	
+    	
+        <p>Name: <input type="text" th:field="*{nome}" class="form-control"/></p>
         
+        
+        <p th:if="${#fields.hasErrors('nome')}" th:errorclass="error" th:errors="*{nome}" />
+        </div>
+        
+        
+        	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    	
+    	
+        
+        <p>Cognome: <input type="text" th:path="nome" th:field="*{cognome}" class="form-control"/></p>
+     </div>
+     
+      	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    	
+    	
+      
+       <p>Telefono: <input type="text" th:field="*{telefono}" class="form-control"/></p>
+       </div>
+       
+       	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    	
+    	
+       
+        <p>Codice Fiscale: <input type="text" th:field="*{codFiscale}" class="form-control"/></p>
+        </div>
+        
+      	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    	
+    	
+      
+       <p>Data di Nascita: <input type="text" th:field="*{dataNascita}" placeholder="yyyy-MM-dd" class="form-control" /> </p>
+      
+      </div>
+       	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    	
+    	
+       
+        <p>Email: <input type="email" th:field="*{email}" class="form-control"/></p>
+        	
+        	</div>
+        	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    	
+    	
+        
+          <p>Username: <input type="text" th:field="*{username}" class="form-control"/></p>
+          </div>
+          	<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    	
+    	
+          
+            <p>Password: <input type="text" th:field="*{password}" class="form-control"/></p>
+        </div>
         <p><input type="submit" value="Submit"/></p>
     </form>
+    </div>
+    </div>
+    </div>
+    </div>
     
    
 </body>

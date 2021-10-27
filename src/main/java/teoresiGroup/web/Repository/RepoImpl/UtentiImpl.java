@@ -34,6 +34,7 @@ private EntityManager em;
 @Autowired
 public UtentiRepo utentiRepo;
 
+
 private JdbcTemplate conn;
 	@Override
 	@Transactional
@@ -123,7 +124,7 @@ private JdbcTemplate conn;
 		String toSearch= "%" + username + "%";
 		
 		Root<UtentiModel> rec= query.from(UtentiModel.class);
-		/*Ricerca "viceversa", nome-cognome, cognome-nome*/
+		
 		Expression<String> exp= queryBuilder.concat(rec.<String>get("username"), " ");
 		exp=queryBuilder.concat(exp, rec.<String>get("password"));
 		
@@ -136,11 +137,7 @@ private JdbcTemplate conn;
 		query.select(rec).where(p);
 		
 		List<UtentiModel> ut=em.createQuery(query).getResultList();
-		log.info("vedo cosa arriva in em: ");
-		log.info(em.toString());
-		em.clear();
-		log.info("vedo cosa arriva nella query: ");
-		log.info(ut.toString());
+		
 		return ut;
 	}
 	@Override

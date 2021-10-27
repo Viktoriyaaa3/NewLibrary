@@ -1932,3 +1932,170 @@
 2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
 2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=damian, username=damian]]
 2021-10-24 23:20:33 INFO  [http-nio-8080-exec-4]: dati.get(0): Damian
+2021-10-25 10:49:30 INFO  [main]: avvenuta connessione ad db
+2021-10-25 10:49:33 INFO  [main]: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$2@57eab3f5
+2021-10-25 10:49:33 INFO  [main]: org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-25 10:49:33 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-25 10:49:33 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4c6d1f1f
+2021-10-25 10:49:34 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: vedo cosa arriva in em: 
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@15b078f]
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: vedo cosa arriva nella query: 
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-25 10:49:45 INFO  [http-nio-8080-exec-4]: dati.get(0): provaaa
+2021-10-25 12:51:19 INFO  [main]: avvenuta connessione ad db
+2021-10-25 12:51:23 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-25 12:51:45 INFO  [http-nio-8080-exec-5]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-25 12:51:45 INFO  [http-nio-8080-exec-5]: I dati che sono arrivati: 0 - 123Stella Nicola null null
+2021-10-25 12:51:45 INFO  [http-nio-8080-exec-5]: UtentiService usenrame e password123Stella Nicola
+2021-10-25 12:51:45 INFO  [http-nio-8080-exec-5]: UtentiImpl ByPassAndUsername123Stella Nicola
+2021-10-25 12:51:45 INFO  [http-nio-8080-exec-5]: UtentiService usenrame e password123Stella Nicola
+2021-10-25 12:51:45 INFO  [http-nio-8080-exec-5]: UtentiImpl ByPassAndUsername123Stella Nicola
+2021-10-25 12:51:45 INFO  [http-nio-8080-exec-5]: []
+2021-10-26 11:09:41 INFO  [main]: avvenuta connessione ad db
+2021-10-26 11:09:44 INFO  [http-nio-8080-exec-2]: avvenuta connessione ad db
+2021-10-26 11:10:49 INFO  [main]: avvenuta connessione ad db
+2021-10-26 11:10:51 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-26 11:10:51 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@4fb54ca0
+2021-10-26 11:10:52 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-26 11:11:01 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 11:11:01 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 -  guidkesr null null
+2021-10-26 11:11:01 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e password guidkesr
+2021-10-26 11:11:01 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsername guidkesr
+2021-10-26 11:11:01 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e password guidkesr
+2021-10-26 11:11:01 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsername guidkesr
+2021-10-26 11:11:01 INFO  [http-nio-8080-exec-4]: []
+2021-10-26 11:11:09 INFO  [http-nio-8080-exec-5]: Sono nel metodo submit
+2021-10-26 11:11:09 INFO  [http-nio-8080-exec-5]: Scrivo i dati ricevuti nel post, metodo add :       guidkesr null
+2021-10-26 11:11:32 INFO  [http-nio-8080-exec-10]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 11:11:32 INFO  [http-nio-8080-exec-10]: I dati che sono arrivati: 0 -  guidkesr null null
+2021-10-26 11:11:32 INFO  [http-nio-8080-exec-10]: UtentiService usenrame e password guidkesr
+2021-10-26 11:11:32 INFO  [http-nio-8080-exec-10]: UtentiImpl ByPassAndUsername guidkesr
+2021-10-26 11:11:32 INFO  [http-nio-8080-exec-10]: UtentiService usenrame e password guidkesr
+2021-10-26 11:11:32 INFO  [http-nio-8080-exec-10]: UtentiImpl ByPassAndUsername guidkesr
+2021-10-26 11:11:32 INFO  [http-nio-8080-exec-10]: []
+2021-10-26 11:27:28 INFO  [main]: avvenuta connessione ad db
+2021-10-26 11:27:32 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-26 11:27:32 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@50150196
+2021-10-26 11:27:33 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-26 11:27:39 INFO  [http-nio-8080-exec-4]: Sono nel metodo per registrare gli utenti
+2021-10-26 11:28:18 INFO  [http-nio-8080-exec-7]: Sono nel metodo submit
+2021-10-26 11:28:18 INFO  [http-nio-8080-exec-7]: Scrivo i dati ricevuti nel post, metodo add :   bhj, bgfc vbhjfd@nvif 123 prova2 prova2 1999-01-01
+2021-10-26 11:28:18 INFO  [http-nio-8080-exec-7]: Sono nel metodo add di UtentiImpl
+2021-10-26 11:28:19 INFO  [http-nio-8080-exec-7]: UtentiModel [password=prova2, username=prova2]
+2021-10-26 11:46:33 INFO  [http-nio-8080-exec-10]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 11:46:33 INFO  [http-nio-8080-exec-10]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-26 11:46:33 INFO  [http-nio-8080-exec-10]: UtentiService usenrame e passwordadmin admin
+2021-10-26 11:46:33 INFO  [http-nio-8080-exec-10]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 11:46:34 INFO  [http-nio-8080-exec-10]: UtentiService usenrame e passwordadmin admin
+2021-10-26 11:46:34 INFO  [http-nio-8080-exec-10]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 11:46:34 INFO  [http-nio-8080-exec-10]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-26 11:46:34 INFO  [http-nio-8080-exec-10]: dati.get(0): provaaa
+2021-10-26 11:46:48 INFO  [http-nio-8080-exec-3]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 11:46:48 INFO  [http-nio-8080-exec-3]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-26 11:46:48 INFO  [http-nio-8080-exec-3]: UtentiService usenrame e passwordadmin admin
+2021-10-26 11:46:48 INFO  [http-nio-8080-exec-3]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 11:46:48 INFO  [http-nio-8080-exec-3]: UtentiService usenrame e passwordadmin admin
+2021-10-26 11:46:48 INFO  [http-nio-8080-exec-3]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 11:46:48 INFO  [http-nio-8080-exec-3]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-26 11:46:48 INFO  [http-nio-8080-exec-3]: dati.get(0): provaaa
+2021-10-26 12:29:46 INFO  [main]: avvenuta connessione ad db
+2021-10-26 12:29:48 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-26 12:29:48 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@7c329d38
+2021-10-26 12:29:49 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-26 12:29:54 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 12:29:54 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 -  admin null null
+2021-10-26 12:29:54 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e password admin
+2021-10-26 12:29:54 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsername admin
+2021-10-26 12:29:54 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e password admin
+2021-10-26 12:29:54 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsername admin
+2021-10-26 12:29:54 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-26 12:29:54 INFO  [http-nio-8080-exec-4]: dati.get(0): provaaa
+2021-10-26 12:31:05 INFO  [main]: avvenuta connessione ad db
+2021-10-26 12:31:08 INFO  [main]: VEDO SE SONO ENTRATA NEL METODO JDCB PER L'AUTENTICAZIONE
+2021-10-26 12:31:08 INFO  [main]: sono in usrDetailService org.springframework.jdbc.datasource.DriverManagerDataSource@2b8030c6
+2021-10-26 12:31:08 INFO  [http-nio-8080-exec-2]: Sono nel metodo iniziale
+2021-10-26 12:31:16 INFO  [http-nio-8080-exec-4]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 12:31:16 INFO  [http-nio-8080-exec-4]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-26 12:31:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-26 12:31:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 12:31:16 INFO  [http-nio-8080-exec-4]: UtentiService usenrame e passwordadmin admin
+2021-10-26 12:31:16 INFO  [http-nio-8080-exec-4]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 12:31:16 INFO  [http-nio-8080-exec-4]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-26 12:31:16 INFO  [http-nio-8080-exec-4]: dati.get(0): provaaa
+2021-10-26 12:31:25 INFO  [http-nio-8080-exec-8]: SOno nel metodo per cercare un libro: get search
+2021-10-26 12:31:29 INFO  [http-nio-8080-exec-10]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:33:34 INFO  [http-nio-8080-exec-4]: Sono in libri form
+2021-10-26 12:33:34 INFO  [http-nio-8080-exec-4]: Dati inseriti: LibriModel [id=0, titolo=null, autore=null, dataPubblicazione=null, numeroPezzi=0]
+2021-10-26 12:33:50 INFO  [http-nio-8080-exec-5]: Sono in Libri aggiungi post
+2021-10-26 12:33:50 INFO  [http-nio-8080-exec-5]: i dati che sono arrivati: Java Java 20
+2021-10-26 12:33:50 INFO  [http-nio-8080-exec-5]: Sono nel metodo per aggiungere dati al libro. Classe ServiceImpl
+2021-10-26 12:33:50 INFO  [http-nio-8080-exec-5]: Vedo cosa mi dice la lLibriModel [id=0, titolo=Java, autore=Java, dataPubblicazione=2000-11-11, numeroPezzi=20]
+2021-10-26 12:33:50 INFO  [http-nio-8080-exec-5]: sono nem metodo add di LibroImpl
+2021-10-26 12:33:50 INFO  [http-nio-8080-exec-5]: Vedo dato che arriva qua: LibriModel [id=0, titolo=Java, autore=Java, dataPubblicazione=2000-11-11, numeroPezzi=20]
+2021-10-26 12:33:57 INFO  [http-nio-8080-exec-8]: SOno nel metodo per cercare un libro: get search
+2021-10-26 12:34:00 INFO  [http-nio-8080-exec-9]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:34:05 INFO  [http-nio-8080-exec-1]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:34:07 INFO  [http-nio-8080-exec-2]: Sono in Libri aggiungi post
+2021-10-26 12:34:07 INFO  [http-nio-8080-exec-2]: i dati che sono arrivati: Java Java 20
+2021-10-26 12:34:07 INFO  [http-nio-8080-exec-2]: Sono nel metodo per aggiungere dati al libro. Classe ServiceImpl
+2021-10-26 12:34:07 INFO  [http-nio-8080-exec-2]: Vedo cosa mi dice la lLibriModel [id=0, titolo=Java, autore=Java, dataPubblicazione=2000-11-11, numeroPezzi=20]
+2021-10-26 12:34:07 INFO  [http-nio-8080-exec-2]: sono nem metodo add di LibroImpl
+2021-10-26 12:34:07 INFO  [http-nio-8080-exec-2]: Vedo dato che arriva qua: LibriModel [id=0, titolo=Java, autore=Java, dataPubblicazione=2000-11-11, numeroPezzi=20]
+2021-10-26 12:34:18 INFO  [http-nio-8080-exec-5]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 12:34:18 INFO  [http-nio-8080-exec-5]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-26 12:34:18 INFO  [http-nio-8080-exec-5]: UtentiService usenrame e passwordadmin admin
+2021-10-26 12:34:18 INFO  [http-nio-8080-exec-5]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 12:34:18 INFO  [http-nio-8080-exec-5]: UtentiService usenrame e passwordadmin admin
+2021-10-26 12:34:18 INFO  [http-nio-8080-exec-5]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 12:34:18 INFO  [http-nio-8080-exec-5]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-26 12:34:18 INFO  [http-nio-8080-exec-5]: dati.get(0): provaaa
+2021-10-26 12:34:20 INFO  [http-nio-8080-exec-6]: SOno nel metodo per cercare un libro: get search
+2021-10-26 12:34:23 INFO  [http-nio-8080-exec-8]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:34:43 INFO  [http-nio-8080-exec-3]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:34:45 INFO  [http-nio-8080-exec-4]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:35:04 INFO  [http-nio-8080-exec-6]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:35:25 INFO  [http-nio-8080-exec-9]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:40:08 INFO  [http-nio-8080-exec-1]: SOno nel metodo per cercare un libro: get search
+2021-10-26 12:40:09 INFO  [http-nio-8080-exec-2]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 12:40:09 INFO  [http-nio-8080-exec-2]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-26 12:40:09 INFO  [http-nio-8080-exec-2]: UtentiService usenrame e passwordadmin admin
+2021-10-26 12:40:09 INFO  [http-nio-8080-exec-2]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 12:40:09 INFO  [http-nio-8080-exec-2]: UtentiService usenrame e passwordadmin admin
+2021-10-26 12:40:09 INFO  [http-nio-8080-exec-2]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 12:40:09 INFO  [http-nio-8080-exec-2]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-26 12:40:09 INFO  [http-nio-8080-exec-2]: dati.get(0): provaaa
+2021-10-26 12:40:20 INFO  [http-nio-8080-exec-4]: SOno nel metodo per cercare un libro: get search
+2021-10-26 12:40:23 INFO  [http-nio-8080-exec-5]: Son nel metodo per cercare i libri: post trovato
+2021-10-26 12:40:26 INFO  [http-nio-8080-exec-6]: Sono nel metodo find by ID
+2021-10-26 12:40:26 INFO  [http-nio-8080-exec-6]: vedo che id mi è arrivato: 26
+2021-10-26 12:40:29 INFO  [http-nio-8080-exec-8]: Sono nel metodo find by ID
+2021-10-26 12:40:29 INFO  [http-nio-8080-exec-8]: vedo che id mi è arrivato: 26
+2021-10-26 12:40:33 INFO  [http-nio-8080-exec-10]: Sono in libri form
+2021-10-26 12:40:33 INFO  [http-nio-8080-exec-10]: Dati inseriti: LibriModel [id=0, titolo=null, autore=null, dataPubblicazione=null, numeroPezzi=0]
+2021-10-26 12:40:47 INFO  [http-nio-8080-exec-2]: Sono in Libri aggiungi post
+2021-10-26 12:40:47 INFO  [http-nio-8080-exec-2]: i dati che sono arrivati: bjfk uvgf 40
+2021-10-26 12:40:47 INFO  [http-nio-8080-exec-2]: Sono nel metodo per aggiungere dati al libro. Classe ServiceImpl
+2021-10-26 12:40:47 INFO  [http-nio-8080-exec-2]: Vedo cosa mi dice la lLibriModel [id=0, titolo=uvgf, autore=bjfk, dataPubblicazione=2000-11-11, numeroPezzi=40]
+2021-10-26 12:40:47 INFO  [http-nio-8080-exec-2]: sono nem metodo add di LibroImpl
+2021-10-26 12:40:47 INFO  [http-nio-8080-exec-2]: Vedo dato che arriva qua: LibriModel [id=0, titolo=uvgf, autore=bjfk, dataPubblicazione=2000-11-11, numeroPezzi=40]
+2021-10-26 12:40:54 INFO  [http-nio-8080-exec-5]: SOno nel metodo per cercare un libro: get search
+2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: Controllo i dati che mi stanno arrivando dall'utente: 
+2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: I dati che sono arrivati: 0 - admin admin null null
+2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: UtentiService usenrame e passwordadmin admin
+2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: UtentiService usenrame e passwordadmin admin
+2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: UtentiImpl ByPassAndUsernameadmin admin
+2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: [UtentiModel [password=$2a$10$pBwsEsA8LGfK3VcRt4AJPeyq3uMaeAJWe3T3wnUQqaEqAd8PaySvG, username=admin]]
+2021-10-26 12:43:12 INFO  [http-nio-8080-exec-9]: dati.get(0): provaaa
