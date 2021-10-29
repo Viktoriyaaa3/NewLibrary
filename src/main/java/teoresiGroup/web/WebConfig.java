@@ -29,7 +29,6 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.Repository.OperatoreRepo;
-import teoresiGroup.web.Repository.UtentiCrudRepository;
 //import teoresiGroup.web.Repository.PersistentToken;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
@@ -43,6 +42,7 @@ import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 import teoresiGroup.web.service.Interfacce.LibroService;
 import teoresiGroup.web.service.Interfacce.OperatoreService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
+import teoresiGroup.web.service.Interfacce.provaLibroService;
 import teoresiGroup.web.service.Interfacce.provaUserService;
 
 @Configuration
@@ -84,6 +84,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	   /*
 	    * STEP 1 - Create SpringResourceTemplateResolver
 	    * */
+	 
 	   @Bean
 	   public SpringResourceTemplateResolver templateResolver() {
 	      SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
@@ -213,10 +214,13 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    public OperatoreService getOpService() {
 	    	return new OperatoreServiceImpl();
 	    }
-	    @Bean provaUserService getCrud() {
+	    @Bean public provaUserService getCrud() {
 	    	return new provaUserService();
 	    }
-	   
+	   @Bean
+	   public provaLibroService getLibroServi() {
+		   return new provaLibroService();
+	   }
 	/*    @Bean
 	    public UserDetailsService userDetailsService() {
 	        return  new RicavoDalDb();

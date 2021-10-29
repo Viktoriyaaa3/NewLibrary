@@ -20,7 +20,7 @@
 	</div>
 	
 		  <form action="#" th:action="@{/book/trovatoAutore}" th:object="${book}" method="post" >
-          <p>Cerco per ID: <input type="text" th:field="*{autore}"/></p>
+          <p>Cerco per ID: <input type="number" th:field="*{id}"/></p>
         
         <p><input type="submit" value="Submit" class="btn btn-success"/></p>
     </form>
