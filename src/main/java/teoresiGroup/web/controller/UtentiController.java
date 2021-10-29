@@ -14,11 +14,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.MatrixVariable;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import teoresiGroup.web.Repository.UtentiCrudRepository;
 import teoresiGroup.web.model.UtentiModel;
 //Simport teoresiGroup.web.service.Interfacce.UtentiService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
@@ -28,8 +28,8 @@ import teoresiGroup.web.service.Interfacce.provaUserService;
 @RequestMapping("/cliente")
 public class UtentiController {
 	private final static Logger log = Logger.getLogger(UtentiController.class.getName());
-	@Autowired
-	private UtentiService utentiService;
+	//@Autowired
+	//private UtentiService utentiService;
 	//@Autowired UtentiServiceImpl uImpl;
 	@Autowired
 	private provaUserService prova;
@@ -43,7 +43,7 @@ public class UtentiController {
 	List<UtentiModel> um;
 UtentiModel utenti;
 	
-@GetMapping("/registra")
+@GetMapping("/registraCliente")
 public ModelAndView nuovo(Model model) {
 	log.info("Sono nel metodo per registrare gli utenti");
 	
@@ -58,40 +58,9 @@ public ModelAndView nuovo(Model model) {
 }
 
 
-/*@PostMapping("/add")
-public ModelAndView sumbit( @Valid @ModelAttribute("utenteForm") UtentiModel utenti, BindingResult res)
-{
-	log.info("Sono nel metodo submit");
-	//String err=
-	if(utenti!=null)
-	{ 
-		log.info("Scrivo i dati ricevuti nel post, metodo add : " + utenti.getNome() + " " + utenti.getCognome() + " " + utenti.getCodFiscale()
-	+ " "+ utenti.getEmail() + " " + utenti.getTelefono() + " " + utenti.getPassword() + " " + utenti.getUsername()+ " "+
-	utenti.getDataNascita());
-	
-	if(utenti.getPassword().isEmpty() || utenti.getUsername().isEmpty())
-		return new ModelAndView("error");
+/*------------FUNZIONA-------------*/
 
-	
-	try {utenti.setPassword(utenti.getPassword());
-	
-	}catch(Exception e) {
-		log.info(e.getMessage());
-		return new ModelAndView("result", "utenteForm", utenti);// modificare che ritorna sulla pagina di registrazione
-		
-		
-	}
-		utentiService.add(utenti);
-	return new ModelAndView("result", "utenteForm", utenti);}
-	if(res.hasErrors()) {
-		return new ModelAndView("cliente", "utenteForm", new UtentiModel());
-	}
-	else 
-		return new ModelAndView("error");
-	
-}*/
-
-@PostMapping("/add")
+@PostMapping("/addCliente")
 public ModelAndView sumbit( @Valid @ModelAttribute("utenteForm") UtentiModel utenti)
 {
 	if(utenti!=null) {
@@ -117,7 +86,7 @@ public ModelAndView sumbit( @Valid @ModelAttribute("utenteForm") UtentiModel ute
 @GetMapping("/cNome")
 public String nome() {
 	log.info("sono nel metodo cerca nome");
-	log.info(utentiService.dammiNome());
+	//log.info(utentiService.dammiNome());
 	
 	return "result";
 	
@@ -147,9 +116,9 @@ public String getUtenti(Model model) {
 
 
 /*variabili tipo matrice*/
-@GetMapping(value="/cerca/{parametri}")
-public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, List<String>> parametri, Model model) {
-	
+@GetMapping(value="/cerca/{nome}")
+public String GetClientFilter(@PathVariable("nome") Map<String, List<String>> parametri, Model model) {
+	//List
 	
 	long NumRecords = 0;
 	long SkipValue = 0;
@@ -164,7 +133,7 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 	List<UtentiModel> recordset;
 	
 	//PARAMETRI FILTRO
-	List<String> ParamFiltro = parametri.get("filtro");
+	List<String> ParamFiltro = parametri.get("nome");
 	if (ParamFiltro != null)
 	{
 		Filter = ParamFiltro.get(0);  //Filtro applicato 
@@ -173,7 +142,7 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 	
 	
 	if (Filter.length() > 0)
-		recordset = utentiService.ByNome(Filter); //Otteniamo i clienti per nominativo
+		recordset = prova.getByNome(Filter); //Otteniamo i clienti per nominativo
 	else
 	{
 		if (um == null)
@@ -194,17 +163,17 @@ public String GetClientFilter(@MatrixVariable(pathVar="parametri") Map<String, L
 	return "clienti";
 	
 }
-
-@GetMapping("/all")
+/*------------FUNZIONA----------*/
+@GetMapping("/allUtenti")
 public ModelAndView all(Model model) {
-	Iterable<UtentiModel> lib= utentiService.getAll();
-	lib.forEach((UtentiModel l)->{
-		model.addAttribute("utenti", lib);
+	Iterable<UtentiModel> utenti= prova.getAll();
+	utenti.forEach((UtentiModel l)->{
+		model.addAttribute("utenti", utenti);
 	});
 	
 	
 	
-	return new ModelAndView("tuttiOperatori", "utenti" ,lib);
+	return new ModelAndView("tuttiOperatori", "utenti" ,utenti);
 	
 }
 

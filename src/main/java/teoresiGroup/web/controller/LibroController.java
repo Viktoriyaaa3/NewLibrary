@@ -1,6 +1,7 @@
 package teoresiGroup.web.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,13 +18,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 import teoresiGroup.web.model.LibriModel;
 import teoresiGroup.web.service.Interfacce.LibroService;
+import teoresiGroup.web.service.Interfacce.provaLibroService;
 @Controller
 @RequestMapping("/book")
 public class LibroController {
 	private static final Logger log= Logger.getLogger(LibroController.class.getName());
 	@Autowired
 	public LibroService libroService;
-	
+	@Autowired
+	public provaLibroService libService;
 	
 	@GetMapping("/autore")
 	public ModelAndView byName(Model model)
@@ -37,9 +40,9 @@ public class LibroController {
 	{
 		log.info("Son nel metodo per cercare i libri: post trovato");
 		List<LibriModel> libri= null;
-		LibriModel l=null;
+		Optional<LibriModel> l=null;
 
-		try {	l=libroService.getByName(lib.getAutore());//getById(lib.getId());
+		try {	l=libService.getById(lib.getId());//getById(lib.getId());
 		return new ModelAndView("libroTrovato", "book", l);
 			
 			
@@ -49,6 +52,12 @@ public class LibroController {
 		}
 		
 	}
+	
+	
+	
+	
+	
+	
 	
 	@GetMapping("/lb")
 	public ModelAndView hello(Model model)
@@ -60,7 +69,7 @@ public class LibroController {
 		return new ModelAndView("libroVista", "libroForm", new LibriModel());
 		
 	}
-	
+	/*----------FUNZIONA------------*/
 	@PostMapping("/libro")
 	public ModelAndView ciao(@ModelAttribute("libroForm") LibriModel libro) {
 		
@@ -72,7 +81,7 @@ if(libro!=null)
 	log.info("i dati che sono arrivati: " + libro.getAutore() + " " + libro.getTitolo()+
 			" " + libro.getNumeroPezzi());
 	
-	libroService.add(libro);
+	libService.add(libro);
 
 	return  new ModelAndView("regLibroSucesso", "libroForm", libro);
 	/*reindirizza alla pagina di registrazione. cambiare vesro visualizza tutto*/
@@ -82,11 +91,11 @@ else return  new ModelAndView("error");
 	}
 	
 	
-	
+	/*------------FUNZIONA-------------*/
 
 	@GetMapping("/all")
 	public ModelAndView all(Model model) {
-		Iterable<LibriModel> lib= libroService.getAll();
+		Iterable<LibriModel> lib= libService.getAll();
 		lib.forEach((LibriModel l)->{
 			model.addAttribute("books", lib);
 		});
@@ -127,9 +136,9 @@ public ModelAndView trovato(@ModelAttribute("book") LibriModel lib, Model model)
 {
 	log.info("Son nel metodo per cercare i libri: post trovato");
 	List<LibriModel> libri= null;
-	LibriModel l=null;
+	 Optional<LibriModel> l=null;
 
-	try {	l=libroService.getById(lib.getId());
+	try {	l=libService.getById(lib.getId());;
 	return new ModelAndView("libroTrovato", "book", l);
 		
 		
@@ -144,7 +153,7 @@ public ModelAndView trovato(@ModelAttribute("book") LibriModel lib, Model model)
 	
 @GetMapping("/edit/{id}")
 public String showUpdateForm(@PathVariable("id") int id, Model model) {
-   try { LibriModel lib = libroService.getById(id);
+   try { Optional<LibriModel> lib = libService.getById(id);
    model.addAttribute("book", lib);}
    catch(IllegalArgumentException e) {
      // .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
