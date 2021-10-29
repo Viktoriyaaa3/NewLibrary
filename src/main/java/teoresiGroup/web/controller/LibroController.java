@@ -28,7 +28,7 @@ public class LibroController {
 	@Autowired
 	public provaLibroService libService;
 	
-	@GetMapping("/autore")
+	@GetMapping("/cercoAutorePerId")
 	public ModelAndView byName(Model model)
 	{log.info("SOno nel metodo per cercare un libro: get search");
 		LibriModel lib= new LibriModel();
@@ -40,7 +40,7 @@ public class LibroController {
 	{
 		log.info("Son nel metodo per cercare i libri: post trovato");
 		List<LibriModel> libri= null;
-		Optional<LibriModel> l=null;
+		LibriModel l=null;
 
 		try {	l=libService.getById(lib.getId());//getById(lib.getId());
 		return new ModelAndView("libroTrovato", "book", l);
@@ -136,7 +136,7 @@ public ModelAndView trovato(@ModelAttribute("book") LibriModel lib, Model model)
 {
 	log.info("Son nel metodo per cercare i libri: post trovato");
 	List<LibriModel> libri= null;
-	 Optional<LibriModel> l=null;
+	LibriModel l=null;
 
 	try {	l=libService.getById(lib.getId());;
 	return new ModelAndView("libroTrovato", "book", l);
@@ -153,7 +153,7 @@ public ModelAndView trovato(@ModelAttribute("book") LibriModel lib, Model model)
 	
 @GetMapping("/edit/{id}")
 public String showUpdateForm(@PathVariable("id") int id, Model model) {
-   try { Optional<LibriModel> lib = libService.getById(id);
+   try { LibriModel lib = libService.getById(id);
    model.addAttribute("book", lib);}
    catch(IllegalArgumentException e) {
      // .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
@@ -182,9 +182,9 @@ public String updateUser(@PathVariable("id") int id, @Validated LibriModel lib,
 
 @GetMapping("/delete/{id}")
 public String deleteUser(@PathVariable("id") int id, Model model) {
-  try {  LibriModel user = libroService.getById(id);
+  try {  //LibriModel user = libService.delete(id);
      // .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
-    libroService.delete(id);
+    libService.delete(id);
   }
   catch(IllegalArgumentException e) {
 	  
