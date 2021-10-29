@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<title>Benvenuto nella libreria</title>
+</head>
+<body>
+	<div class="jumbotron jumbotron-billboard">
+  <div class="container">
+        <div class="row">
+		<h2 >Fai una ricerca per autore</h2>
+	</div>
+	
+		  <form action="#" th:action="@{/book/trovatoAutore}" th:object="${book}" method="post" >
+          <p>Cerco per ID: <input type="number" th:field="*{id}"/></p>
+        
+        <p><input type="submit" value="Submit" class="btn btn-success"/></p>
+    </form>
+		</div>
+	</div>
+</body>
+</html>

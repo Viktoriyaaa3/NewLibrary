@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Gestisci Operatori</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th> Nome </th>
+            <th> Cognome</th>
+         
+        </tr>
+    </thead>
+    <tbody>
+	
+            <td><span th:text="${book.nome}"> Nome </span></td>
+            <td><span th:text="${book.cognome}"> Cognome </span></td>
+           
+            <td> <a th:href="@{'/operatore/edit/'+${book.id}}">Aggiorna</a></td>
+            <td> <a th:href="@{'/operatore/delete/'+${book.id}}">Elimina</a></td>
+            
+        </tr>
+    </tbody>
+</table>
+		<h2>Aggiunger nuovo operatore</h2>
+		<div><a href="/libreriaProject/operatore/add">Aggiungi</a></div>
+		<h2>Vedi lista operatori</h2>
+		<div><a href="/libreriaProject/operatore/alll">Lista tutti operatori</a></div>
+</body>
+</html>

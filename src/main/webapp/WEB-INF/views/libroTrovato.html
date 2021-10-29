@@ -3,10 +3,17 @@
 <head>
     <title>Modifcia Libro</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
-<table>
-    <thead>
+<table class="table">
+    <thead class="table-light">
         <tr>
             <th> Titolo </th>
             <th> Autore </th>
@@ -15,16 +22,21 @@
         </tr>
     </thead>
     <tbody>
-	
+    <tr th:if="${book.autore.empty}">
+            <td colspan="2"> Autore cerato non è presente </td>
+        </tr>
+	<tr>
             <td><span th:text="${book.titolo}"> Title </span></td>
             <td><span th:text="${book.autore}"> Author </span></td>
             <td><span th:text="${book.numeroPezzi}"> Numero Pezzi</span></td>
             <td><span th:text="${book.dataPubblicazione}">Data pubblicazione</span></td>
-            <td> <a href="/libreriaProject/book/aggiorna">Aggiorna</a></td>
-            <td> <a href="/libreriaProject/book/delete">Elimina</a></td>
+            <td> <a th:href="@{'/book/edit/'+${book.id}}" class="btn btn-success">Aggiorna</a></td>
+            <td> <a th:href="@{'/book/delete/'+${book.id}}" class="btn btn-success">Elimina</a></td>
+            
         </tr>
     </tbody>
 </table>
-		
+		<h2>Aggiungere Libro</h2>
+		<div><a href="/libreriaProject/book/lb" class="btn btn-success">Aggiungi</a></div>
 </body>
 </html>

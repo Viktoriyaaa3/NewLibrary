@@ -1,11 +1,79 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
-    <title>Submission result</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pagina di Benvenuto</title>
+    <link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class="jumbotron jumbotron-billboard">
     <h1>Hai effettuato il login: </h1>
+  <p th:text=" #{nome} "></p>
    <h2>Qua ci saranno altre scelte per l'ultente loggato</h2>
+  
+ 
+   <hr>
+
+	<p>
+	User: <span sec:authentication="name"></span>
+Role(s): <span sec:authentication="principal.authorities"></span>
+	
+	<hr>
+	<p>
+	<div>
+	<h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+	<div sec:authorize="hasRole('USER')"></div>
+    <h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+    <div sec:authorize="hasRole('OPERATORE')"></div>
+    <h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+     <div sec:authorize="hasRole('ADMIN')">
+    <h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+    </div>
+    
+</div>
+
+	<div th:if="${#httpServletRequest.remoteUser != null}">
+    User: <sec:authentication property="principal.username" />
+		<br><br>
+		Role(s): <sec:authentication property="principal.authorities" />
+		</div>
+     
+      sample_user
+    <h1>PROVA NUOVI TAG</h1>
+     User: <sec:authentication property="principal.username" />
+		<br><br>
+		Role(s): <sec:authentication property="principal.authorities" />
+		
+
+
+   <table class="table">
+   <thead class="table-light">
+   <tr>
+   <th>Vedi elenco dei libri</th>
+   <th>Cerca un libro per nome</th>
+   <th>Controlla i libri che hai prenotato</th>
+   <th>Elenco tutti utenti</th>
+   </tr>
+   </thead>
+   <tbody>
+   
+  <tr>
+  <td> <a href="/libreriaProject/book/all" class="btn btn-success">Elenco</a></td>
+  <td>  <a href="/libreriaProject/book/cercoAutorePerId" class="btn btn-success">Cerca</a></td>
+   <td>  <a href="" class="btn btn-success">Per ora vuoto</a></td>
+   <td>   <a href="/libreriaProject/cliente/allUtenti" class="btn btn-success">Elenco Tutti utenti</a></td>
+     </tr>
+      </tbody>
+   </table>
+     
+  <div class="panel-heading"><form action="#" th:action="@{/login/log}" th:object="${utenteForm}" method="get" >
+  <input type="submit" value="Logout" class="btn btn-success"/>
+  </form></div> 
+  </div>
 </body>
 </html>

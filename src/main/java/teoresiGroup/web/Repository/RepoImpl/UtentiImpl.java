@@ -1,5 +1,6 @@
 package teoresiGroup.web.Repository.RepoImpl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -8,6 +9,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.sql.DataSource;
 import javax.transaction.Transactional;
 //import teoresiGroup.web.Repository.AbstractDao;
@@ -18,14 +20,15 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Expression;
 
+import teoresiGroup.web.Repository.UtentiCrudRepository;
 import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.model.Utente;
+
 import teoresiGroup.web.model.UtentiModel;
 import teoresiGroup.web.service.Interfacce.UtentiService;
 
 @Repository
 @Transactional
-public class UtentiImpl /*extends AbstractDao<UtentiModel, Integer>*/ implements UtentiRepo {
+public class UtentiImpl implements UtentiRepo {
 	private static final Logger log= Logger.getLogger(UtentiImpl.class.getName());
 @PersistenceContext
 private EntityManager em;
@@ -33,13 +36,27 @@ private EntityManager em;
 public UtentiRepo utentiRepo;
 
 private JdbcTemplate conn;
-	@Override
+//@Autowired
+//public UtentiCrudRepository crudRepo;
+/*@Override
 	@Transactional
 	public void add(UtentiModel u) {
 		log.info("Sono nel metodo add di UtentiImpl");
 		em.persist(u);
 		log.info(u);
-	}
+	}*/
+/*@Transactional
+public void add(UtentiModel u) {
+try {
+	u.setNome(u.getNome());
+	u.setCognome(u.getCognome());
+	u.setDataNascita(u.getDataNascita());
+	crudRepo.save(u);
+}catch(Exception e) {
+	log.info("non è stato possibile salvare nuovo utente" + e.getStackTrace());
+	
+}}*/
+
 	public UtentiImpl(DataSource ds) {
 		conn= new JdbcTemplate(ds);
 	}
@@ -105,12 +122,7 @@ private JdbcTemplate conn;
 		//conn.
 		return null;
 	}
-	@Override
-	public void insert(Utente u) {
-		String sql="INSERT INTO Utenti(nome, cognome, codFiscale, telefono, email) VALUES(?,?,?,?,?)";
-		conn.update(sql, u.getNome(), u.getCognome(), u.getCodFiscale(),u.getTelefono(), u.getEmail() );
-		
-	}
+	
 	@Override
 	public String dammiNome() {
 		String sql="SELECT nome FROM Utenti";
@@ -119,13 +131,14 @@ private JdbcTemplate conn;
 	}
 	@Override
 	public List<UtentiModel> ByPassAndUsername(String password, String username) {
+		log.info("UtentiImpl ByPassAndUsername" + password + " " + username);
 		CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
 		CriteriaQuery<UtentiModel> query= queryBuilder.createQuery(UtentiModel.class);
 
 		String toSearch= "%" + username + "%";
 		
 		Root<UtentiModel> rec= query.from(UtentiModel.class);
-		/*Ricerca "viceversa", nome-cognome, cognome-nome*/
+		
 		Expression<String> exp= queryBuilder.concat(rec.<String>get("username"), " ");
 		exp=queryBuilder.concat(exp, rec.<String>get("password"));
 		
@@ -138,11 +151,42 @@ private JdbcTemplate conn;
 		query.select(rec).where(p);
 		
 		List<UtentiModel> ut=em.createQuery(query).getResultList();
-		em.clear();
 		
 		return ut;
 	}
+	@Override
+	public UtentiModel selezionaPerUsername(String username) {
+	/*	CriteriaBuilder queryBuilder= em.getCriteriaBuilder();
+		CriteriaQuery<UtentiModel> query= queryBuilder.createQuery(UtentiModel.class);
+		Root<UtentiModel> rec= query.from(UtentiModel.class);
+		 query.select(rec).where(queryBuilder.equal(rec.get("username"), username));
+		 
+		 UtentiModel ut=em.createQuery(query)).getSingleResult();
 	
+		 em.clear();
+		return ut;*/
+		
+		UtentiModel ut;
+		String jpql ="SELECT a FROM Utenti a WHERE a.username=:username";
+		ut=(UtentiModel) em.createQuery(jpql).setParameter("username", username).getSingleResult();
+        return ut;
+	}
+	@Override
+	public List<UtentiModel> getAll() {
+		Query q=em.createQuery("Select p FROM UtentiModel p");
+		return q.getResultList();
+	}
+	@Override
+	public List<UtentiModel> cerca(List<UtentiModel> utenti, java.util.function.Predicate<UtentiModel> predicato) {
+		List<UtentiModel> utentiTrovati= new ArrayList<UtentiModel>();
+		for(UtentiModel u:utenti) {
+			if(predicato.test(u)){
+				utentiTrovati.get(u.getId());
+			}
+		}
+		return null;
+	}
+
 
 	
 	

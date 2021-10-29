@@ -2,12 +2,22 @@ package teoresiGroup.web;
 
 import javax.sql.DataSource;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.Database;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 //import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
@@ -18,41 +28,63 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import teoresiGroup.web.Repository.LibroRepo;
+import teoresiGroup.web.Repository.OperatoreRepo;
+//import teoresiGroup.web.Repository.PersistentToken;
 import teoresiGroup.web.Repository.UtentiRepo;
 import teoresiGroup.web.Repository.RepoImpl.LibroImpl;
+import teoresiGroup.web.Repository.RepoImpl.OperatoreImpl;
 import teoresiGroup.web.Repository.RepoImpl.UtentiImpl;
+//import teoresiGroup.web.service.RicavoDalDb;
 import teoresiGroup.web.service.Implem.LibroServiceImpl;
+import teoresiGroup.web.service.Implem.OperatoreServiceImpl;
+//import teoresiGroup.web.service.Implem.UserService;
 import teoresiGroup.web.service.Implem.UtentiServiceImpl;
 import teoresiGroup.web.service.Interfacce.LibroService;
+import teoresiGroup.web.service.Interfacce.OperatoreService;
 import teoresiGroup.web.service.Interfacce.UtentiService;
-
-import org.springframework.core.env.Environment;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.orm.jpa.vendor.Database;
-import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
+import teoresiGroup.web.service.Interfacce.provaLibroService;
+import teoresiGroup.web.service.Interfacce.provaUserService;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = " teoresiGroup.web.controller")
+@ComponentScan(" teoresiGroup.web.controller")
 @PropertySource("classpath:NewLibrary.properties")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "teoresiGroup.web.Repository", entityManagerFactoryRef = "emf", transactionManagerRef = "tmf")
 public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdapter implements ApplicationContextAware */{
-	  @Autowired
+	private static final Logger log= Logger.getLogger(WebConfig.class.getName());
+	@Autowired
 	    private Environment env;
 	
 	
 	 @Autowired
 	   private ApplicationContext applicationContext;
-
+	
+	/*@Bean(name="validator")	public LocalValidatorFactoryBean validator() {
+		LocalValidatorFactoryBean bean= new LocalValidatorFactoryBean();
+		bean.setValidationMessageSource(messageSource());
+		return bean;
+		
+	}/*
+	@Override
+	public Validator getValidator() {
+		return validator();
+	}
+	 */
+	/* @Bean esternalizzazione delle etichette
+	 le metto nel file message properties, cambiare nel frontend le etichette con
+	 ciò che scrivo nel file di properties per ciascun elemento
+	 public MessageSource messageSource() {
+		 ResourceBundleMessageSource res= new ResourceBundleMessageSource();
+		 res.setBasename("message");
+		 return res;
+		 
+	 }*/
+	 
 	   /*
 	    * STEP 1 - Create SpringResourceTemplateResolver
 	    * */
+	 
 	   @Bean
 	   public SpringResourceTemplateResolver templateResolver() {
 	      SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
@@ -86,10 +118,19 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	   @Bean(name = "dataSource")
 	    public DataSource getDataSource(){
 	        DriverManagerDataSource db= new DriverManagerDataSource();
+	        try {
 	        db.setDriverClassName(env.getRequiredProperty("NewLibrary.db.driver"));
 	        db.setUrl(env.getRequiredProperty("NewLibrary.db.url"));
 	        db.setUsername(env.getRequiredProperty("NewLibrary.db.username"));
 	        db.setPassword(env.getRequiredProperty("NewLibrary.db.password"));
+	        }
+	        catch(RuntimeException e) {
+	        	log.info(e.getCause());
+	        	throw new RuntimeException(e);
+	        	
+	        	
+	        }
+	        log.info("avvenuta connessione ad db");
 	        return db;
 	    }
 	    @Bean(name="emf")
@@ -105,7 +146,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	        factory.setPackagesToScan(getClass().getPackage().getName());//classi che utilizzano entity manager
 	        return factory;
 	    }
-
+	    
 	    @Bean(name="tmf")
 	    public PlatformTransactionManager getTransactionManager(){
 	       // JpaTransactionManager jtm= new JpaTransactionManager(getEntityManager().getObject());
@@ -113,7 +154,39 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    	return new JpaTransactionManager(getEntityManagerFactory().getObject());
 
 	    }
-	    
+	 /*   @Bean
+	    public RoleHierarchy roleHierarchy() {
+	        RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
+	        String hierarchy = "ROLE_ADMIN > ROLE_STAFF \n ROLE_STAFF > ROLE_USER";
+	        roleHierarchy.setHierarchy(hierarchy);
+	        return roleHierarchy;
+	    }
+	    @Bean
+	    public DefaultWebSecurityExpressionHandler webSecurityExpressionHandler() {
+	        DefaultWebSecurityExpressionHandler expressionHandler = new DefaultWebSecurityExpressionHandler();
+	        expressionHandler.setRoleHierarchy(roleHierarchy());
+	        return expressionHandler;
+	    }*/
+	    /*-------------------
+	    @Override
+	    public void addInterceptors(InterceptorRegistry registry) {
+	        LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
+	        localeChangeInterceptor.setParamName("lang");
+	        registry.addInterceptor(localeChangeInterceptor);
+	    }
+	    @Bean
+	    public LocaleResolver localeResolver() {
+	        CookieLocaleResolver cookieLocaleResolver = new CookieLocaleResolver();
+	        cookieLocaleResolver.setDefaultLocale(Locale.ITALY);
+	        return cookieLocaleResolver;
+	    }
+	    @Bean
+	    public LocaleResolver localeResolve() {
+	        SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
+	        return sessionLocaleResolver;
+	    }*/
+	    /*-----------------------*/
+	
 	    @Bean
 	    public UtentiRepo getUtenteService() {
 	    	return new UtentiImpl(getDataSource());
@@ -122,7 +195,7 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    
 	    @Bean
 	    public LibroRepo getLibroService() {
-	    	return new LibroImpl(getDataSource());
+	    	return new LibroImpl();
 	    }
 	    @Bean
 	    public UtentiService getUtentiService() {
@@ -133,4 +206,32 @@ public class WebConfig implements WebMvcConfigurer/*extends WebMvcConfigurerAdap
 	    public LibroService getLibroServic() {
 	    	return new LibroServiceImpl();
 	    }
+	    @Bean
+	    public OperatoreRepo getOp() {
+	    	return new OperatoreImpl();
+	    }
+	    @Bean
+	    public OperatoreService getOpService() {
+	    	return new OperatoreServiceImpl();
+	    }
+	    @Bean public provaUserService getCrud() {
+	    	return new provaUserService();
+	    }
+	   @Bean
+	   public provaLibroService getLibroServi() {
+		   return new provaLibroService();
+	   }
+	/*    @Bean
+	    public UserDetailsService userDetailsService() {
+	        return  new RicavoDalDb();
+	    }
+	@Bean
+	public PersistentTokenRepository peristent() {
+		return new PersistentToken();
+	}*/
+	/*@Bean
+	public UserDetailsService us() {
+		return new UserService();
+	}*/
+	    
 }

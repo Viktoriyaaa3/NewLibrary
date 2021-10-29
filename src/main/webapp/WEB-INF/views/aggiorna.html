@@ -3,15 +3,57 @@
 <head> 
     <title>Inserisci un nuovo libro</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <link rel="stylesheet"
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
-	<h1>Form</h1>
-    <form action="#" th:action="@{/book/aggiorna}" th:object="${book}" method="post">
-    	<p>Titolo: <input type="text" th:field="*{titolo}" /></p>
-        <p>Autore: <input type="text" th:field="*{autore}" /></p>
-       	<p>Data Pubblicazioine: <input type="text" th:field="*{dataPubblicazione}" placeholder="yyyy-MM-dd" /> </p>
-        <p>Numero Pezzi: <input type="number" th:field="*{numeroPezzi}" /></p>
-        <p><input type="submit" value="Update" /> <input type="reset" value="Reset" /></p>
-    </form>
+	<div>
+<div id="loginbox" style="margin-top: 50px;"
+			class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+
+				
+
+	<div class="panel panel-info">
+	<div class="panel-heading">
+	<div class="panel-title">Aggiorna i dati</div></div>
+		<div style="padding-top: 30px" class="panel-body">
+<form action="#" 
+  th:action="@{/book/update/{id}(id=${book.id})}" 
+  th:object="${book}" 
+  method="post" class="form-horizontal">
+   <div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+  <label for="titolo">Titolo</label>
+    <input type="text" th:field="*{titolo}" id="titolo" placeholder="titolo" class="form-control">
+    </div>
+   <div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    <label for="autore">Autore</label>
+    <input type="text" th:field="*{autore}" id="autore" placeholder="autore" class="form-control">
+    </div>
+    
+    <div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    <label for="dataPubblicazione">Data di Pubblicazione</label>
+    <input type="text" th:field="*{dataPubblicazione}" id="dataPubblicazione" placeholder="yyyy-MM-dd"  class="form-control">
+   </div>
+   
+   <div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+    <label for="numeroPezzi">Numero Pezzi</label>
+    <input type="number" th:field="*{numeroPezzi}" id="numeroPezzi" placeholder="numeroPezzi"  class="form-control">
+   </div>
+    <input type="submit" value="Aggiorna Libro" class="btn btn-success">   
+</form>
+</div>
+</div>
+
+</div>
+</div>
 </body>
 </html>

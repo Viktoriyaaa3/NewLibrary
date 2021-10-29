@@ -2,31 +2,21 @@ package teoresiGroup.web.Repository.RepoImpl;
 
 import java.util.List;
 import java.util.Optional;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.sql.DataSource;
 import javax.transaction.Transactional;
-//import teoresiGroup.web.Repository.AbstractDao;
-import teoresiGroup.web.Repository.LibroRepo;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Expression;
 
-import teoresiGroup.web.Repository.UtentiRepo;
-import teoresiGroup.web.model.Libri;
-//import teoresiGroup.web.model.LibriMapper;
+import teoresiGroup.web.Repository.LibroRepo;
 import teoresiGroup.web.model.LibriModel;
-import teoresiGroup.web.model.Utente;
-import teoresiGroup.web.model.UtentiModel;
 
 @Repository
 @Transactional
@@ -38,14 +28,8 @@ public class LibroImpl /*extends AbstractDao<LibriModel, Integer>*/ implements L
 	@Autowired
 	public LibroRepo libroRepo;
 	
-	/*jdbc non ti serve. da eliminare tutti i metodi con jdbc*/
-	private JdbcTemplate conn;
-
-
-
-	public LibroImpl(DataSource dataSource) {
-		conn=new JdbcTemplate(dataSource);
-	}
+	/*jdbc non mi serve. da eliminare tutti i metodi con jdbc*/
+	
 
 	@Override
 	@Transactional
@@ -66,6 +50,18 @@ public class LibroImpl /*extends AbstractDao<LibriModel, Integer>*/ implements L
 	public void update(LibriModel l) {
 		em.merge(l);
 		
+	}
+	
+	@Override
+	@Transactional
+	public void delete(int id) {
+		em.remove(getById(id));
+		
+	}
+	@Override
+	public List<LibriModel> getAll() {
+		Query q = em.createQuery("SELECT p FROM LibriModel p");
+		return q.getResultList();
 	}
 
 
@@ -95,18 +91,6 @@ public class LibroImpl /*extends AbstractDao<LibriModel, Integer>*/ implements L
 		return null;
 	}
 
-	@Override
-	public void insert(LibriModel u) {
-		String sql="INSERT INTO Libri( titolo,autore, dataPubblicazione, numeroPezzi) VALUES(?,?,?,?)";
-		conn.update(sql, u.getTitolo(), u.getAutore(), u.getDataPubblicazione(), u.getNumeroPezzi() );
-		
-	}
-	/*@Override
-	public List<Libri> getAll() {
-		String sql="SELECT * FROM Libri";
-		List<Libri> lib= conn.query(sql, new LibriMapper());
-		
-		return lib;	}*/
 	
 	@Override
 	public String dammiNome() {
@@ -131,14 +115,6 @@ public class LibroImpl /*extends AbstractDao<LibriModel, Integer>*/ implements L
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
-	@Override
-	public void delete(LibriModel l) {
-		em.remove(l);
-		
-	}
-
 
 
 }
